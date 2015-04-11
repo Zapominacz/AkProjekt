@@ -1,16 +1,19 @@
 package com.zapominacz.studia.akprojekt;
 
+import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
+import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
+import org.fife.ui.rtextarea.RTextScrollPane;
+
 /**
  * @author Zapominacz
  */
 public class MainWindow extends javax.swing.JFrame {
 
-    // Variables declaration - do not modify
-    private javax.swing.JScrollPane asmScrollPane;
-    private javax.swing.JTextPane asmTextPane;
+    private RTextScrollPane asmScrollPane;
+    private RSyntaxTextArea asmTextPane;
     private javax.swing.JMenuItem breakMenuItem;
-    private javax.swing.JScrollPane codeScrollPane;
-    private javax.swing.JTextPane codeTextPane;
+    private RTextScrollPane codeScrollPane;
+    private RSyntaxTextArea codeTextPane;
     private javax.swing.JMenuItem continueMenuItem;
     private javax.swing.JTabbedPane editorPane;
     private javax.swing.JMenu fileMenu;
@@ -115,10 +118,19 @@ public class MainWindow extends javax.swing.JFrame {
         statusLabel = new javax.swing.JLabel();
         splitPane = new javax.swing.JSplitPane();
         editorPane = new javax.swing.JTabbedPane();
-        asmScrollPane = new javax.swing.JScrollPane();
-        asmTextPane = new javax.swing.JTextPane();
-        codeScrollPane = new javax.swing.JScrollPane();
-        codeTextPane = new javax.swing.JTextPane();
+
+
+        asmTextPane = new RSyntaxTextArea(20, 60);
+        asmTextPane.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_ASSEMBLER_X86);
+        asmTextPane.setCodeFoldingEnabled(true);
+        asmScrollPane = new RTextScrollPane(asmTextPane);
+
+
+        codeTextPane = new RSyntaxTextArea(20, 60);
+        codeTextPane.setCodeFoldingEnabled(true);
+        codeScrollPane = new RTextScrollPane(codeTextPane);
+
+
         regScrollPane = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         r0Label = new javax.swing.JLabel();
@@ -177,11 +189,7 @@ public class MainWindow extends javax.swing.JFrame {
         splitPane.setDividerLocation(400);
         splitPane.setDividerSize(1);
 
-        asmScrollPane.setViewportView(asmTextPane);
-
         editorPane.addTab("asembler", asmScrollPane);
-
-        codeScrollPane.setViewportView(codeTextPane);
 
         editorPane.addTab("kod", codeScrollPane);
 

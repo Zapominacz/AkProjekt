@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Symulator.iml" filepath="$PROJECT_DIR$/Symulator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SyntaxHighlight/SyntaxHighlight.iml" filepath="$PROJECT_DIR$/SyntaxHighlight/SyntaxHighlight.iml" />
     </modules>
   </component>
 </project>
