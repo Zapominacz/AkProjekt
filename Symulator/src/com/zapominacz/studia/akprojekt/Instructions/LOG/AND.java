@@ -1,6 +1,7 @@
 package com.zapominacz.studia.akprojekt.Instructions.LOG;
 
 import com.zapominacz.studia.akprojekt.Instructions.Instruction;
+import com.zapominacz.studia.akprojekt.Registers.Registers;
 
 import java.util.ArrayList;
 
@@ -15,13 +16,12 @@ public class AND extends Instruction {
 
     public boolean execute(){
         if(validArguments()){
-            Boolean[] src1 = registers.getRegisterValue(arguments.get(0));
-            Boolean[] src2 = registers.getRegisterValue(arguments.get(1));
-            Boolean[] dest = registers.getRegisterValue(arguments.get(2));
-            for(int i=0; i<64; i++){
+            Boolean[] src1 = super.registers.getRegisterValue(arguments.get(0));
+            Boolean[] src2 = super.registers.getRegisterValue(arguments.get(1));
+            Boolean[] dest = super.registers.getRegisterValue(arguments.get(2));
+            for(int i=0; i<64; i++)
                 dest[i] = src1[i] & src2[i];
-            }
-            return false;
+            return true;
         }
         else
             return false;
