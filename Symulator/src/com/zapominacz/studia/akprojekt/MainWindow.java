@@ -4,6 +4,10 @@ import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
 import org.fife.ui.rtextarea.RTextScrollPane;
 
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 /**
  * @author Zapominacz
  */
@@ -17,7 +21,7 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JMenuItem continueMenuItem;
     private javax.swing.JTabbedPane editorPane;
     private javax.swing.JMenu fileMenu;
-    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu programMenu;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JMenuBar menuBar;
     private javax.swing.JMenuItem nextMenuItem;
@@ -63,6 +67,8 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JSplitPane splitPane;
     private javax.swing.JLabel statusLabel;
     private javax.swing.JMenuItem stopMenuItem;
+    private JMenuItem translateMenuItem;
+    private MnemonicCodeTranslator translator;
 
     /**
      * Creates new form MainWindow
@@ -172,12 +178,14 @@ public class MainWindow extends javax.swing.JFrame {
         openMenuItem = new javax.swing.JMenuItem();
         saveAsMenuItem = new javax.swing.JMenuItem();
         saveMenuItem = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        programMenu = new javax.swing.JMenu();
         runMenuItem = new javax.swing.JMenuItem();
+        translateMenuItem = new javax.swing.JMenuItem();
         nextMenuItem = new javax.swing.JMenuItem();
         breakMenuItem = new javax.swing.JMenuItem();
         stopMenuItem = new javax.swing.JMenuItem();
         continueMenuItem = new javax.swing.JMenuItem();
+        translator = new MnemonicCodeTranslator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Projekt AK");
@@ -439,30 +447,35 @@ public class MainWindow extends javax.swing.JFrame {
 
         menuBar.add(fileMenu);
 
-        jMenu2.setText("Program");
-        jMenu2.setToolTipText("");
+        programMenu.setText("Program");
+        programMenu.setToolTipText("");
+
+        translateMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.CTRL_MASK));
+        translateMenuItem.setText("Translate");
+        translateMenuItem.addActionListener(e -> translator.translateAssemblyCode(asmTextPane, codeTextPane));
+        programMenu.add(translateMenuItem);
 
         runMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.CTRL_MASK));
         runMenuItem.setText("Uruchom");
-        jMenu2.add(runMenuItem);
+        programMenu.add(runMenuItem);
 
         nextMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_MASK));
         nextMenuItem.setText("Nastêpna linia");
-        jMenu2.add(nextMenuItem);
+        programMenu.add(nextMenuItem);
 
         breakMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_B, java.awt.event.InputEvent.CTRL_MASK));
         breakMenuItem.setText("Toggle breakpoint");
-        jMenu2.add(breakMenuItem);
+        programMenu.add(breakMenuItem);
 
         stopMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_H, java.awt.event.InputEvent.CTRL_MASK));
         stopMenuItem.setText("Zatrzymaj");
-        jMenu2.add(stopMenuItem);
+        programMenu.add(stopMenuItem);
 
         continueMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.CTRL_MASK));
         continueMenuItem.setText("Kontynuuj");
-        jMenu2.add(continueMenuItem);
+        programMenu.add(continueMenuItem);
 
-        menuBar.add(jMenu2);
+        menuBar.add(programMenu);
 
         setJMenuBar(menuBar);
 
