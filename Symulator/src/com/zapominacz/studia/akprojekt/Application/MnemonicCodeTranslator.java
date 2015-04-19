@@ -1,4 +1,4 @@
-package com.zapominacz.studia.akprojekt;
+package com.zapominacz.studia.akprojekt.Application;
 
 import com.zapominacz.studia.akprojekt.exceptions.UnsupportedMnemonicException;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
@@ -17,7 +17,7 @@ public class MnemonicCodeTranslator {
     private String[] asmLines;
     private Map<String, String> opCodeMap;
 
-    MnemonicCodeTranslator() {
+    public MnemonicCodeTranslator() {
         try {
             loadOpCodeMap();
         } catch (IOException e) {

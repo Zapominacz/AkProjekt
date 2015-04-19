@@ -1,12 +1,12 @@
 package com.zapominacz.studia.akprojekt;
 
+import com.zapominacz.studia.akprojekt.Application.MnemonicCodeTranslator;
+import com.zapominacz.studia.akprojekt.Application.Compiler;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
 import org.fife.ui.rtextarea.RTextScrollPane;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 /**
  * @author Zapominacz
@@ -69,11 +69,13 @@ public class MainWindow extends javax.swing.JFrame {
     private javax.swing.JMenuItem stopMenuItem;
     private JMenuItem translateMenuItem;
     private MnemonicCodeTranslator translator;
+    private Compiler compiler;
 
     /**
      * Creates new form MainWindow
      */
     public MainWindow() {
+        compiler = Compiler.getInstance();
         initComponents();
     }
 
@@ -205,67 +207,67 @@ public class MainWindow extends javax.swing.JFrame {
 
         r0Label.setText("R0x0");
 
-        r0Field.setText("0xFFFFFFFFFFFFFFFF");
+        r0Field.setText(compiler.getRegisterHexValue("R0"));
 
         r1Label.setText("R0x1");
 
-        r1Field.setText("0xFFFFFFFFFFFFFFFF");
+        r1Field.setText(compiler.getRegisterHexValue("R1"));
 
         r2Label.setText("R0x2");
 
-        r2Field.setText("0xFFFFFFFFFFFFFFFF");
+        r2Field.setText(compiler.getRegisterHexValue("R2"));
 
         r3Label.setText("R0x3");
 
-        r3Field.setText("0xFFFFFFFFFFFFFFFF");
+        r3Field.setText(compiler.getRegisterHexValue("R3"));
 
-        r4Field.setText("0xFFFFFFFFFFFFFFFF");
+        r4Field.setText(compiler.getRegisterHexValue("R7"));
 
         r4Label.setText("R0x7");
 
-        r5Field.setText("0xFFFFFFFFFFFFFFFF");
+        r5Field.setText(compiler.getRegisterHexValue("R6"));
 
         r5Label.setText("R0x6");
 
         r6Label.setText("R0x5");
 
-        r6Field.setText("0xFFFFFFFFFFFFFFFF");
+        r6Field.setText(compiler.getRegisterHexValue("R5"));
 
-        r7Field.setText("0xFFFFFFFFFFFFFFFF");
+        r7Field.setText(compiler.getRegisterHexValue("R4"));
 
         r7Label.setText("R0x4");
 
-        r8Field.setText("0xFFFFFFFFFFFFFFFF");
+        r8Field.setText(compiler.getRegisterHexValue("RF"));
 
         r8Label.setText("R0xF");
 
         r9Label.setText("R0xE");
 
-        r9Field.setText("0xFFFFFFFFFFFFFFFF");
+        r9Field.setText(compiler.getRegisterHexValue("RE"));
 
-        rAField.setText("0xFFFFFFFFFFFFFFFF");
+        rAField.setText(compiler.getRegisterHexValue("RD"));
 
         rALabel.setText("R0xC");
 
         rBLabel.setText("R0xD");
 
-        rBField.setText("0xFFFFFFFFFFFFFFFF");
+        rBField.setText(compiler.getRegisterHexValue("RC"));
 
-        rCField.setText("0xFFFFFFFFFFFFFFFF");
+        rCField.setText(compiler.getRegisterHexValue("RB"));
 
         rCLabel.setText("R0xA");
 
-        rDField.setText("0xFFFFFFFFFFFFFFFF");
+        rDField.setText(compiler.getRegisterHexValue("RA"));
 
         rDLabel.setText("R0xB");
 
-        rEField.setText("0xFFFFFFFFFFFFFFFF");
+        rEField.setText(compiler.getRegisterHexValue("R9"));
 
         rELabel.setText("R0x9");
 
         rFLabel.setText("R0x8");
 
-        rFField.setText("0xFFFFFFFFFFFFFFFF");
+        rFField.setText(compiler.getRegisterHexValue("R8"));
 
         showInSystemLabel.setText("Reprezentacja:");
 

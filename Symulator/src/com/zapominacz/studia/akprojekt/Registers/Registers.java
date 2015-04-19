@@ -14,7 +14,7 @@ public class Registers {
     private Registers(){
         registers = new HashMap<>();
         for(int i=0; i < 16; i++){
-            registers.put("R" + Integer.toHexString(i), new Boolean[64]);
+            registers.put("R" + Integer.toHexString(i).toUpperCase(), new Boolean[64]);
         }
     }
 
