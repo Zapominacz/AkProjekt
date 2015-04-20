@@ -1,4 +1,4 @@
 package com.zapominacz.studia.akprojekt;
 
-public class AsmFileOperationsAdapter {
+public class AsmFileOperations {
 }

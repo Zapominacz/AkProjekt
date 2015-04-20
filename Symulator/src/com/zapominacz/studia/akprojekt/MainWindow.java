@@ -7,8 +7,9 @@ import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
 import org.fife.ui.rtextarea.RTextScrollPane;
 
 import javax.swing.*;
+import java.nio.file.Path;
 
-public class MainWindow extends JFrame {
+public class MainWindow extends JFrame implements StatusChangeInterface {
 
     private RSyntaxTextArea codeTextPane;
     private RSyntaxTextArea asmTextPane;
@@ -39,8 +40,10 @@ public class MainWindow extends JFrame {
     private JTabbedPane editorPane;
     private JSplitPane splitPane;
 
+    private UserGuiActionsAdapter guiActionsAdapter;
     private MnemonicCodeTranslator translator;
     private Compiler compiler;
+    private Path openedFile;
 
     /**
      * Creates new form MainWindow
@@ -131,7 +134,9 @@ public class MainWindow extends JFrame {
         breakMenuItem = new JMenuItem();
         stopMenuItem = new JMenuItem();
         continueMenuItem = new JMenuItem();
+
         translator = new MnemonicCodeTranslator();
+        guiActionsAdapter = new UserGuiActionsAdapter();
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setTitle("Projekt AK");
@@ -152,6 +157,7 @@ public class MainWindow extends JFrame {
         showInSystemLabel.setText("Reprezentacja:");
 
         showInSystemComboBox.setModel(new DefaultComboBoxModel(new String[]{"HEX", "DEC"}));
+        showInSystemComboBox.addActionListener(e1 -> guiActionsAdapter.onSystemChanged(showInSystemComboBox));
 
         GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -202,15 +208,18 @@ public class MainWindow extends JFrame {
 
         openMenuItem.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_MASK));
         openMenuItem.setText("Open");
+        openMenuItem.addActionListener(e -> openedFile = guiActionsAdapter.onOpenFile(asmTextPane, openedFile));
         fileMenu.add(openMenuItem);
 
         saveAsMenuItem.setText("Zapisz jako...");
         fileMenu.add(saveAsMenuItem);
+        saveAsMenuItem.addActionListener(e -> openedFile = guiActionsAdapter.onSaveAsFile(asmTextPane, openedFile));
 
         saveMenuItem.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
         saveMenuItem.setText("Zapisz");
         saveMenuItem.setToolTipText("");
         saveMenuItem.setActionCommand("Zapisz");
+        saveMenuItem.addActionListener(e -> openedFile = guiActionsAdapter.onSaveFile(asmTextPane, openedFile));
         fileMenu.add(saveMenuItem);
 
         menuBar.add(fileMenu);
@@ -225,22 +234,27 @@ public class MainWindow extends JFrame {
 
         runMenuItem.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.CTRL_MASK));
         runMenuItem.setText("Uruchom");
+        runMenuItem.addActionListener(e -> guiActionsAdapter.onRunProgram(asmTextPane, codeTextPane));
         programMenu.add(runMenuItem);
 
         nextMenuItem.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_MASK));
         nextMenuItem.setText("Nastêpna linia");
+        nextMenuItem.addActionListener(e -> guiActionsAdapter.onNextLine(asmTextPane, codeTextPane));
         programMenu.add(nextMenuItem);
 
         breakMenuItem.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_B, java.awt.event.InputEvent.CTRL_MASK));
         breakMenuItem.setText("Toggle breakpoint");
+        breakMenuItem.addActionListener(e -> guiActionsAdapter.onBreakPointToggle(asmTextPane, codeTextPane));
         programMenu.add(breakMenuItem);
 
         stopMenuItem.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_H, java.awt.event.InputEvent.CTRL_MASK));
         stopMenuItem.setText("Zatrzymaj");
+        stopMenuItem.addActionListener(e -> guiActionsAdapter.onInterrupt(asmTextPane, codeTextPane));
         programMenu.add(stopMenuItem);
 
         continueMenuItem.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.CTRL_MASK));
         continueMenuItem.setText("Kontynuuj");
+        continueMenuItem.addActionListener(e -> guiActionsAdapter.onContinue(asmTextPane, codeTextPane));
         programMenu.add(continueMenuItem);
 
         menuBar.add(programMenu);
@@ -270,5 +284,10 @@ public class MainWindow extends JFrame {
 
         pack();
     }// </editor-fold>
+
+    @Override
+    public void changeStatus(String msg) {
+        statusLabel.setText(msg);
+    }
     // End of variables declaration                   
 }
