@@ -208,18 +208,18 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
 
         openMenuItem.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_O, java.awt.event.InputEvent.CTRL_MASK));
         openMenuItem.setText("Open");
-        openMenuItem.addActionListener(e -> openedFile = guiActionsAdapter.onOpenFile(asmTextPane, openedFile));
+        openMenuItem.addActionListener(e -> guiActionsAdapter.onOpenFile(asmTextPane, MainWindow.this));
         fileMenu.add(openMenuItem);
 
         saveAsMenuItem.setText("Zapisz jako...");
         fileMenu.add(saveAsMenuItem);
-        saveAsMenuItem.addActionListener(e -> openedFile = guiActionsAdapter.onSaveAsFile(asmTextPane, openedFile));
+        saveAsMenuItem.addActionListener(e -> guiActionsAdapter.onSaveAsFile(asmTextPane, MainWindow.this));
 
         saveMenuItem.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
         saveMenuItem.setText("Zapisz");
         saveMenuItem.setToolTipText("");
         saveMenuItem.setActionCommand("Zapisz");
-        saveMenuItem.addActionListener(e -> openedFile = guiActionsAdapter.onSaveFile(asmTextPane, openedFile));
+        saveMenuItem.addActionListener(e -> guiActionsAdapter.onSaveFile(asmTextPane, MainWindow.this));
         fileMenu.add(saveMenuItem);
 
         menuBar.add(fileMenu);

@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81f6e321-724b-4f1c-9b1f-460bd1d47d4a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/StatusChangeInterface.java" />
-      <change type="DELETED" beforePath="D:\AkProjekt\Symulator\out\production\Symulator\com\zapominacz\studia\akprojekt\MnemonicCodeTranslator.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Symulator/com/zapominacz/studia/akprojekt/MainWindow$1.class" afterPath="$PROJECT_DIR$/out/production/Symulator/com/zapominacz/studia/akprojekt/MainWindow$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Symulator/com/zapominacz/studia/akprojekt/MainWindow.class" afterPath="$PROJECT_DIR$/out/production/Symulator/com/zapominacz/studia/akprojekt/MainWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Symulator/com/zapominacz/studia/akprojekt/Registers/Registers.class" afterPath="$PROJECT_DIR$/out/production/Symulator/com/zapominacz/studia/akprojekt/Registers/Registers.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/MainWindow.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/MainWindow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\AkProjekt\Symulator\src\com\zapominacz\studia\akprojekt\AsmFileOperationsAdapter.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/AsmFileOperations.java" />
     </list>
     <ignored path="Symulator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,20 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="289" column="31" selection-start-line="289" selection-start-column="31" selection-end-line="289" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.3084112">
+              <caret line="215" column="46" selection-start-line="215" selection-start-column="46" selection-end-line="215" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1857#1944#0" expanded="true" />
                 <element signature="e#2879#2880#0" expanded="true" />
                 <element signature="e#2944#2945#0" expanded="true" />
                 <element signature="e#3183#3213#0" expanded="true" />
-                <element signature="e#3218#3281#0" expanded="true" />
-                <element signature="e#13150#13151#0" expanded="true" />
-                <element signature="e#13190#13191#0" expanded="true" />
+                <element signature="e#13126#13127#0" expanded="true" />
+                <element signature="e#13166#13167#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,20 +74,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserGuiActionsAdapter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserGuiActionsAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27803737">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#382#383#0" expanded="true" />
-                <element signature="e#409#410#0" expanded="true" />
-                <element signature="e#487#488#0" expanded="true" />
-                <element signature="e#514#515#0" expanded="true" />
-                <element signature="e#590#591#0" expanded="true" />
-                <element signature="e#617#618#0" expanded="true" />
+                <element signature="e#378#379#0" expanded="true" />
+                <element signature="e#411#412#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JFileChooser.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/javax/swing/JFileChooser.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="678" column="15" selection-start-line="678" selection-start-column="15" selection-end-line="678" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StandardOpenOption.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/nio/file/StandardOpenOption.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="75" column="4" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -137,8 +146,8 @@
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/AsmFileOperator.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/AsmFileOperationsAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/StatusChangeInterface.java" />
-        <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/MainWindow.java" />
       </list>
     </option>
   </component>
@@ -448,7 +457,13 @@
       <option name="project" value="LOCAL" />
       <updated>1429545363187</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Podpieto adapter">
+      <created>1429546439657</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1429546439657</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -495,7 +510,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Refaktor MainWindow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refaktor MainWindow" />
+    <MESSAGE value="Podpieto adapter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Podpieto adapter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -516,9 +532,8 @@
             <element signature="e#2879#2880#0" expanded="true" />
             <element signature="e#2944#2945#0" expanded="true" />
             <element signature="e#3183#3213#0" expanded="true" />
-            <element signature="e#3218#3281#0" expanded="true" />
-            <element signature="e#13150#13151#0" expanded="true" />
-            <element signature="e#13190#13191#0" expanded="true" />
+            <element signature="e#13126#13127#0" expanded="true" />
+            <element signature="e#13166#13167#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -554,8 +569,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
           <folding>
-            <element signature="e#176#177#0" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#176#177#0" expanded="false" />
+            <element signature="e#203#204#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -610,9 +625,8 @@
             <element signature="e#2879#2880#0" expanded="true" />
             <element signature="e#2944#2945#0" expanded="true" />
             <element signature="e#3183#3213#0" expanded="true" />
-            <element signature="e#3218#3281#0" expanded="true" />
-            <element signature="e#13150#13151#0" expanded="true" />
-            <element signature="e#13190#13191#0" expanded="true" />
+            <element signature="e#13126#13127#0" expanded="true" />
+            <element signature="e#13166#13167#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -651,9 +665,8 @@
             <element signature="e#2879#2880#0" expanded="true" />
             <element signature="e#2944#2945#0" expanded="true" />
             <element signature="e#3183#3213#0" expanded="true" />
-            <element signature="e#3218#3281#0" expanded="true" />
-            <element signature="e#13150#13151#0" expanded="true" />
-            <element signature="e#13190#13191#0" expanded="true" />
+            <element signature="e#13126#13127#0" expanded="true" />
+            <element signature="e#13166#13167#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -668,9 +681,8 @@
             <element signature="e#2879#2880#0" expanded="true" />
             <element signature="e#2944#2945#0" expanded="true" />
             <element signature="e#3183#3213#0" expanded="true" />
-            <element signature="e#3218#3281#0" expanded="true" />
-            <element signature="e#13150#13151#0" expanded="true" />
-            <element signature="e#13190#13191#0" expanded="true" />
+            <element signature="e#13126#13127#0" expanded="true" />
+            <element signature="e#13166#13167#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -685,9 +697,8 @@
             <element signature="e#2879#2880#0" expanded="true" />
             <element signature="e#2944#2945#0" expanded="true" />
             <element signature="e#3183#3213#0" expanded="true" />
-            <element signature="e#3218#3281#0" expanded="true" />
-            <element signature="e#13150#13151#0" expanded="true" />
-            <element signature="e#13190#13191#0" expanded="true" />
+            <element signature="e#13126#13127#0" expanded="true" />
+            <element signature="e#13166#13167#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -730,8 +741,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
           <folding>
-            <element signature="e#176#177#0" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
+            <element signature="e#176#177#0" expanded="false" />
+            <element signature="e#203#204#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -775,8 +786,8 @@
         <state vertical-scroll-proportion="0.33278418">
           <caret line="1766" column="31" selection-start-line="1766" selection-start-column="31" selection-end-line="1766" selection-end-column="31" />
           <folding>
-            <element signature="e#67078#67079#0" expanded="true" />
-            <element signature="e#67147#67148#0" expanded="true" />
+            <element signature="e#67078#67079#0" expanded="false" />
+            <element signature="e#67147#67148#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -805,14 +816,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/AsmFileOperations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/StatusChangeInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -821,35 +824,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/MainWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/AsmFileOperations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="289" column="31" selection-start-line="289" selection-start-column="31" selection-end-line="289" selection-end-column="31" />
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/nio/file/StandardOpenOption.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="4" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/javax/swing/JFileChooser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="678" column="15" selection-start-line="678" selection-start-column="15" selection-end-line="678" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_05/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3317757">
+          <caret line="2227" column="16" selection-start-line="2227" selection-start-column="16" selection-end-line="2227" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="54" selection-start-line="38" selection-start-column="54" selection-end-line="38" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#378#379#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/MainWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3084112">
+          <caret line="215" column="46" selection-start-line="215" selection-start-column="46" selection-end-line="215" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1857#1944#0" expanded="true" />
             <element signature="e#2879#2880#0" expanded="true" />
             <element signature="e#2944#2945#0" expanded="true" />
             <element signature="e#3183#3213#0" expanded="true" />
-            <element signature="e#3218#3281#0" expanded="true" />
-            <element signature="e#13150#13151#0" expanded="true" />
-            <element signature="e#13190#13191#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27803737">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#409#410#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#590#591#0" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#13126#13127#0" expanded="true" />
+            <element signature="e#13166#13167#0" expanded="true" />
           </folding>
         </state>
       </provider>
