@@ -16,6 +16,7 @@ public class Registers {
         for(int i=0; i < 16; i++){
             registers.put("R" + Integer.toHexString(i).toUpperCase(), new Boolean[64]);
         }
+        reset();
     }
 
     public static Registers getInstance(){
@@ -37,5 +38,13 @@ public class Registers {
 
     public boolean validRegisterName(String registerName){
         return getRegisterValue(registerName) != null;
+    }
+
+    public void reset(){
+        for(int i =0; i<16; i++){
+            Boolean[] src = getRegisterValue("R" + Integer.toHexString(i).toUpperCase());
+            for(int j=0; j<64;j++)
+                src[j] = Boolean.FALSE;
+        }
     }
 }

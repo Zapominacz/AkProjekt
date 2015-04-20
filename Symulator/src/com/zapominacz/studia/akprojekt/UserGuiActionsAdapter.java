@@ -1,5 +1,6 @@
 package com.zapominacz.studia.akprojekt;
 
+import com.zapominacz.studia.akprojekt.Application.Compiler;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 
 import javax.swing.*;
@@ -12,6 +13,8 @@ import java.nio.file.StandardOpenOption;
 public class UserGuiActionsAdapter {
 
     private Path openedFile;
+    //for refactioring:
+    private Compiler compiler = Compiler.getInstance();
 
     public UserGuiActionsAdapter() {
         openedFile = null;
@@ -59,7 +62,23 @@ public class UserGuiActionsAdapter {
         }
     }
 
-    public void onRunProgram(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane) {
+    //for refactoring - textfields update!
+    public void onRunProgram(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane, JTextField[] textFields) {
+        try {
+            for (int i = 0; i < asmTextPane.getLineCount(); i++) {
+                Integer startOffset = asmTextPane.getLineStartOffset(i), endOffset = asmTextPane.getLineEndOffset(i);
+                String temp = asmTextPane.getText(startOffset, endOffset-startOffset);
+                compiler.addInstruction(temp);
+            }
+        }
+        catch(Exception e){
+            //Do nothing
+        }
+        compiler.execute();
+        for(int i = 0; i < 16; i++) {
+            String registerName = "R" + Integer.toHexString(i).toUpperCase();
+            textFields[i].setText(compiler.getRegisterHexValue(registerName));
+        }
     }
 
     public void onNextLine(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane) {

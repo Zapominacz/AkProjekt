@@ -114,10 +114,10 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
         registerLabels = new JLabel[16];
         registerTextFields = new JTextField[16];
         for(int i = 0; i < 16; i++) {
-            String registerName = "R" + i;
+            String registerName = "R" + Integer.toHexString(i).toUpperCase();
             registerLabels[i] = new JLabel(registerName);
             registerTextFields[i] = new JTextField("0000000000000000");
-            //TODO registerTextFields[i].setText(compiler.getRegisterHexValue(registerName));
+            registerTextFields[i].setText(compiler.getRegisterHexValue(registerName));
         }
 
         showInSystemLabel = new JLabel();
@@ -234,7 +234,7 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
 
         runMenuItem.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.CTRL_MASK));
         runMenuItem.setText("Uruchom");
-        runMenuItem.addActionListener(e -> guiActionsAdapter.onRunProgram(asmTextPane, codeTextPane));
+        runMenuItem.addActionListener(e -> guiActionsAdapter.onRunProgram(asmTextPane, codeTextPane, registerTextFields));
         programMenu.add(runMenuItem);
 
         nextMenuItem.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_MASK));

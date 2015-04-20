@@ -6,6 +6,7 @@ import com.zapominacz.studia.akprojekt.Instructions.Instruction;
 import com.zapominacz.studia.akprojekt.Instructions.LOG.AND;
 import com.zapominacz.studia.akprojekt.Instructions.LOG.OR;
 import com.zapominacz.studia.akprojekt.Instructions.LOG.XOR;
+import com.zapominacz.studia.akprojekt.Instructions.TRA.CNST;
 import com.zapominacz.studia.akprojekt.Registers.Registers;
 
 import java.util.ArrayList;
@@ -40,7 +41,7 @@ public class Compiler {
     public String getRegisterHexValue(String registerName){
         String hexValue = "0x";
         Boolean[] value = registers.getRegisterValue(registerName);
-        for(int i=0; i<16; i++){
+        for(int i=0; i<64; i+=4){
             Integer binNumber = 0;
             for(int j=0; j<4; j++){
                 if(value[i+j] == Boolean.TRUE)
@@ -63,9 +64,18 @@ public class Compiler {
             instructions.add(new OR());
         else if(mnemo[0].equals("XOR"))
             instructions.add(new XOR());
+        else if(mnemo[0].equals("CNST"))
+            instructions.add(new CNST());
 
-        for(int i = 1; i< 5; i++){
-            instructions.get(instructions.size()-1).addArgument(mnemo[i]);
+        int i = 0;
+        for(String temp: mnemo){
+            if(i==0){
+                i++;
+                continue;
+            }
+            else {
+                instructions.get(instructions.size() - 1).addArgument(temp);
+            }
         }
         return true;
     }
