@@ -1,13 +1,12 @@
 package com.zapominacz.studia.akprojekt;
 
-import com.zapominacz.studia.akprojekt.Application.MnemonicCodeTranslator;
 import com.zapominacz.studia.akprojekt.Application.Compiler;
+import com.zapominacz.studia.akprojekt.Application.MnemonicCodeTranslator;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
 import org.fife.ui.rtextarea.RTextScrollPane;
 
 import javax.swing.*;
-import java.nio.file.Path;
 
 public class MainWindow extends JFrame implements StatusChangeInterface {
 
@@ -43,7 +42,6 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
     private UserGuiActionsAdapter guiActionsAdapter;
     private MnemonicCodeTranslator translator;
     private Compiler compiler;
-    private Path openedFile;
 
     /**
      * Creates new form MainWindow
