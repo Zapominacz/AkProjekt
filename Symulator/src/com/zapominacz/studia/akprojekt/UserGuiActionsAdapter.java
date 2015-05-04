@@ -64,10 +64,13 @@ public class UserGuiActionsAdapter {
 
     //for refactoring - textfields update!
     public void onRunProgram(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane, JTextField[] textFields) {
+        compiler.clearCompiler();
+
         try {
             for (int i = 0; i < asmTextPane.getLineCount(); i++) {
                 Integer startOffset = asmTextPane.getLineStartOffset(i), endOffset = asmTextPane.getLineEndOffset(i);
                 String temp = asmTextPane.getText(startOffset, endOffset-startOffset);
+                temp = temp.replaceAll("(\\r|\\n)", "");
                 compiler.addInstruction(temp);
             }
         }
@@ -75,7 +78,7 @@ public class UserGuiActionsAdapter {
             //Do nothing
         }
         compiler.execute();
-        for(int i = 0; i < 16; i++) {
+        for(int i = 0; i < 32; i++) {
             String registerName = "R" + Integer.toHexString(i).toUpperCase();
             textFields[i].setText(compiler.getRegisterHexValue(registerName));
         }

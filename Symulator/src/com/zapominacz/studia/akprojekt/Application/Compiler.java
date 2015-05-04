@@ -1,16 +1,20 @@
 package com.zapominacz.studia.akprojekt.application;
 
+import com.zapominacz.studia.akprojekt.Instructions.manipulation.RL;
+import com.zapominacz.studia.akprojekt.Instructions.manipulation.RR;
+import com.zapominacz.studia.akprojekt.Instructions.transport.GETF;
+import com.zapominacz.studia.akprojekt.Instructions.transport.SETF;
 import com.zapominacz.studia.akprojekt.instructions.aritmetic.ADD;
 import com.zapominacz.studia.akprojekt.instructions.aritmetic.SUB;
 import com.zapominacz.studia.akprojekt.instructions.Instruction;
 import com.zapominacz.studia.akprojekt.instructions.logical.AND;
 import com.zapominacz.studia.akprojekt.instructions.logical.OR;
 import com.zapominacz.studia.akprojekt.instructions.logical.XOR;
-import com.zapominacz.studia.akprojekt.instructions.transport.CNST;
+import com.zapominacz.studia.akprojekt.instructions.transport.COPY_imm;
 import com.zapominacz.studia.akprojekt.registers.Registers;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.Vector;
 
 /**
  * Created by Sebastian on 2015-04-19.
@@ -25,7 +29,7 @@ public class Compiler {
 
 
     private Compiler(){
-        instructions = new ArrayList<>();
+        instructions = new Vector<>();
         registers = Registers.getInstance();
     }
 
@@ -64,8 +68,16 @@ public class Compiler {
             instructions.add(new OR());
         else if(mnemo[0].equals("XOR"))
             instructions.add(new XOR());
-        else if(mnemo[0].equals("CNST"))
-            instructions.add(new CNST());
+        else if(mnemo[0].equals("COPY"))
+            instructions.add(new COPY_imm());
+        else if(mnemo[0].equals("RL"))
+            instructions.add(new RL());
+        else if(mnemo[0].equals("RR"))
+            instructions.add(new RR());
+        else if(mnemo[0].equals("SETF"))
+            instructions.add(new SETF());
+        else if(mnemo[0].equals("GETF"))
+            instructions.add(new GETF());
 
         int i = 0;
         for(String temp: mnemo){
@@ -83,6 +95,11 @@ public class Compiler {
     public void execute(){
         for(Instruction i: instructions)
             i.execute();
+    }
+
+    public void clearCompiler(){
+        registers.reset();
+        instructions.clear();
     }
 
 }
