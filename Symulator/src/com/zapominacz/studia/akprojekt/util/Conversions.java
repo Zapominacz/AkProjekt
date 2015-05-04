@@ -31,7 +31,7 @@ public class Conversions {
     @NotNull
     public static Boolean[] convertIntegerToBooleanArray(long value, int arraySize) {
         Boolean[] result = new Boolean[arraySize];
-        for(int i = 0; i < arraySize; i++) {
+        for(int i = arraySize - 1; i >= 0 ; i--) {
             result[i] = (value % 2 == 1);
             value /= 2;
         }
