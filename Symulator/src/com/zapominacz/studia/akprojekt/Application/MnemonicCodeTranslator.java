@@ -1,4 +1,4 @@
-package com.zapominacz.studia.akprojekt.Application;
+package com.zapominacz.studia.akprojekt.application;
 
 import com.zapominacz.studia.akprojekt.exceptions.UnsupportedMnemonicException;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;

@@ -1,4 +1,4 @@
-package com.zapominacz.studia.akprojekt.Application;
+package com.zapominacz.studia.akprojekt.application;
 
 import com.zapominacz.studia.akprojekt.instructions.aritmetic.ADD;
 import com.zapominacz.studia.akprojekt.instructions.aritmetic.SUB;

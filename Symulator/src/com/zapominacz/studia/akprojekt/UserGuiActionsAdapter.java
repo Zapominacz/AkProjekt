@@ -1,6 +1,6 @@
 package com.zapominacz.studia.akprojekt;
 
-import com.zapominacz.studia.akprojekt.Application.Compiler;
+import com.zapominacz.studia.akprojekt.application.Compiler;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 
 import javax.swing.*;
