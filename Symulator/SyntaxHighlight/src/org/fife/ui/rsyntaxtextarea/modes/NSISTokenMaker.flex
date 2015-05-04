@@ -287,7 +287,7 @@ URL						= (((https?|f(tp|ile))"://"|"www.")({URLCharacters}{URLEndCharacter})?)
 	"subsection" |
 	"subsectionend"				{ addToken(Token.RESERVED_WORD); }
 
-	/* Instructions */
+	/* instructions */
 	"addbrandingimage" |
 	"addsize" |
 	"allowrootdirinstall" |

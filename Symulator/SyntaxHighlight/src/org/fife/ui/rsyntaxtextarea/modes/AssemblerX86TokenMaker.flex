@@ -239,7 +239,7 @@ Operator				= ("+"|"-"|"*"|"/"|"%"|"^"|"|"|"&"|"~"|"!"|"="|"<"|">")
 
     { addToken(Token.PREPROCESSOR); }
 
-	/* Registers */
+	/* registers */
 	"R1" |
 	"R2" |
     "R3" |

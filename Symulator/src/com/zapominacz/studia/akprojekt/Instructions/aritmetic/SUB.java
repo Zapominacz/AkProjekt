@@ -1,6 +1,6 @@
-package com.zapominacz.studia.akprojekt.Instructions.ART;
+package com.zapominacz.studia.akprojekt.instructions.aritmetic;
 
-import com.zapominacz.studia.akprojekt.Instructions.Instruction;
+import com.zapominacz.studia.akprojekt.instructions.Instruction;
 
 import java.util.ArrayList;
 

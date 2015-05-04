@@ -1,7 +1,6 @@
-package com.zapominacz.studia.akprojekt.Instructions.LOG;
+package com.zapominacz.studia.akprojekt.instructions.logical;
 
-import com.zapominacz.studia.akprojekt.Instructions.Instruction;
-import com.zapominacz.studia.akprojekt.Registers.Registers;
+import com.zapominacz.studia.akprojekt.instructions.Instruction;
 
 import java.util.ArrayList;
 

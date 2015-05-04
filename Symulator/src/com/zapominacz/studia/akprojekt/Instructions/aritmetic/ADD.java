@@ -1,6 +1,6 @@
-package com.zapominacz.studia.akprojekt.Instructions.ART;
+package com.zapominacz.studia.akprojekt.instructions.aritmetic;
 
-import com.zapominacz.studia.akprojekt.Instructions.Instruction;
+import com.zapominacz.studia.akprojekt.instructions.Instruction;
 
 import java.util.ArrayList;
 
@@ -20,7 +20,7 @@ public class ADD extends Instruction {
             Boolean[] dest = registers.getRegisterValue(arguments.get(2));
             Boolean[] flags = registers.getRegisterValue(arguments.get(3));
             Boolean CARRY = flags[0], SIGN = Boolean.FALSE, OVERFLOW = Boolean.FALSE, ZERO = Boolean.TRUE;
-            for(int i=0; i<64; i++) {
+            for(int i=63; i>=0; i--) {
                 dest[i] = src1[i] ^ src2[i] ^ CARRY;
                 CARRY = (src1[i] & src2[i]) | ((src1[i] ^ src2[i]) & CARRY);
                 ZERO = ZERO & (!dest[i]);

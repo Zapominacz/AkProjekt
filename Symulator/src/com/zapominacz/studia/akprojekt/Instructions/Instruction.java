@@ -1,6 +1,6 @@
-package com.zapominacz.studia.akprojekt.Instructions;
+package com.zapominacz.studia.akprojekt.instructions;
 
-import com.zapominacz.studia.akprojekt.Registers.Registers;
+import com.zapominacz.studia.akprojekt.registers.Registers;
 
 import java.util.List;
 

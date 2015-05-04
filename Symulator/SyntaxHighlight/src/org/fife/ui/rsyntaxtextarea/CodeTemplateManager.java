@@ -65,7 +65,7 @@ public class CodeTemplateManager {
 
 
 	/**
-	 * Registers the specified template with this template manager.
+	 * registers the specified template with this template manager.
 	 *
 	 * @param template The template to register.
 	 * @throws IllegalArgumentException If <code>template</code> is

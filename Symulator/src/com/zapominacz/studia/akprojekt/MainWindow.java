@@ -2,6 +2,7 @@ package com.zapominacz.studia.akprojekt;
 
 import com.zapominacz.studia.akprojekt.Application.Compiler;
 import com.zapominacz.studia.akprojekt.Application.MnemonicCodeTranslator;
+import com.zapominacz.studia.akprojekt.registers.Registers;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
 import org.fife.ui.rtextarea.RTextScrollPane;
@@ -9,6 +10,8 @@ import org.fife.ui.rtextarea.RTextScrollPane;
 import javax.swing.*;
 
 public class MainWindow extends JFrame implements StatusChangeInterface {
+
+
 
     private RSyntaxTextArea codeTextPane;
     private RSyntaxTextArea asmTextPane;
@@ -109,12 +112,12 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
         regScrollPane = new JScrollPane();
         jPanel1 = new JPanel();
 
-        registerLabels = new JLabel[16];
-        registerTextFields = new JTextField[16];
-        for(int i = 0; i < 16; i++) {
+        registerLabels = new JLabel[Registers.REGISTERS];
+        registerTextFields = new JTextField[Registers.REGISTERS];
+        for(int i = 0; i < Registers.REGISTERS; i++) {
             String registerName = "R" + Integer.toHexString(i).toUpperCase();
             registerLabels[i] = new JLabel(registerName);
-            registerTextFields[i] = new JTextField("0000000000000000");
+            registerTextFields[i] = new JTextField("0x00000000");
             registerTextFields[i].setText(compiler.getRegisterHexValue(registerName));
         }
 
@@ -160,7 +163,7 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
         GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         GroupLayout.ParallelGroup registerGroup = jPanel1Layout.createParallelGroup(GroupLayout.Alignment.TRAILING);
-        for(int i = 0; i < 16; i++) {
+        for(int i = 0; i < Registers.REGISTERS; i++) {
             registerGroup = registerGroup.addGroup(jPanel1Layout.createSequentialGroup()
                     .addComponent(registerLabels[i])
                     .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
@@ -183,7 +186,7 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
                 .addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                         .addComponent(showInSystemLabel)
                         .addComponent(showInSystemComboBox, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE));
-        for(int i = 0; i < 16; i++) {
+        for(int i = 0; i < Registers.REGISTERS; i++) {
             registerVerticalGroup = registerVerticalGroup
                     .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)

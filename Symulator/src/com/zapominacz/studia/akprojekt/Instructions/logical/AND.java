@@ -1,15 +1,15 @@
-package com.zapominacz.studia.akprojekt.Instructions.LOG;
+package com.zapominacz.studia.akprojekt.instructions.logical;
 
-import com.zapominacz.studia.akprojekt.Instructions.Instruction;
+import com.zapominacz.studia.akprojekt.instructions.Instruction;
 
 import java.util.ArrayList;
 
 /**
  * Created by Sebastian on 2015-04-13.
- * OR logical instruction
+ * AND logical instruction
  */
-public class OR extends Instruction {
-    public OR(){
+public class AND extends Instruction {
+    public AND(){
         arguments = new ArrayList<>();
     }
 
@@ -19,7 +19,7 @@ public class OR extends Instruction {
             Boolean[] src2 = registers.getRegisterValue(arguments.get(1));
             Boolean[] dest = registers.getRegisterValue(arguments.get(2));
             for(int i=0; i<64; i++)
-                dest[i] = src1[i] | src2[i];
+                dest[i] = src1[i] & src2[i];
             return true;
         }
         else

@@ -1,19 +1,23 @@
-package com.zapominacz.studia.akprojekt.Registers;
+package com.zapominacz.studia.akprojekt.registers;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * Created by Sebastian on 2015-04-12.
- * Registers Singleton
+ * registers Singleton
  */
 public class Registers {
+
+    public final static int REGISTERS = 32;
+    private final static int WORD_LEN = 32;
+
     private Map<String, Boolean[]> registers;
     private static Registers instance = null;
 
     private Registers(){
         registers = new HashMap<>();
-        for(int i=0; i < 16; i++){
+        for(int i=0; i < REGISTERS; i++){
             registers.put("R" + Integer.toHexString(i).toUpperCase(), new Boolean[64]);
         }
         reset();
@@ -41,9 +45,9 @@ public class Registers {
     }
 
     public void reset(){
-        for(int i =0; i<16; i++){
+        for(int i =0; i<REGISTERS; i++){
             Boolean[] src = getRegisterValue("R" + Integer.toHexString(i).toUpperCase());
-            for(int j=0; j<64;j++)
+            for(int j=0; j < WORD_LEN;j++)
                 src[j] = Boolean.FALSE;
         }
     }

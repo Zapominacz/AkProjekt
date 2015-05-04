@@ -1,13 +1,13 @@
 package com.zapominacz.studia.akprojekt.Application;
 
-import com.zapominacz.studia.akprojekt.Instructions.ART.ADD;
-import com.zapominacz.studia.akprojekt.Instructions.ART.SUB;
-import com.zapominacz.studia.akprojekt.Instructions.Instruction;
-import com.zapominacz.studia.akprojekt.Instructions.LOG.AND;
-import com.zapominacz.studia.akprojekt.Instructions.LOG.OR;
-import com.zapominacz.studia.akprojekt.Instructions.LOG.XOR;
-import com.zapominacz.studia.akprojekt.Instructions.TRA.CNST;
-import com.zapominacz.studia.akprojekt.Registers.Registers;
+import com.zapominacz.studia.akprojekt.instructions.aritmetic.ADD;
+import com.zapominacz.studia.akprojekt.instructions.aritmetic.SUB;
+import com.zapominacz.studia.akprojekt.instructions.Instruction;
+import com.zapominacz.studia.akprojekt.instructions.logical.AND;
+import com.zapominacz.studia.akprojekt.instructions.logical.OR;
+import com.zapominacz.studia.akprojekt.instructions.logical.XOR;
+import com.zapominacz.studia.akprojekt.instructions.transport.CNST;
+import com.zapominacz.studia.akprojekt.registers.Registers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +41,7 @@ public class Compiler {
     public String getRegisterHexValue(String registerName){
         String hexValue = "0x";
         Boolean[] value = registers.getRegisterValue(registerName);
-        for(int i=0; i<64; i+=4){
+        for(int i=0; i<32; i+=4){
             Integer binNumber = 0;
             for(int j=0; j<4; j++){
                 if(value[i+j] == Boolean.TRUE)

@@ -27,7 +27,7 @@ public class MnemonicCodeTranslator {
 
     private void loadOpCodeMap() throws IOException {
         opCodeMap = new HashMap<>();
-        Path translateTableFile = Paths.get("translateTable.txt");
+        Path translateTableFile = Paths.get("translateOpcodesTable.txt");
         Iterator<String> tableIterator = Files.lines(translateTableFile).iterator();
         while (tableIterator.hasNext()) {
             String[] lineData = tableIterator.next().split(" ");
