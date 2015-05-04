@@ -18,16 +18,16 @@ public class ADD extends Instruction {
             Boolean[] src1 = registers.getRegisterValue(arguments.get(0));
             Boolean[] src2 = registers.getRegisterValue(arguments.get(1));
             Boolean[] dest = registers.getRegisterValue(arguments.get(2));
-            Boolean[] flags = registers.getRegisterValue(arguments.get(3));
+            Boolean[] flags = registers.getRegisterValue("RFLAGS");
             Boolean CARRY = flags[0], SIGN = Boolean.FALSE, OVERFLOW = Boolean.FALSE, ZERO = Boolean.TRUE;
-            for(int i=63; i>=0; i--) {
+            for(int i=31; i>=0; i--) {
                 dest[i] = src1[i] ^ src2[i] ^ CARRY;
                 CARRY = (src1[i] & src2[i]) | ((src1[i] ^ src2[i]) & CARRY);
                 ZERO = ZERO & (!dest[i]);
             }
-            if (dest[63] == Boolean.TRUE)
+            if (dest[31] == Boolean.TRUE)
                 SIGN = Boolean.TRUE;
-            if (!CARRY.equals(dest[63]))
+            if (!CARRY.equals(dest[31]))
                 OVERFLOW = Boolean.TRUE;
             flags[0] = CARRY;
             flags[1] = SIGN;

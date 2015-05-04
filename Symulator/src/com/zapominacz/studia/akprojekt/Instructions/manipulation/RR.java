@@ -1,4 +1,4 @@
-package com.zapominacz.studia.akprojekt.instructions.logical;
+package com.zapominacz.studia.akprojekt.Instructions.manipulation;
 
 import com.zapominacz.studia.akprojekt.instructions.Instruction;
 
@@ -6,20 +6,20 @@ import java.util.ArrayList;
 
 /**
  * Created by Sebastian on 2015-04-13.
- * OR logical instruction
+ * RL manipulation instruction
  */
-public class OR extends Instruction {
-    public OR(){
+public class RR extends Instruction {
+    public RR(){
         arguments = new ArrayList<>();
     }
 
     public boolean execute(){
         if(validArguments()){
-            Boolean[] src1 = registers.getRegisterValue(arguments.get(0));
-            Boolean[] src2 = registers.getRegisterValue(arguments.get(1));
-            Boolean[] dest = registers.getRegisterValue(arguments.get(2));
-            for(int i=0; i<32; i++)
-                dest[i] = src1[i] | src2[i];
+            Boolean[] src = registers.getRegisterValue(arguments.get(0));
+            Boolean[] dest = registers.getRegisterValue(arguments.get(1));
+            dest[0] = src[31];
+            for(int i=1; i<32; i++)
+                dest[i] = src[i-1];
             return true;
         }
         else

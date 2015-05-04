@@ -12,6 +12,7 @@ import java.util.Map;
 public class Registers {
 
     public final static int REGISTERS = 32;
+    private final static int WORD_LEN = 32;
 
     private Map<String, Boolean[]> registers;
     private static Registers instance = null;
@@ -19,9 +20,10 @@ public class Registers {
     private Registers(){
         registers = new HashMap<>();
         for(int i=0; i < REGISTERS; i++){
-            registers.put("R" + Integer.toHexString(i).toUpperCase(), new Boolean[64]);
+            registers.put("R" + Integer.toHexString(i).toUpperCase(), new Boolean[WORD_LEN]);
         }
-        reset();
+        registers.put(("RFLAGS"), new Boolean[WORD_LEN]);
+                reset();
     }
 
     public static Registers getInstance(){
@@ -46,10 +48,14 @@ public class Registers {
     }
 
     public void reset(){
+        Boolean[] src;
         for(int i =0; i<REGISTERS; i++){
-            Boolean[] src = getRegisterValue("R" + Integer.toHexString(i).toUpperCase());
-            for(int j=0; j < Register.WORD_LEN;j++)
+            src = getRegisterValue("R" + Integer.toHexString(i).toUpperCase());
+            for(int j=0; j < WORD_LEN;j++)
                 src[j] = Boolean.FALSE;
         }
+        src = getRegisterValue("RFLAGS");
+        for(int j=0; j < WORD_LEN;j++)
+            src[j] = Boolean.FALSE;
     }
 }

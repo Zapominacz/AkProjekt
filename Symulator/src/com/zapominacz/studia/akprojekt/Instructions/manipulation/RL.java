@@ -1,4 +1,4 @@
-package com.zapominacz.studia.akprojekt.instructions.transport;
+package com.zapominacz.studia.akprojekt.Instructions.manipulation;
 
 import com.zapominacz.studia.akprojekt.instructions.Instruction;
 
@@ -6,25 +6,19 @@ import java.util.ArrayList;
 
 /**
  * Created by Sebastian on 2015-04-13.
- * XOR logical instruction
+ * RL manipulation instruction
  */
-public class CNST extends Instruction {
-    public CNST(){
+public class RL extends Instruction {
+    public RL(){
         arguments = new ArrayList<>();
     }
 
     public boolean execute(){
         if(validArguments()){
-            String hexValue = arguments.get(0);
+            Boolean[] src = registers.getRegisterValue(arguments.get(0));
             Boolean[] dest = registers.getRegisterValue(arguments.get(1));
-            Long value = Long.parseLong(hexValue, 16);
-            for(int i=63; i>=0; i--){
-                if(value % 2 == 0)
-                    dest[i] = Boolean.FALSE;
-                else
-                    dest[i] = Boolean.TRUE;
-                value /= 2;
-            }
+            for(int i=0; i<32; i++)
+                dest[i] = src[(i+1)%32];
             return true;
         }
         else
