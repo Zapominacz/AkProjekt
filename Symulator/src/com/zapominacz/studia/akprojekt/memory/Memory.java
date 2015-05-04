@@ -3,7 +3,6 @@ package com.zapominacz.studia.akprojekt.memory;
 import com.sun.istack.internal.NotNull;
 import com.zapominacz.studia.akprojekt.model.Register;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -35,15 +34,18 @@ public class Memory {
         byte[] result;
         if(rem == 0) {
             result = memoryMap.get(cluster);
+            if(result == null) {
+                result = new byte[]{0, 0, 0, 0};
+            }
         } else {
             result = new byte[MEMORY_BYTES];
             byte[] c1 = memoryMap.get(cluster);
             byte[] c2 = memoryMap.get(cluster + 1);
             if(c1 == null) {
-                memoryMap.put(cluster, new byte[]{0, 0, 0, 0});
+                c1 = new byte[]{0, 0, 0, 0};
             }
             if(c2 == null) {
-                memoryMap.put(cluster + 1, new byte[] {0,0,0,0});
+                c2 = new byte[] {0,0,0,0};
             }
             System.arraycopy(c1, rem, result, 0, CLUSTER_LEN  - rem);
             System.arraycopy(c2, 0, result, CLUSTER_LEN  - rem, rem);
@@ -68,6 +70,8 @@ public class Memory {
                 }
                 System.arraycopy(value, 0, c1, rem, CLUSTER_LEN  - rem);
                 System.arraycopy(value, CLUSTER_LEN  - rem, c2, 0, rem);
+                memoryMap.put(cluster, c1);
+                memoryMap.put(cluster + 1, c2);
             } else {
                 memoryMap.put(cluster, value);
             }
