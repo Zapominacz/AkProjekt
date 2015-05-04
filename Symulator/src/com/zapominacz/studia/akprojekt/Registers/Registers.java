@@ -1,5 +1,7 @@
 package com.zapominacz.studia.akprojekt.registers;
 
+import com.zapominacz.studia.akprojekt.model.Register;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,7 +12,6 @@ import java.util.Map;
 public class Registers {
 
     public final static int REGISTERS = 32;
-    private final static int WORD_LEN = 32;
 
     private Map<String, Boolean[]> registers;
     private static Registers instance = null;
@@ -47,7 +48,7 @@ public class Registers {
     public void reset(){
         for(int i =0; i<REGISTERS; i++){
             Boolean[] src = getRegisterValue("R" + Integer.toHexString(i).toUpperCase());
-            for(int j=0; j < WORD_LEN;j++)
+            for(int j=0; j < Register.WORD_LEN;j++)
                 src[j] = Boolean.FALSE;
         }
     }
