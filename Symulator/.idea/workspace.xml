@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81f6e321-724b-4f1c-9b1f-460bd1d47d4a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/util/NumberBaseFormat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/enums/RegisterSection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/numberFormatRegexTable.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/translateConditionalTable.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/translateRegisters.txt" />
-      <change type="MODIFICATION" beforePath="D:\AkProjekt\Symulator\out\production\Symulator\com\zapominacz\studia\akprojekt\registers\Registers.class" afterPath="$PROJECT_DIR$/out/production/Symulator/com/zapominacz/studia/akprojekt/registers/Registers.class" />
-      <change type="MODIFICATION" beforePath="D:\AkProjekt\Symulator\src\com\zapominacz\studia\akprojekt\application\Compiler.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/application/Compiler.java" />
-      <change type="MODIFICATION" beforePath="D:\AkProjekt\Symulator\src\com\zapominacz\studia\akprojekt\instructions\transport\GETF.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/transport/GETF.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/application/MnemonicCodeTranslator.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/application/MnemonicCodeTranslator.java" />
-      <change type="MODIFICATION" beforePath="D:\AkProjekt\Symulator\src\com\zapominacz\studia\akprojekt\instructions\manipulation\RL.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/manipulation/RL.java" />
-      <change type="MODIFICATION" beforePath="D:\AkProjekt\Symulator\src\com\zapominacz\studia\akprojekt\instructions\manipulation\RR.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/manipulation/RR.java" />
-      <change type="MODIFICATION" beforePath="D:\AkProjekt\Symulator\src\com\zapominacz\studia\akprojekt\instructions\transport\SETF.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/transport/SETF.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translateOpcodesTable.txt" afterPath="$PROJECT_DIR$/translateOpcodesTable.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/numberFormatRegexTable.txt" afterPath="$PROJECT_DIR$/numberFormatRegexTable.txt" />
     </list>
     <ignored path="Symulator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,12 +24,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MnemonicCodeTranslator.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MnemonicCodeTranslator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/application/MnemonicCodeTranslator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.037383">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -71,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="numberFormatRegexTable.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="numberFormatRegexTable.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/numberFormatRegexTable.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+            <state vertical-scroll-proportion="0.1588785">
+              <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -156,8 +144,8 @@
         <option value="$PROJECT_DIR$/translateRegisters.txt" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/enums/RegisterSection.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/util/NumberBaseFormat.java" />
-        <option value="$PROJECT_DIR$/numberFormatRegexTable.txt" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/application/MnemonicCodeTranslator.java" />
+        <option value="$PROJECT_DIR$/numberFormatRegexTable.txt" />
       </list>
     </option>
   </component>
@@ -921,14 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/numberFormatRegexTable.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/translateOpcodesTable.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -950,8 +930,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/application/MnemonicCodeTranslator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.037383">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="145" column="0" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numberFormatRegexTable.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1588785">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
           <folding />
         </state>
       </provider>
