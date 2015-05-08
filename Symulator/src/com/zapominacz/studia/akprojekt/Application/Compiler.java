@@ -1,9 +1,9 @@
 package com.zapominacz.studia.akprojekt.application;
 
-import com.zapominacz.studia.akprojekt.Instructions.manipulation.RL;
-import com.zapominacz.studia.akprojekt.Instructions.manipulation.RR;
-import com.zapominacz.studia.akprojekt.Instructions.transport.GETF;
-import com.zapominacz.studia.akprojekt.Instructions.transport.SETF;
+import com.zapominacz.studia.akprojekt.instructions.manipulation.RL;
+import com.zapominacz.studia.akprojekt.instructions.manipulation.RR;
+import com.zapominacz.studia.akprojekt.instructions.transport.GETF;
+import com.zapominacz.studia.akprojekt.instructions.transport.SETF;
 import com.zapominacz.studia.akprojekt.instructions.aritmetic.ADD;
 import com.zapominacz.studia.akprojekt.instructions.aritmetic.SUB;
 import com.zapominacz.studia.akprojekt.instructions.Instruction;
@@ -13,8 +13,8 @@ import com.zapominacz.studia.akprojekt.instructions.logical.XOR;
 import com.zapominacz.studia.akprojekt.instructions.transport.COPY_imm;
 import com.zapominacz.studia.akprojekt.registers.Registers;
 
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Vector;
 
 /**
  * Created by Sebastian on 2015-04-19.
@@ -29,7 +29,7 @@ public class Compiler {
 
 
     private Compiler(){
-        instructions = new Vector<>();
+        instructions = new ArrayList<>();
         registers = Registers.getInstance();
     }
 

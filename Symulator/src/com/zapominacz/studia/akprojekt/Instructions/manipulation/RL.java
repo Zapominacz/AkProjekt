@@ -1,4 +1,4 @@
-package com.zapominacz.studia.akprojekt.Instructions.manipulation;
+package com.zapominacz.studia.akprojekt.instructions.manipulation;
 
 import com.zapominacz.studia.akprojekt.instructions.Instruction;
 

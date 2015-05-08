@@ -1,4 +1,4 @@
-package com.zapominacz.studia.akprojekt.Instructions.transport;
+package com.zapominacz.studia.akprojekt.instructions.transport;
 
 import com.zapominacz.studia.akprojekt.instructions.Instruction;
 

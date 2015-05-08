@@ -39,6 +39,9 @@ public class UserGuiActionsAdapter {
     public void onSaveAsFile(RSyntaxTextArea asmTextPane, JFrame parent) {
         final JFileChooser fileChooser = new JFileChooser();
         fileChooser.showSaveDialog(parent);
+        if(fileChooser.getSelectedFile() == null) {
+            return;
+        }
         openedFile = fileChooser.getSelectedFile().toPath();
         try {
             Files.write(openedFile, asmTextPane.getText().getBytes(), StandardOpenOption.CREATE,
