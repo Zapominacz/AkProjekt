@@ -1,6 +1,10 @@
 package com.zapominacz.studia.akprojekt;
 
-import com.zapominacz.studia.akprojekt.application.Compiler;
+import com.zapominacz.studia.akprojekt.core.Processor;
+import com.zapominacz.studia.akprojekt.memory.Memory;
+import com.zapominacz.studia.akprojekt.model.Register;
+import com.zapominacz.studia.akprojekt.utils.Bits;
+import com.zapominacz.studia.akprojekt.utils.Registers;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 
 import javax.swing.*;
@@ -14,14 +18,32 @@ import java.nio.file.StandardOpenOption;
 public class UserGuiActionsAdapter {
 
     private Path openedFile;
-    //for refactioring:
-    private Compiler compiler = Compiler.getInstance();
+    private Processor processor;
+    private Memory memory;
+    private Register[] registers;
+    private boolean hex = true;
 
     public UserGuiActionsAdapter() {
         openedFile = null;
+        registers = new Register[Registers.REGISTERS];
+        for(int i = 0; i < Registers.REGISTERS; i++) {
+            registers[i] = new Register();
+        }
+        memory = Memory.getInstance();
+        processor = new Processor(Bits.parseBits(Processor.CURRENT_INSTRUCTION, Register.WORD_LEN), registers, memory);
     }
 
-    public void onSystemChanged(JComboBox showInSystemComboBox) {
+    public void onSystemChanged(JComboBox showInSystemComboBox, JTextField[] registerTextFields) {
+        hex = showInSystemComboBox.getSelectedIndex() == 0;
+        if(hex) {
+            for(JTextField textField : registerTextFields) {
+                textField.setText("0x" + textField.getText());
+            }
+        } else {
+            for(JTextField textField : registerTextFields) {
+                textField.setText(textField.getText().substring(2));
+            }
+        }
     }
 
     public void onOpenFile(RSyntaxTextArea asmTextPane, JFrame parent) {
@@ -69,30 +91,29 @@ public class UserGuiActionsAdapter {
         }
     }
 
-    //for refactoring - textfields update!
     public void onRunProgram(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane, JTextField[] textFields) {
-        compiler.clearCompiler();
-
-        try {
-            for (int i = 0; i < asmTextPane.getLineCount(); i++) {
-                Integer startOffset = asmTextPane.getLineStartOffset(i), endOffset = asmTextPane.getLineEndOffset(i);
-                String temp = asmTextPane.getText(startOffset, endOffset-startOffset);
-                temp = temp.replaceAll("(\\r|\\n)", "");
-                compiler.addInstruction(temp);
-            }
-        }
-        catch(Exception e){
-            //Do nothing
-        }
-        compiler.execute();
-        for(int i = 0; i < 32; i++) {
-            String registerName = "R" + Integer.toHexString(i).toUpperCase();
-            textFields[i].setText(compiler.getRegisterHexValue(registerName));
-        }
+//        compiler.clearCompiler();
+//
+//        try {
+//            for (int i = 0; i < asmTextPane.getLineCount(); i++) {
+//                Integer startOffset = asmTextPane.getLineStartOffset(i), endOffset = asmTextPane.getLineEndOffset(i);
+//                String temp = asmTextPane.getText(startOffset, endOffset-startOffset);
+//                temp = temp.replaceAll("(\\r|\\n)", "");
+//                compiler.addInstruction(temp);
+//            }
+//        }
+//        catch(Exception e){
+//            //Do nothing
+//        }
+//        compiler.execute();
+//        for(int i = 0; i < 32; i++) {
+//            String registerName = "R" + Integer.toHexString(i).toUpperCase();
+//            textFields[i].setText(compiler.getRegisterHexValue(registerName));
+//        }
     }
 
     public void onNextLine(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane) {
-        
+        processor.nextProcessorCycle();
     }
 
     public void onBreakPointToggle(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane) {

@@ -1,9 +1,8 @@
 package com.zapominacz.studia.akprojekt.instructions;
 
-import com.zapominacz.studia.akprojekt.registers.Registers;
-import com.zapominacz.studia.akprojekt.util.Bit;
-
-import java.util.List;
+import com.zapominacz.studia.akprojekt.memory.Memory;
+import com.zapominacz.studia.akprojekt.model.Register;
+import com.zapominacz.studia.akprojekt.model.Bit;
 
 /**
  * Created by Sebastian on 2015-04-12.
@@ -16,8 +15,11 @@ public abstract class Instruction {
     protected int outputRegister;
     protected int firstArgRegister;
     protected int secondArgRegister;
-    protected static Registers registers = Registers.getInstance();
 
     public abstract void execute();
     public abstract void parseArguments(Bit[] argument);
+    public abstract void loadArguments(Register[] registers);
+    public abstract void saveResult(Register[] registers);
+    public abstract void saveResult(Memory memory);
+    public abstract void loadArguments(Memory memory);
 }

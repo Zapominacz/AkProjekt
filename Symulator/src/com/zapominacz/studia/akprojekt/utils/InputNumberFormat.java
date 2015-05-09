@@ -1,4 +1,4 @@
-package com.zapominacz.studia.akprojekt.util;
+package com.zapominacz.studia.akprojekt.utils;
 
 public class InputNumberFormat {
     private String regex;

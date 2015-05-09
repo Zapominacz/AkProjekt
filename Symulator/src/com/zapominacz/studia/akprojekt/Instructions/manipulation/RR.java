@@ -1,36 +1,14 @@
 package com.zapominacz.studia.akprojekt.instructions.manipulation;
 
-import com.zapominacz.studia.akprojekt.instructions.Instruction;
+import com.zapominacz.studia.akprojekt.model.Register;
 
-import java.util.ArrayList;
+public class Rr extends RotationInstruction {
 
-/**
- * Created by Sebastian on 2015-04-13.
- * RL manipulation instruction
- */
-public class RR extends Instruction {
-    public RR(){
-        arguments = new ArrayList<>();
-    }
-
-    public boolean execute(){
-        if(validArguments()){
-            Boolean[] src = registers.getRegisterValue(arguments.get(0));
-            Boolean[] dest = registers.getRegisterValue(arguments.get(1));
-            dest[0] = src[31];
-            for(int i=1; i<32; i++)
-                dest[i] = src[i-1];
-            return true;
+    @Override
+    public void execute(){
+        for(int i = 0; i < Register.WORD_LEN; i++) {
+            result[i] = source[(i - 1) % Register.WORD_LEN]; //TODO modula w Javie moze byc nei ten tegos
         }
-        else
-            return false;
-    }
-
-    public boolean validArguments(){
-        return true;
-    }
-
-    public void addArgument(String argument){
-        arguments.add(argument);
+        carry = source[0];
     }
 }

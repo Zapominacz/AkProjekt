@@ -1,35 +1,20 @@
 package com.zapominacz.studia.akprojekt.instructions.manipulation;
 
+import com.zapominacz.studia.akprojekt.core.Processor;
+import com.zapominacz.studia.akprojekt.enums.RegisterSection;
 import com.zapominacz.studia.akprojekt.instructions.Instruction;
+import com.zapominacz.studia.akprojekt.memory.Memory;
+import com.zapominacz.studia.akprojekt.model.Bit;
+import com.zapominacz.studia.akprojekt.model.Register;
+import com.zapominacz.studia.akprojekt.utils.Bits;
 
-import java.util.ArrayList;
+public class Rl extends RotationInstruction {
 
-/**
- * Created by Sebastian on 2015-04-13.
- * RL manipulation instruction
- */
-public class RL extends Instruction {
-    public RL(){
-        arguments = new ArrayList<>();
-    }
-
-    public boolean execute(){
-        if(validArguments()){
-            Boolean[] src = registers.getRegisterValue(arguments.get(0));
-            Boolean[] dest = registers.getRegisterValue(arguments.get(1));
-            for(int i=0; i<32; i++)
-                dest[i] = src[(i+1)%32];
-            return true;
+    @Override
+    public void execute(){
+        for(int i = 0; i < Register.WORD_LEN; i++) {
+            result[i] = source[(i + 1) % Register.WORD_LEN]; //TODO modula w Javie moze byc nei ten tegos
         }
-        else
-            return false;
-    }
-
-    public boolean validArguments(){
-        return true;
-    }
-
-    public void addArgument(String argument){
-        arguments.add(argument);
+        carry = source[Register.WORD_LEN - 1];
     }
 }

@@ -8,9 +8,10 @@ import com.zapominacz.studia.akprojekt.model.Bit;
 import com.zapominacz.studia.akprojekt.model.Register;
 import com.zapominacz.studia.akprojekt.utils.Bits;
 
-public class GetF extends Instruction {
+public class Pop extends Instruction {
 
-    private Bit[] source;
+    Bit[] address;
+    Bit[] result;
 
     @Override
     public void execute() {
@@ -25,12 +26,13 @@ public class GetF extends Instruction {
 
     @Override
     public void loadArguments(Register[] registers) {
-        source = registers[Processor.FLAGS].getBits();
+        address = registers[Processor.STACK_POINTER].getBits();
     }
 
     @Override
     public void saveResult(Register[] registers) {
-        registers[outputRegister].setRegisterValue(source);
+        registers[Processor.STACK_POINTER].setRegisterValue(Bits.add(address, Bits.parseBits(1, Register.WORD_LEN)));
+        registers[outputRegister].setRegisterValue(result);
     }
 
     @Override
@@ -40,6 +42,6 @@ public class GetF extends Instruction {
 
     @Override
     public void loadArguments(Memory memory) {
-
+        result = memory.loadFromMemory(address);
     }
 }

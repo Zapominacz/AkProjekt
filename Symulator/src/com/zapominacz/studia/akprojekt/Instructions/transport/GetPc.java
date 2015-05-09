@@ -8,7 +8,7 @@ import com.zapominacz.studia.akprojekt.model.Bit;
 import com.zapominacz.studia.akprojekt.model.Register;
 import com.zapominacz.studia.akprojekt.utils.Bits;
 
-public class GetF extends Instruction {
+public class GetPc extends Instruction {
 
     private Bit[] source;
 
@@ -25,7 +25,7 @@ public class GetF extends Instruction {
 
     @Override
     public void loadArguments(Register[] registers) {
-        source = registers[Processor.FLAGS].getBits();
+        source = registers[Processor.PC].getBits();
     }
 
     @Override

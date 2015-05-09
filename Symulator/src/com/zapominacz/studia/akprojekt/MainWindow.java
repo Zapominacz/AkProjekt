@@ -1,8 +1,7 @@
 package com.zapominacz.studia.akprojekt;
 
-import com.zapominacz.studia.akprojekt.application.Compiler;
-import com.zapominacz.studia.akprojekt.application.MnemonicCodeTranslator;
-import com.zapominacz.studia.akprojekt.registers.Registers;
+import com.zapominacz.studia.akprojekt.utils.MnemonicCodeTranslator;
+import com.zapominacz.studia.akprojekt.utils.Registers;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
 import org.fife.ui.rtextarea.RTextScrollPane;
@@ -50,7 +49,6 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
      * Creates new form MainWindow
      */
     public MainWindow() {
-        compiler = Compiler.getInstance();
         initComponents();
     }
 
@@ -118,7 +116,7 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
             String registerName = "R" + Integer.toHexString(i).toUpperCase();
             registerLabels[i] = new JLabel(registerName);
             registerTextFields[i] = new JTextField("0x00000000");
-            registerTextFields[i].setText(compiler.getRegisterHexValue(registerName));
+//            registerTextFields[i].setText(compiler.getRegisterHexValue(registerName));
         }
 
         showInSystemLabel = new JLabel();
@@ -158,7 +156,7 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
         showInSystemLabel.setText("Reprezentacja:");
 
         showInSystemComboBox.setModel(new DefaultComboBoxModel(new String[]{"HEX", "DEC"}));
-        showInSystemComboBox.addActionListener(e1 -> guiActionsAdapter.onSystemChanged(showInSystemComboBox));
+        showInSystemComboBox.addActionListener(e1 -> guiActionsAdapter.onSystemChanged(showInSystemComboBox, registerTextFields));
 
         GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);

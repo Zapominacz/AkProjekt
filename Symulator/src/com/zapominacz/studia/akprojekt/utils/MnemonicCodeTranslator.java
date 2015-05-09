@@ -1,7 +1,7 @@
-package com.zapominacz.studia.akprojekt.application;
+package com.zapominacz.studia.akprojekt.utils;
 
 import com.zapominacz.studia.akprojekt.enums.RegisterSection;
-import com.zapominacz.studia.akprojekt.util.InputNumberFormat;
+import com.zapominacz.studia.akprojekt.memory.Memory;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 
 import javax.swing.text.BadLocationException;
@@ -33,9 +33,11 @@ public class MnemonicCodeTranslator {
     private Map<String, String> condCodeMap;
     private Map<String, String> registersMap;
     private List<InputNumberFormat> numberBase;
+    private Memory memory;
 
     public MnemonicCodeTranslator() {
         try {
+            memory = Memory.getInstance();
             loadNumberBases();
             loadRegistersMap();
             loadCondCodeMap();
@@ -120,6 +122,7 @@ public class MnemonicCodeTranslator {
                 if (cond != null) {
                     insertCondCode(result, cond);
                 }
+                insertIntoMemory(line - 1, result.toString());
                 formatCode(result);
                 codeTextPane.insert(result.toString(), length(codeTextPane));
                 insertNewLine(codeTextPane);
@@ -128,6 +131,11 @@ public class MnemonicCodeTranslator {
             System.out.println("Błąd w lini: " + lastLine);
             e.printStackTrace();
         }
+    }
+
+    private void insertIntoMemory(int line, String result) {
+        line += Memory.CODE_BEGINNING;
+        memory.writeToMemory(Bits.parseBits(line, Memory.MEMORY_LEN), Bits.parseBits(result, Memory.MEMORY_LEN));
     }
 
     private void formatCode(StringBuilder result) {

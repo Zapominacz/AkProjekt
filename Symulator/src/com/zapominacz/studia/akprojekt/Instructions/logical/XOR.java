@@ -1,36 +1,13 @@
 package com.zapominacz.studia.akprojekt.instructions.logical;
 
-import com.zapominacz.studia.akprojekt.instructions.Instruction;
+import com.zapominacz.studia.akprojekt.model.Register;
 
-import java.util.ArrayList;
+public class Xor extends LogicalInstruction {
 
-/**
- * Created by Sebastian on 2015-04-13.
- * XOR logical instruction
- */
-public class XOR extends Instruction {
-    public XOR(){
-        arguments = new ArrayList<>();
-    }
-
-    public boolean execute(){
-        if(validArguments()){
-            Boolean[] src1 = registers.getRegisterValue(arguments.get(0));
-            Boolean[] src2 = registers.getRegisterValue(arguments.get(1));
-            Boolean[] dest = registers.getRegisterValue(arguments.get(2));
-            for(int i=0; i<32; i++)
-                dest[i] = src1[i] ^ src2[i];
-            return true;
+    @Override
+    public void execute() {
+        for(int i = 0; i < Register.WORD_LEN; i++) {
+            result[i] = source1[i].xor(source2[i]);
         }
-        else
-            return false;
-    }
-
-    public boolean validArguments(){
-        return true;
-    }
-
-    public void addArgument(String argument){
-        arguments.add(argument);
     }
 }

@@ -1,4 +1,4 @@
-package com.zapominacz.studia.akprojekt.util;
+package com.zapominacz.studia.akprojekt.utils;
 
 import com.sun.istack.internal.NotNull;
 import com.sun.istack.internal.Nullable;

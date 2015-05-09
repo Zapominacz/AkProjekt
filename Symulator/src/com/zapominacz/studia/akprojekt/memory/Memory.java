@@ -1,14 +1,17 @@
 package com.zapominacz.studia.akprojekt.memory;
 
 import com.sun.istack.internal.NotNull;
-import com.zapominacz.studia.akprojekt.model.Register;
-import com.zapominacz.studia.akprojekt.util.Bit;
-import com.zapominacz.studia.akprojekt.util.Bits;
+import com.zapominacz.studia.akprojekt.model.Bit;
+import com.zapominacz.studia.akprojekt.utils.Bits;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class Memory {
+
+    public final static int STACK_BEGINNING = 3000;
+    public final static int CODE_BEGINNING = 2000;
+    public final static int VAR_BEGINNING = 1000;
 
     public final static int MEMORY_LEN = 32;
     public final static int CLUSTER_LEN = 28;

@@ -1,4 +1,4 @@
-package com.zapominacz.studia.akprojekt.util;
+package com.zapominacz.studia.akprojekt.model;
 
 public enum Bit {
     HIGH(true), LOW(false);
@@ -31,5 +31,9 @@ public enum Bit {
 
     public Bit or(Bit bit) {
         return getByValue(value | bit.value);
+    }
+
+    public Bit neg() {
+        return getByValue(!value);
     }
 }

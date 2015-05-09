@@ -1,6 +1,4 @@
-package com.zapominacz.studia.akprojekt.registers;
-
-import com.zapominacz.studia.akprojekt.model.Register;
+package com.zapominacz.studia.akprojekt.utils;
 
 import java.util.HashMap;
 import java.util.Map;
