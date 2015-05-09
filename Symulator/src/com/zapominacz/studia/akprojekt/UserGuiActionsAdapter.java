@@ -4,6 +4,7 @@ import com.zapominacz.studia.akprojekt.application.Compiler;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 
 import javax.swing.*;
+import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -26,28 +27,31 @@ public class UserGuiActionsAdapter {
     public void onOpenFile(RSyntaxTextArea asmTextPane, JFrame parent) {
         final JFileChooser fileChooser = new JFileChooser();
         fileChooser.showOpenDialog(parent);
-        openedFile = fileChooser.getSelectedFile().toPath();
-        byte[] bytes = new byte[0];
-        try {
-            bytes = Files.readAllBytes(openedFile);
-        } catch (IOException e) {
-            e.printStackTrace();
+        File file = fileChooser.getSelectedFile();
+        if(file != null) {
+            openedFile = file.toPath();
+            byte[] bytes = new byte[0];
+            try {
+                bytes = Files.readAllBytes(openedFile);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            asmTextPane.setText(new String(bytes, Charset.forName("UTF-8")));
         }
-        asmTextPane.setText(new String(bytes, Charset.forName("UTF-8")));
     }
 
     public void onSaveAsFile(RSyntaxTextArea asmTextPane, JFrame parent) {
         final JFileChooser fileChooser = new JFileChooser();
         fileChooser.showSaveDialog(parent);
-        if(fileChooser.getSelectedFile() == null) {
-            return;
-        }
-        openedFile = fileChooser.getSelectedFile().toPath();
-        try {
-            Files.write(openedFile, asmTextPane.getText().getBytes(), StandardOpenOption.CREATE,
-                    StandardOpenOption.TRUNCATE_EXISTING);
-        } catch (IOException e) {
-            e.printStackTrace();
+        File file = fileChooser.getSelectedFile();
+        if(file != null) {
+            openedFile = file.toPath();
+            try {
+                Files.write(openedFile, asmTextPane.getText().getBytes(), StandardOpenOption.CREATE,
+                        StandardOpenOption.TRUNCATE_EXISTING);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 

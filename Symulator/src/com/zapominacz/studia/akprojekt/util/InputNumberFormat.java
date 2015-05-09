@@ -1,12 +1,12 @@
 package com.zapominacz.studia.akprojekt.util;
 
-public class NumberBaseFormat {
+public class InputNumberFormat {
     private String regex;
     private int base;
     private int trimCount;
     private boolean fromLeft;
 
-    public NumberBaseFormat(String regex, int base, boolean fromLeft, int trimCount) {
+    public InputNumberFormat(String regex, int base, boolean fromLeft, int trimCount) {
         this.regex = regex;
         this.base = base;
         this.fromLeft = fromLeft;

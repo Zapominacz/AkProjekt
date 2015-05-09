@@ -1,6 +1,7 @@
 package com.zapominacz.studia.akprojekt.instructions;
 
 import com.zapominacz.studia.akprojekt.registers.Registers;
+import com.zapominacz.studia.akprojekt.util.Bit;
 
 import java.util.List;
 
@@ -9,10 +10,14 @@ import java.util.List;
  * Instruction abstract class, made for execution of instructions
  */
 public abstract class Instruction {
-    protected List<String> arguments;
+
+    public final static int INSTRUCTION_LENGTH = 32;
+
+    protected int outputRegister;
+    protected int firstArgRegister;
+    protected int secondArgRegister;
     protected static Registers registers = Registers.getInstance();
 
-    public abstract boolean execute();
-    public abstract boolean validArguments();
-    public abstract void addArgument(String argument);
+    public abstract void execute();
+    public abstract void parseArguments(Bit[] argument);
 }

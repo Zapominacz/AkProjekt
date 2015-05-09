@@ -2,17 +2,18 @@ package com.zapominacz.studia.akprojekt.memory;
 
 import com.sun.istack.internal.NotNull;
 import com.zapominacz.studia.akprojekt.model.Register;
+import com.zapominacz.studia.akprojekt.util.Bit;
+import com.zapominacz.studia.akprojekt.util.Bits;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class Memory {
 
-    //public final static int MEMORY_LEN = 32;
-    public final static int MEMORY_BYTES = 4;
-    public final static int CLUSTER_LEN = 4;
+    public final static int MEMORY_LEN = 32;
+    public final static int CLUSTER_LEN = 28;
 
-    Map<Integer, byte[]> memoryMap;
+    Map<Bit[], Bit[]> memoryMap;
     private static Memory instance;
 
     private Memory() {
@@ -28,53 +29,56 @@ public class Memory {
     }
 
     @NotNull
-    byte[] loadFromMemory(long address) {
-        int cluster = (int) (address / MEMORY_BYTES);
-        int rem = (int) (address % MEMORY_BYTES);
-        byte[] result;
-        if(rem == 0) {
+    public Bit[] loadFromMemory(@NotNull Bit[] address) {
+        Bit[] cluster = Bits.getBits(address, 0, CLUSTER_LEN);
+        Bit[] rem = Bits.getBits(address, CLUSTER_LEN, MEMORY_LEN);
+        Bit[] result;
+        int remainder = Bits.parseInteger(rem);
+        if(remainder == 0) {
             result = memoryMap.get(cluster);
             if(result == null) {
-                result = new byte[]{0, 0, 0, 0};
+                result = Bits.createBits(MEMORY_LEN);
             }
         } else {
-            result = new byte[MEMORY_BYTES];
-            byte[] c1 = memoryMap.get(cluster);
-            byte[] c2 = memoryMap.get(cluster + 1);
+            result = Bits.createBits(MEMORY_LEN);
+            Bit[] increment = Bits.createBits(CLUSTER_LEN);
+            increment[0] = Bit.LOW;
+            Bit[] c1 = memoryMap.get(cluster);
+            Bit[] c2 = memoryMap.get(Bits.add(cluster, increment));
             if(c1 == null) {
-                c1 = new byte[]{0, 0, 0, 0};
+                c1 = Bits.createBits(MEMORY_LEN);
             }
             if(c2 == null) {
-                c2 = new byte[] {0,0,0,0};
+                c2 = Bits.createBits(MEMORY_LEN);
             }
-            System.arraycopy(c1, rem, result, 0, CLUSTER_LEN  - rem);
-            System.arraycopy(c2, 0, result, CLUSTER_LEN  - rem, rem);
+            System.arraycopy(c1, remainder, result, 0, CLUSTER_LEN  - remainder);
+            System.arraycopy(c2, 0, result, remainder, remainder);
         }
         return result;
     }
 
-    void writeToMemory(long address, @NotNull byte[] value) {
-        if(value.length != Register.WORD_LEN) {
-            throw new UnsupportedOperationException("Tylko 32 bity");
-        } else {
-            int cluster = (int) (address / MEMORY_BYTES);
-            int rem = (int) (address % MEMORY_BYTES);
-            if(rem != 0) {
-                byte[] c1 = memoryMap.get(cluster);
-                byte[] c2 = memoryMap.get(cluster + 1);
-                if(c1 == null) {
-                    c1 =  new byte[]{0, 0, 0, 0};
-                }
-                if(c2 == null) {
-                    c2 =  new byte[]{0, 0, 0, 0};
-                }
-                System.arraycopy(value, 0, c1, rem, CLUSTER_LEN  - rem);
-                System.arraycopy(value, CLUSTER_LEN  - rem, c2, 0, rem);
-                memoryMap.put(cluster, c1);
-                memoryMap.put(cluster + 1, c2);
-            } else {
-                memoryMap.put(cluster, value);
+    public void writeToMemory(@NotNull Bit[] address, @NotNull Bit[] value) {
+        Bit[] cluster = Bits.getBits(address, 0, CLUSTER_LEN);
+        Bit[] rem = Bits.getBits(address, CLUSTER_LEN, MEMORY_LEN);
+        int remainder = Bits.parseInteger(rem);
+        if(remainder != 0) {
+            Bit[] increment = Bits.createBits(CLUSTER_LEN);
+            increment[0] = Bit.LOW;
+            Bit[] nextCluster = Bits.add(cluster, increment);
+            Bit[] c1 = memoryMap.get(cluster);
+            Bit[] c2 = memoryMap.get(nextCluster);
+            if(c1 == null) {
+                c1 =  Bits.createBits(MEMORY_LEN);
             }
+            if(c2 == null) {
+                c2 =  Bits.createBits(MEMORY_LEN);
+            }
+            System.arraycopy(value, 0, c1, remainder, CLUSTER_LEN  - remainder);
+            System.arraycopy(value, CLUSTER_LEN  - remainder, c2, 0, remainder);
+            memoryMap.put(cluster, c1);
+            memoryMap.put(nextCluster, c2);
+        } else {
+            memoryMap.put(cluster, value);
         }
     }
 

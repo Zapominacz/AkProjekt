@@ -1,7 +1,7 @@
 package com.zapominacz.studia.akprojekt.application;
 
 import com.zapominacz.studia.akprojekt.enums.RegisterSection;
-import com.zapominacz.studia.akprojekt.util.NumberBaseFormat;
+import com.zapominacz.studia.akprojekt.util.InputNumberFormat;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 
 import javax.swing.text.BadLocationException;
@@ -32,7 +32,7 @@ public class MnemonicCodeTranslator {
     private Map<String, String[]> opCodeMap;
     private Map<String, String> condCodeMap;
     private Map<String, String> registersMap;
-    private List<NumberBaseFormat> numberBase;
+    private List<InputNumberFormat> numberBase;
 
     public MnemonicCodeTranslator() {
         try {
@@ -51,7 +51,7 @@ public class MnemonicCodeTranslator {
         Iterator<String> tableIterator = Files.lines(translateTableFile).iterator();
         while (tableIterator.hasNext()) {
             String[] lineData = tableIterator.next().split("\\s+");
-            numberBase.add(new NumberBaseFormat(lineData[0], Integer.parseInt(lineData[1]),
+            numberBase.add(new InputNumberFormat(lineData[0], Integer.parseInt(lineData[1]),
                     lineData[2].equals("B"), Integer.parseInt(lineData[3])));
         }
     }
@@ -90,11 +90,21 @@ public class MnemonicCodeTranslator {
         clearTranslateTextPane(codeTextPane);
         String lastLine = null;
         try {
+            int line = 0;
             for (String asmLine : asmTextPane.getText().split("\\n")) {
+                line++;
                 lastLine = asmLine;
+                if(asmLine.matches("\\s*")) {
+                    insertNewLine(codeTextPane);
+                    continue;
+                }
                 StringBuilder result = new StringBuilder(COMMAND_BASE);
                 String[] command = asmLine.toUpperCase().split("\\s+");
                 String[] code = opCodeMap.get(command[MNEMONIC]);
+                if(code == null) {
+                    System.out.println("Błąd w lini" + line + ": " + lastLine);
+                    return;
+                }
                 translateOpcode(result, code[0]);
 
                 for (int i = 1; i < command.length; i++) {
@@ -115,7 +125,7 @@ public class MnemonicCodeTranslator {
                 insertNewLine(codeTextPane);
             }
         } catch (IndexOutOfBoundsException e) {
-            System.out.println("B��d w lini: " + lastLine);
+            System.out.println("Błąd w lini: " + lastLine);
             e.printStackTrace();
         }
     }
@@ -134,7 +144,7 @@ public class MnemonicCodeTranslator {
 
     private void parseImmediateArgument(StringBuilder builder, String immediate) {
         String result = null;
-        for(NumberBaseFormat baseFormat : numberBase) {
+        for(InputNumberFormat baseFormat : numberBase) {
             if(immediate.matches(baseFormat.getRegex())) {
                 result = baseFormat.convertStringNumberToBinaryString(immediate);
                 if(result.length() > 8) {

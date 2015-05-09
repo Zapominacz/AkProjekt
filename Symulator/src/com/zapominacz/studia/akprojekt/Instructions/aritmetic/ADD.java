@@ -4,12 +4,9 @@ import com.zapominacz.studia.akprojekt.instructions.Instruction;
 
 import java.util.ArrayList;
 
-/**
- * Created by Sebastian on 2015-04-19.
- */
-public class ADD extends Instruction {
+public class Add extends Instruction {
 
-    public ADD(){
+    public Add(){
         arguments = new ArrayList<>();
     }
 

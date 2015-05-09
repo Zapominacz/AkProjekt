@@ -4,7 +4,7 @@ import com.zapominacz.studia.akprojekt.instructions.manipulation.RL;
 import com.zapominacz.studia.akprojekt.instructions.manipulation.RR;
 import com.zapominacz.studia.akprojekt.instructions.transport.GETF;
 import com.zapominacz.studia.akprojekt.instructions.transport.SETF;
-import com.zapominacz.studia.akprojekt.instructions.aritmetic.ADD;
+import com.zapominacz.studia.akprojekt.instructions.aritmetic.Add;
 import com.zapominacz.studia.akprojekt.instructions.aritmetic.SUB;
 import com.zapominacz.studia.akprojekt.instructions.Instruction;
 import com.zapominacz.studia.akprojekt.instructions.logical.AND;
@@ -59,7 +59,7 @@ public class Compiler {
     public Boolean addInstruction(String instruction){
         String mnemo[] = instruction.split(" ");
         if(mnemo[0].equals("ADD"))
-            instructions.add(new ADD());
+            instructions.add(new Add());
         else if(mnemo[0].equals("SUB"))
             instructions.add(new SUB());
         else if(mnemo[0].equals("AND"))
