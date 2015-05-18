@@ -16,7 +16,7 @@ public class Memory {
     public final static int MEMORY_LEN = 32;
     public final static int CLUSTER_LEN = 28;
 
-    Map<Bit[], Bit[]> memoryMap;
+    Map<Integer, Bit[]> memoryMap;
     private static Memory instance;
 
     private Memory() {
@@ -33,10 +33,10 @@ public class Memory {
 
     @NotNull
     public Bit[] loadFromMemory(@NotNull Bit[] address) {
-        Bit[] cluster = Bits.getBits(address, 0, CLUSTER_LEN);
-        Bit[] rem = Bits.getBits(address, CLUSTER_LEN, MEMORY_LEN);
+        int realAddress = Bits.parseInteger(address);
+        int cluster = realAddress / 4;
+        int remainder = realAddress % 4;
         Bit[] result;
-        int remainder = Bits.parseInteger(rem);
         if(remainder == 0) {
             result = memoryMap.get(cluster);
             if(result == null) {
@@ -44,10 +44,8 @@ public class Memory {
             }
         } else {
             result = Bits.createBits(MEMORY_LEN);
-            Bit[] increment = Bits.createBits(CLUSTER_LEN);
-            increment[0] = Bit.LOW;
             Bit[] c1 = memoryMap.get(cluster);
-            Bit[] c2 = memoryMap.get(Bits.add(cluster, increment));
+            Bit[] c2 = memoryMap.get(cluster + 4);
             if(c1 == null) {
                 c1 = Bits.createBits(MEMORY_LEN);
             }
@@ -61,15 +59,16 @@ public class Memory {
     }
 
     public void writeToMemory(@NotNull Bit[] address, @NotNull Bit[] value) {
-        Bit[] cluster = Bits.getBits(address, 0, CLUSTER_LEN);
-        Bit[] rem = Bits.getBits(address, CLUSTER_LEN, MEMORY_LEN);
-        int remainder = Bits.parseInteger(rem);
+        int realAddress = Bits.parseInteger(address);
+        writeToMemory(realAddress, value);
+    }
+
+    public void writeToMemory(@NotNull int realAddress, @NotNull Bit[] value) {
+        int cluster = realAddress / 4;
+        int remainder = realAddress % 4;
         if(remainder != 0) {
-            Bit[] increment = Bits.createBits(CLUSTER_LEN);
-            increment[0] = Bit.LOW;
-            Bit[] nextCluster = Bits.add(cluster, increment);
             Bit[] c1 = memoryMap.get(cluster);
-            Bit[] c2 = memoryMap.get(nextCluster);
+            Bit[] c2 = memoryMap.get(cluster + 4);
             if(c1 == null) {
                 c1 =  Bits.createBits(MEMORY_LEN);
             }
@@ -79,7 +78,7 @@ public class Memory {
             System.arraycopy(value, 0, c1, remainder, CLUSTER_LEN  - remainder);
             System.arraycopy(value, CLUSTER_LEN  - remainder, c2, 0, remainder);
             memoryMap.put(cluster, c1);
-            memoryMap.put(nextCluster, c2);
+            memoryMap.put(cluster + 4, c2);
         } else {
             memoryMap.put(cluster, value);
         }

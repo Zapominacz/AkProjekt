@@ -35,7 +35,7 @@ public class SetPc extends Instruction {
 
     @Override
     public void saveResult(Register[] registers) {
-        if(Bits.equals(flags, cond)) {
+        if(Bits.equals(flags, cond) || Instruction.isAlways(cond)) {
             registers[Processor.PC].setRegisterValue(source);
         }
     }

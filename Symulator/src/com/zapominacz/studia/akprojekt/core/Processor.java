@@ -9,8 +9,8 @@ import com.zapominacz.studia.akprojekt.instructions.manipulation.Rl;
 import com.zapominacz.studia.akprojekt.instructions.manipulation.Rr;
 import com.zapominacz.studia.akprojekt.instructions.transport.*;
 import com.zapominacz.studia.akprojekt.memory.Memory;
-import com.zapominacz.studia.akprojekt.model.Register;
 import com.zapominacz.studia.akprojekt.model.Bit;
+import com.zapominacz.studia.akprojekt.model.Register;
 import com.zapominacz.studia.akprojekt.utils.Bits;
 
 import java.util.HashMap;
@@ -63,8 +63,7 @@ public class Processor {
     }
 
     private void loadNextInstructionPointer() {
-        Bit[] increment = Bits.createBits(Register.WORD_LEN);
-        increment[0] = Bit.LOW;
+        Bit[] increment = Bits.parseBits(4, Register.WORD_LEN);
         registers[PC].setRegisterValue(Bits.add(registers[PC].getBits(), increment));
     }
 
@@ -73,7 +72,7 @@ public class Processor {
     }
 
     private void loadNextInstruction() {
-        Bit[] instructionCode = registers[PC].getBits();
+        Bit[] instructionCode = memory.loadFromMemory(registers[PC].getBits());
         int instructionNumber = Bits.parseInteger(Bits.getBits(instructionCode,
                 RegisterSection.OPCODE_START.getIndex(), RegisterSection.OPCODE_END.getIndex()));
         currentInstruction = availableInstructions.get(instructionNumber);
@@ -87,28 +86,30 @@ public class Processor {
 //        availableInstructions.put(1, new AddI());
 //        availableInstructions.put(2, new Sub());
 //        availableInstructions.put(3, new SubI());
+//        availableInstructions.put(4, new MulI());
+//        availableInstructions.put(5, new Mul());
 //        availableInstructions.put(6, new IMuh());
 //        availableInstructions.put(7, new Muh());
-//        availableInstructions.put(5, new Mul());
-//        availableInstructions.put(4, new MulI());
+
+
         availableInstructions.put(8, new Or());
-        availableInstructions.put(10, new Xor());
+        availableInstructions.put(9, new Xor());
         availableInstructions.put(10, new And());
-        availableInstructions.put(12, new Rr());
-        availableInstructions.put(14, new Rl());
-        availableInstructions.put(16, new Push());
-        availableInstructions.put(17, new Pop());
-//        availableInstructions.put(15, new Itrp());
-        availableInstructions.put(26, new GetPc());
-        availableInstructions.put(27, new SetPc());
-//        availableInstructions.put(18, new Call());
-//        availableInstructions.put(19, new Ret());
-        availableInstructions.put(22, new LoadI());
-        availableInstructions.put(23, new Load());
-        availableInstructions.put(24, new Store());
-        availableInstructions.put(18, new Copy());
-        availableInstructions.put(30, new GetF());
-        availableInstructions.put(31, new SetF());
+        availableInstructions.put(14, new Rr());
+        availableInstructions.put(15, new Rl());
+        availableInstructions.put(19, new Push());
+        availableInstructions.put(20, new Pop());
+//        availableInstructions.put(31, new Itrp());
+        availableInstructions.put(27, new GetPc());
+        availableInstructions.put(28, new SetPc());
+//        availableInstructions.put(29, new Call());
+//        availableInstructions.put(30, new Ret());
+        availableInstructions.put(21, new LoadI());
+        availableInstructions.put(22, new Load());
+        availableInstructions.put(25, new Store());
+        availableInstructions.put(26, new Copy());
+        availableInstructions.put(23, new GetF());
+        availableInstructions.put(24, new SetF());
     }
 
 }

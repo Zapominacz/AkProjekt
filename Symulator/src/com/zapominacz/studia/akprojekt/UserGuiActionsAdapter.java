@@ -94,7 +94,7 @@ public class UserGuiActionsAdapter {
     }
 
     public void onRunProgram(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane) {
-        processor.init(Bits.parseBits(Processor.CURRENT_INSTRUCTION, Register.WORD_LEN));
+        processor.init(Bits.parseBits(Memory.CODE_BEGINNING, Register.WORD_LEN));
 //        compiler.clearCompiler();
 //
 //        try {
@@ -126,6 +126,6 @@ public class UserGuiActionsAdapter {
     }
 
     public void onContinue(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane) {
-
+        processor.nextProcessorCycle();
     }
 }

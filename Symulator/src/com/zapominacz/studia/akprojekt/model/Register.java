@@ -4,8 +4,6 @@ import com.zapominacz.studia.akprojekt.utils.Bits;
 import com.zapominacz.studia.akprojekt.utils.Conversions;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class Register {
 
@@ -34,7 +32,7 @@ public class Register {
     public void setRepresentation(JTextField representation) {
         this.representation = representation;
         this.representation.addActionListener(e -> {
-
+            registerValue = Bits.parseBits(Conversions.toNumber(representation.getText(), 16), WORD_LEN);
         });
     }
 

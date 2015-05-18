@@ -12,11 +12,12 @@ public class Bits {
 
     public static int parseInteger(Bit[] bits) {
         int result = 0;
+        int exp = 1;
         for(Bit bit : bits) {
-            result *= 2;
             if(bit.getBooleanValue()) {
-                result++;
+                result+= exp;
             }
+            exp *= 2;
         }
         return result;
     }
@@ -75,6 +76,14 @@ public class Bits {
         for(int i = 0; i < len; i++) {
             result[i] = bits1[i].xor(bits2[i]).xor(carry);
             carry = (bits1[i].and(bits2[i].neg())).or(((bits1[i].xor(bits2[i])).neg()).and(carry));
+        }
+        return result;
+    }
+
+    public static Bit[] reverse(Bit[] bits) {
+        Bit[] result = Bits.createBits(bits.length);
+        for(int i = 0; i < bits.length; i++) {
+            result[i] = bits[bits.length - i - 1];
         }
         return result;
     }

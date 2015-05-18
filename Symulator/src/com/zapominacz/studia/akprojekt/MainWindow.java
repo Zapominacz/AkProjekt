@@ -115,7 +115,7 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
         for(int i = 0; i < Registers.REGISTERS; i++) {
             String registerName = "R" + Integer.toHexString(i).toUpperCase();
             registerLabels[i] = new JLabel(registerName);
-            guiActionsAdapter.connectTextFieldWithRegister(i, new JTextField("0x00000000"));
+            guiActionsAdapter.connectTextFieldWithRegister(i, new JTextField("0"));
         }
 
         showInSystemLabel = new JLabel();

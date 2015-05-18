@@ -1,6 +1,5 @@
 package com.zapominacz.studia.akprojekt.utils;
 
-import com.zapominacz.studia.akprojekt.enums.RegisterSection;
 import com.zapominacz.studia.akprojekt.memory.Memory;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 
@@ -12,6 +11,25 @@ import java.nio.file.Paths;
 import java.util.*;
 
 public class MnemonicCodeTranslator {
+
+    public enum RegisterSection {
+        OPCODE_START(0), OPCODE_END(5),
+        OUT_REG_START(5), OUT_REG_END(10),
+        FIRST_REG_START(10), FIRST_REG_END(15),
+        SECOND_REG_START(15), SECOND_REG_END(20),
+        IMMEDIATE_START(20), IMMEDIATE_END(28),
+        COND_CODE_START(28), COND_CODE_END(32);
+
+        private int index;
+
+        private RegisterSection(int index) {
+            this.index = index;
+        }
+
+        public int getIndex() {
+            return index;
+        }
+    }
 
     private static final String TRANSLATE_OPCODE_TABLE_PATH = "translateOpcodesTable.txt";
     private static final String TRANSLATE_NUBER_BASE_TABLE_PATH = "numberFormatRegexTable.txt";
@@ -134,8 +152,9 @@ public class MnemonicCodeTranslator {
     }
 
     private void insertIntoMemory(int line, String result) {
+        line *= 4;
         line += Memory.CODE_BEGINNING;
-        memory.writeToMemory(Bits.parseBits(line, Memory.MEMORY_LEN), Bits.parseBits(result, Memory.MEMORY_LEN));
+        memory.writeToMemory(line, Bits.reverse(Bits.parseBits(result, Memory.MEMORY_LEN)));
     }
 
     private void formatCode(StringBuilder result) {
