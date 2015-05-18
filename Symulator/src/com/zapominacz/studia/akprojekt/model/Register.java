@@ -1,6 +1,7 @@
 package com.zapominacz.studia.akprojekt.model;
 
 import com.zapominacz.studia.akprojekt.utils.Bits;
+import com.zapominacz.studia.akprojekt.utils.Conversions;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -22,7 +23,8 @@ public class Register {
 
     public void setRegisterValue(Bit[] registerValue) {
         this.registerValue = registerValue;
-        representation.setText(Integer.toBinaryString(Bits.parseInteger(registerValue))); //TODO w translatorze
+        int val = Bits.parseInteger(registerValue);
+        representation.setText(Conversions.toHexString(val));
     }
 
     public JTextField getRepresentation() {

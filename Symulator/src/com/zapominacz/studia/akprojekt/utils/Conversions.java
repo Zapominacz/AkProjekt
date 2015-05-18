@@ -2,45 +2,23 @@ package com.zapominacz.studia.akprojekt.utils;
 
 import com.sun.istack.internal.NotNull;
 import com.sun.istack.internal.Nullable;
+import com.zapominacz.studia.akprojekt.model.Bit;
 
 public class Conversions {
 
-    public static int convertBooleanArrayToInteger(@NotNull Boolean[] array) {
-        int result = 0;
-        for(boolean bit : array) {
-            result *= 2;
-            if(bit) {
-                result++;
-            }
-        }
-        return result;
+    public static String toHexString(int val) {
+        return Integer.toUnsignedString(val, 16).toUpperCase();
     }
 
-    @NotNull
-    public static String convertBooleanArrayToString(@NotNull Boolean[] array, int base, @Nullable CharSequence prefix) {
-        StringBuilder result = new StringBuilder(prefix);
-        int value = convertBooleanArrayToInteger(array);
-        while(value > 0) {
-            int currentValue = value % base;
-            result.insert(0, Integer.toHexString(currentValue));
-            value /= base;
-        }
-        return result.toString();
+    public static String toDecString(int val) {
+        return Integer.toUnsignedString(val, 10).toUpperCase();
     }
 
-    @NotNull
-    public static Boolean[] convertIntegerToBooleanArray(long value, int arraySize) {
-        Boolean[] result = new Boolean[arraySize];
-        for(int i = arraySize - 1; i >= 0 ; i--) {
-            result[i] = (value % 2 == 1);
-            value /= 2;
-        }
-        return result;
+    public static String addPrefix(String prefix, String val) {
+        return new StringBuilder(prefix).append(val).toString();
     }
 
-    @NotNull
-    public static Boolean[] convertStringToBooleanArray(@NotNull String value, int base, int arraySize) {
-        long val = Long.parseLong(value, base);
-        return convertIntegerToBooleanArray(val, arraySize);
+    public static String removePrefix(String prefix, String val) {
+        return new StringBuilder(val).delete(0, prefix.length()).toString();
     }
 }
