@@ -25,7 +25,7 @@ public class Memory {
 
     @NotNull
     public static Memory getInstance() {
-        if(instance != null) {
+        if(instance == null) {
             instance = new Memory();
         }
         return instance;
