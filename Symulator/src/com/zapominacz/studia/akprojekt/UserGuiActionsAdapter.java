@@ -30,19 +30,21 @@ public class UserGuiActionsAdapter {
             registers[i] = new Register();
         }
         memory = Memory.getInstance();
-        processor = new Processor(Bits.parseBits(Processor.CURRENT_INSTRUCTION, Register.WORD_LEN), registers, memory);
+        processor = new Processor(registers, memory);
     }
 
-    public void onSystemChanged(JComboBox showInSystemComboBox, JTextField[] registerTextFields) {
+    public Register getRegister(int number) {
+        return registers[number];
+    }
+
+    public void connectTextFieldWithRegister(int register, JTextField textField) {
+        registers[register].setRepresentation(textField);
+    }
+
+    public void onSystemChanged(JComboBox showInSystemComboBox) {
         hex = showInSystemComboBox.getSelectedIndex() == 0;
-        if(hex) {
-            for(JTextField textField : registerTextFields) {
-                textField.setText("0x" + textField.getText());
-            }
-        } else {
-            for(JTextField textField : registerTextFields) {
-                textField.setText(textField.getText().substring(2));
-            }
+        for(Register register : registers) {
+            register.changeSystem(hex);
         }
     }
 
@@ -91,7 +93,8 @@ public class UserGuiActionsAdapter {
         }
     }
 
-    public void onRunProgram(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane, JTextField[] textFields) {
+    public void onRunProgram(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane) {
+        processor.init(Bits.parseBits(Processor.CURRENT_INSTRUCTION, Register.WORD_LEN));
 //        compiler.clearCompiler();
 //
 //        try {

@@ -29,7 +29,6 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
     private JMenuItem saveMenuItem;
 
     private JLabel[] registerLabels;
-    private JTextField[] registerTextFields;
 
     private RTextScrollPane asmScrollPane;
     private RTextScrollPane codeScrollPane;
@@ -49,6 +48,8 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
      * Creates new form MainWindow
      */
     public MainWindow() {
+        translator = new MnemonicCodeTranslator();
+        guiActionsAdapter = new UserGuiActionsAdapter();
         initComponents();
     }
 
@@ -111,12 +112,10 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
         jPanel1 = new JPanel();
 
         registerLabels = new JLabel[Registers.REGISTERS];
-        registerTextFields = new JTextField[Registers.REGISTERS];
         for(int i = 0; i < Registers.REGISTERS; i++) {
             String registerName = "R" + Integer.toHexString(i).toUpperCase();
             registerLabels[i] = new JLabel(registerName);
-            registerTextFields[i] = new JTextField("0x00000000");
-//            registerTextFields[i].setText(compiler.getRegisterHexValue(registerName));
+            guiActionsAdapter.connectTextFieldWithRegister(i, new JTextField("0x00000000"));
         }
 
         showInSystemLabel = new JLabel();
@@ -133,9 +132,6 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
         breakMenuItem = new JMenuItem();
         stopMenuItem = new JMenuItem();
         continueMenuItem = new JMenuItem();
-
-        translator = new MnemonicCodeTranslator();
-        guiActionsAdapter = new UserGuiActionsAdapter();
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setTitle("Projekt AK");
@@ -156,7 +152,7 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
         showInSystemLabel.setText("Reprezentacja:");
 
         showInSystemComboBox.setModel(new DefaultComboBoxModel(new String[]{"HEX", "DEC"}));
-        showInSystemComboBox.addActionListener(e1 -> guiActionsAdapter.onSystemChanged(showInSystemComboBox, registerTextFields));
+        showInSystemComboBox.addActionListener(e1 -> guiActionsAdapter.onSystemChanged(showInSystemComboBox));
 
         GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -165,7 +161,7 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
             registerGroup = registerGroup.addGroup(jPanel1Layout.createSequentialGroup()
                     .addComponent(registerLabels[i])
                     .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
-                    .addComponent(registerTextFields[i], GroupLayout.PREFERRED_SIZE, 150, GroupLayout.PREFERRED_SIZE));
+                    .addComponent(guiActionsAdapter.getRegister(i).getRepresentation(), GroupLayout.PREFERRED_SIZE, 150, GroupLayout.PREFERRED_SIZE));
         }
         jPanel1Layout.setHorizontalGroup(
                 jPanel1Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
@@ -189,7 +185,7 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
                     .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
                     .addGroup(jPanel1Layout.createParallelGroup(GroupLayout.Alignment.BASELINE)
                             .addComponent(registerLabels[i])
-                            .addComponent(registerTextFields[i], GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE));
+                            .addComponent(guiActionsAdapter.getRegister(i).getRepresentation(), GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE));
         }
         jPanel1Layout.setVerticalGroup(
                 jPanel1Layout.createParallelGroup(GroupLayout.Alignment.LEADING)
@@ -233,7 +229,7 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
 
         runMenuItem.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.CTRL_MASK));
         runMenuItem.setText("Uruchom");
-        runMenuItem.addActionListener(e -> guiActionsAdapter.onRunProgram(asmTextPane, codeTextPane, registerTextFields));
+        runMenuItem.addActionListener(e -> guiActionsAdapter.onRunProgram(asmTextPane, codeTextPane));
         programMenu.add(runMenuItem);
 
         nextMenuItem.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_N, java.awt.event.InputEvent.CTRL_MASK));
