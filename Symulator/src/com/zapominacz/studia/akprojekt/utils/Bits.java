@@ -43,7 +43,8 @@ public class Bits {
     public static Bit[] parseBits(int number, int len) {
         Bit[] result = createBits(len);
         for(int i = 0; i < len; i++) {
-            result[i].getByValue(number % 2 == 0);
+            boolean high = number % 2 == 0;
+            result[i] = Bit.getByValue(high);
             number /= 2;
         }
         return  result;
@@ -52,7 +53,7 @@ public class Bits {
     public static Bit[] parseBits(String line, int len) {
         Bit[] result = createBits(len);
         for(int i = 0; i < len; i++) {
-            result[i].getByValue(line.charAt(i) == '1');
+            result[i] = Bit.getByValue(line.charAt(i) == '1');
         }
         return  result;
     }

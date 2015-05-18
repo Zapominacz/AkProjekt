@@ -13,7 +13,7 @@ public enum Bit {
         return value;
     }
 
-    public Bit getByValue(boolean high) {
+    public static Bit getByValue(boolean high) {
         if(high) {
             return HIGH;
         } else {
