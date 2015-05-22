@@ -17,7 +17,9 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class UserGuiActionsAdapter {
@@ -28,9 +30,10 @@ public class UserGuiActionsAdapter {
     private Memory memory;
     private Register[] registers;
     private JLabel statusIndicator;
-    private Set<Integer> breakPoints;
+    private Map<Integer, Object> breakPoints;
 
     public UserGuiActionsAdapter() {
+        breakPoints = new HashMap<>();
         translator = new MnemonicCodeTranslator();
         openedFile = null;
         registers = new Register[Registers.REGISTERS];
@@ -125,7 +128,15 @@ public class UserGuiActionsAdapter {
 
     public void onBreakPointToggle(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane) {
         try {
-            asmTextPane.addLineHighlight(asmTextPane.getCaretLineNumber(), Color.RED);
+            int line = asmTextPane.getCaretLineNumber();
+            Object tag = breakPoints.get(line);
+            if (tag != null) {
+                asmTextPane.removeLineHighlight(tag);
+                breakPoints.remove(line);
+            } else {
+                breakPoints.put(line, asmTextPane.addLineHighlight(asmTextPane.getCaretLineNumber(), Color.RED));
+            }
+
         } catch (BadLocationException e) {
             e.printStackTrace();
         }
@@ -136,7 +147,12 @@ public class UserGuiActionsAdapter {
     }
 
     public void onContinue(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane) {
-
+        int maxLine = asmTextPane.getLineCount();
+        int line = processor.getCurrentLine();
+        while(breakPoints.get(line) == null && line < maxLine) {
+            onNextLine(asmTextPane, codeTextPane);
+            line = processor.getCurrentLine();
+        }
     }
 
     public void setStatusText(String statusText) {

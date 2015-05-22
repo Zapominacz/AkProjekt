@@ -48,17 +48,16 @@ public class Processor {
         loadAvailableInstructions();
         initStackPointer();
         insertPointerToPC(firstInstructionPointer);
-        loadNextInstruction();
     }
 
     public void nextProcessorCycle() {
-        loadNextInstructionPointer();
+        loadNextInstruction();
         currentInstruction.loadArguments(registers);
         currentInstruction.loadArguments(memory);
         currentInstruction.execute();
         currentInstruction.saveResult(registers);
         currentInstruction.saveResult(memory);
-        loadNextInstruction();
+        loadNextInstructionPointer();
     }
 
     private void loadNextInstructionPointer() {

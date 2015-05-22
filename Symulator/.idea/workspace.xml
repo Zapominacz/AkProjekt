@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81f6e321-724b-4f1c-9b1f-460bd1d47d4a" name="Default" comment="Nowy layout">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/AssemblerX86TokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/AssemblerX86TokenMaker.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Symulator/com/zapominacz/studia/akprojekt/MainWindow.class" afterPath="$PROJECT_DIR$/out/production/Symulator/com/zapominacz/studia/akprojekt/MainWindow.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/AssemblerX86TokenMaker.flex" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/AssemblerX86TokenMaker.flex" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/AssemblerX86TokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/AssemblerX86TokenMaker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/MainWindow.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/MainWindow.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/core/Processor.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/core/Processor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Symulator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,32 +28,22 @@
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.551724">
-              <caret line="198" column="0" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.172414">
+              <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MnemonicCodeTranslator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/utils/MnemonicCodeTranslator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserGuiActionsAdapter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserGuiActionsAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39050537">
-              <caret line="112" column="50" selection-start-line="112" selection-start-column="50" selection-end-line="112" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="110" column="47" selection-start-line="110" selection-start-column="47" selection-end-line="110" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1449#1450#0" expanded="true" />
-                <element signature="e#1489#1490#0" expanded="true" />
+                <element signature="e#1544#1545#0" expanded="true" />
+                <element signature="e#1584#1585#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,26 +59,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RTextArea.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RTextArea.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="286" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Processor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Processor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/core/Processor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="116" column="70" selection-start-line="116" selection-start-column="70" selection-end-line="116" selection-end-column="70" />
+            <state vertical-scroll-proportion="0.41041347">
+              <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
               <folding>
-                <element signature="e#2540#2541#0" expanded="true" />
-                <element signature="e#2606#2607#0" expanded="true" />
-                <element signature="e#4616#4617#0" expanded="true" />
-                <element signature="e#4694#4695#0" expanded="true" />
+                <element signature="e#2509#2510#0" expanded="true" />
+                <element signature="e#2575#2576#0" expanded="true" />
+                <element signature="e#4585#4586#0" expanded="true" />
+                <element signature="e#4663#4664#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,8 +145,8 @@
         <option value="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/AssemblerX86TokenMaker.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/utils/MnemonicCodeTranslator.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/MainWindow.java" />
-        <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/core/Processor.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/core/Processor.java" />
       </list>
     </option>
   </component>
@@ -829,14 +803,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/core/Memory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/logical/LogicalInstruction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1088,31 +1054,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/MainWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.551724">
-          <caret line="198" column="0" selection-start-line="198" selection-start-column="0" selection-end-line="198" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/core/Processor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="116" column="70" selection-start-line="116" selection-start-column="70" selection-end-line="116" selection-end-column="70" />
-          <folding>
-            <element signature="e#2540#2541#0" expanded="true" />
-            <element signature="e#2606#2607#0" expanded="true" />
-            <element signature="e#4616#4617#0" expanded="true" />
-            <element signature="e#4694#4695#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RTextArea.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="286" column="0" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.3323124">
+          <caret line="1093" column="16" selection-start-line="1093" selection-start-column="16" selection-end-line="1093" selection-end-column="16" />
           <folding />
         </state>
       </provider>
@@ -1125,22 +1070,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/utils/MnemonicCodeTranslator.java">
+    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="110" column="47" selection-start-line="110" selection-start-column="47" selection-end-line="110" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1544#1545#0" expanded="true" />
+            <element signature="e#1584#1585#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/core/Memory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18223584">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/utils/MnemonicCodeTranslator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5206738">
           <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39050537">
-          <caret line="112" column="50" selection-start-line="112" selection-start-column="50" selection-end-line="112" selection-end-column="50" />
+        <state vertical-scroll-proportion="-7.172414">
+          <caret line="213" column="0" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/core/Processor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41041347">
+          <caret line="59" column="37" selection-start-line="59" selection-start-column="37" selection-end-line="59" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1449#1450#0" expanded="true" />
-            <element signature="e#1489#1490#0" expanded="true" />
+            <element signature="e#2509#2510#0" expanded="true" />
+            <element signature="e#2575#2576#0" expanded="true" />
+            <element signature="e#4585#4586#0" expanded="true" />
+            <element signature="e#4663#4664#0" expanded="true" />
           </folding>
         </state>
       </provider>
