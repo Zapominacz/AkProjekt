@@ -1,8 +1,8 @@
 package com.zapominacz.studia.akprojekt.instructions;
 
-import com.zapominacz.studia.akprojekt.memory.Memory;
-import com.zapominacz.studia.akprojekt.model.Register;
+import com.zapominacz.studia.akprojekt.core.Memory;
 import com.zapominacz.studia.akprojekt.model.Bit;
+import com.zapominacz.studia.akprojekt.model.Register;
 
 /**
  * Created by Sebastian on 2015-04-12.

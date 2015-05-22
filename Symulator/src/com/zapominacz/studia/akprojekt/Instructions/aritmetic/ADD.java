@@ -1,7 +1,7 @@
 //package com.zapominacz.studia.akprojekt.instructions.aritmetic;
 //
 //import com.zapominacz.studia.akprojekt.instructions.logical.LogicalInstruction;
-//import com.zapominacz.studia.akprojekt.memory.Memory;
+//import com.zapominacz.studia.akprojekt.core.Memory;
 //import com.zapominacz.studia.akprojekt.model.Bit;
 //import com.zapominacz.studia.akprojekt.model.Register;
 //

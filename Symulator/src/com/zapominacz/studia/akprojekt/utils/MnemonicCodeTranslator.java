@@ -1,6 +1,6 @@
 package com.zapominacz.studia.akprojekt.utils;
 
-import com.zapominacz.studia.akprojekt.memory.Memory;
+import com.zapominacz.studia.akprojekt.core.Memory;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 
 import javax.swing.text.BadLocationException;

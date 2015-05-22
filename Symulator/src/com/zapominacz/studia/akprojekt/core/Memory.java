@@ -1,4 +1,4 @@
-package com.zapominacz.studia.akprojekt.memory;
+package com.zapominacz.studia.akprojekt.core;
 
 import com.sun.istack.internal.NotNull;
 import com.zapominacz.studia.akprojekt.model.Bit;

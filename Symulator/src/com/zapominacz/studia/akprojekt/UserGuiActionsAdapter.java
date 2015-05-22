@@ -1,7 +1,7 @@
 package com.zapominacz.studia.akprojekt;
 
+import com.zapominacz.studia.akprojekt.core.Memory;
 import com.zapominacz.studia.akprojekt.core.Processor;
-import com.zapominacz.studia.akprojekt.memory.Memory;
 import com.zapominacz.studia.akprojekt.model.Register;
 import com.zapominacz.studia.akprojekt.utils.Bits;
 import com.zapominacz.studia.akprojekt.utils.Registers;
