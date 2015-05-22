@@ -22,6 +22,18 @@ public class Bits {
         return result;
     }
 
+    public static long parseLong(Bit[] bits) {
+        long result = 0;
+        long exp = 1;
+        for(Bit bit : bits) {
+            if(bit.getBooleanValue()) {
+                result+= exp;
+            }
+            exp *= 2;
+        }
+        return result;
+    }
+
     public static Bit[] createBits(int len) {
         Bit[] result = new Bit[len];
         for(int i = 0; i < len; i++) {
