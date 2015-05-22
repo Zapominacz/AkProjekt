@@ -2,11 +2,9 @@ package com.zapominacz.studia.akprojekt.core;
 
 import com.zapominacz.studia.akprojekt.enums.RegisterSection;
 import com.zapominacz.studia.akprojekt.instructions.Instruction;
-import com.zapominacz.studia.akprojekt.instructions.logical.And;
-import com.zapominacz.studia.akprojekt.instructions.logical.Or;
-import com.zapominacz.studia.akprojekt.instructions.logical.Xor;
-import com.zapominacz.studia.akprojekt.instructions.manipulation.Rl;
-import com.zapominacz.studia.akprojekt.instructions.manipulation.Rr;
+import com.zapominacz.studia.akprojekt.instructions.logical.*;
+import com.zapominacz.studia.akprojekt.instructions.manipulation.*;
+import com.zapominacz.studia.akprojekt.instructions.arithmetic.*;
 import com.zapominacz.studia.akprojekt.instructions.transport.*;
 import com.zapominacz.studia.akprojekt.model.Bit;
 import com.zapominacz.studia.akprojekt.model.Register;
@@ -81,17 +79,15 @@ public class Processor {
 
     public void loadAvailableInstructions() {
         availableInstructions = new HashMap<>();
-        //TODO numery
-//        availableInstructions.put(0, new Add());
-//        availableInstructions.put(1, new AddI());
-//        availableInstructions.put(2, new Sub());
-//        availableInstructions.put(3, new SubI());
-//        availableInstructions.put(4, new MulI());
-//        availableInstructions.put(5, new Mul());
-//        availableInstructions.put(6, new IMuh());
-//        availableInstructions.put(7, new Muh());
 
-
+        availableInstructions.put(0, new Add());
+        availableInstructions.put(1, new AddI());
+        availableInstructions.put(2, new Sub());
+        availableInstructions.put(3, new SubI());
+        availableInstructions.put(4, new MulI());
+        availableInstructions.put(5, new Mul());
+        availableInstructions.put(6, new IMuh());
+        availableInstructions.put(7, new Muh());
         availableInstructions.put(8, new Or());
         availableInstructions.put(9, new Xor());
         availableInstructions.put(10, new And());
@@ -99,11 +95,11 @@ public class Processor {
         availableInstructions.put(15, new Rl());
         availableInstructions.put(19, new Push());
         availableInstructions.put(20, new Pop());
-//        availableInstructions.put(31, new Itrp());
+        availableInstructions.put(31, new Itrp());
         availableInstructions.put(27, new GetPc());
         availableInstructions.put(28, new SetPc());
-//        availableInstructions.put(29, new Call());
-//        availableInstructions.put(30, new Ret());
+        availableInstructions.put(29, new Call());
+        availableInstructions.put(30, new Ret());
         availableInstructions.put(21, new LoadI());
         availableInstructions.put(22, new Load());
         availableInstructions.put(25, new Store());

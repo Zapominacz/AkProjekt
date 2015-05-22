@@ -34,28 +34,7 @@ public class Memory {
     @NotNull
     public Bit[] loadFromMemory(@NotNull Bit[] address) {
         int realAddress = Bits.parseInteger(address);
-        int cluster = realAddress / 4;
-        int remainder = realAddress % 4;
-        Bit[] result;
-        if(remainder == 0) {
-            result = memoryMap.get(cluster);
-            if(result == null) {
-                result = Bits.createBits(MEMORY_LEN);
-            }
-        } else {
-            result = Bits.createBits(MEMORY_LEN);
-            Bit[] c1 = memoryMap.get(cluster);
-            Bit[] c2 = memoryMap.get(cluster + 4);
-            if(c1 == null) {
-                c1 = Bits.createBits(MEMORY_LEN);
-            }
-            if(c2 == null) {
-                c2 = Bits.createBits(MEMORY_LEN);
-            }
-            System.arraycopy(c1, remainder, result, 0, CLUSTER_LEN  - remainder);
-            System.arraycopy(c2, 0, result, remainder, remainder);
-        }
-        return result;
+        return loadFromMemory(realAddress);
     }
 
     public void writeToMemory(@NotNull Bit[] address, @NotNull Bit[] value) {
@@ -84,4 +63,29 @@ public class Memory {
         }
     }
 
+    @NotNull
+    public Bit[] loadFromMemory(int realAddress) {
+        int cluster = realAddress / 4;
+        int remainder = realAddress % 4;
+        Bit[] result;
+        if(remainder == 0) {
+            result = memoryMap.get(cluster);
+            if(result == null) {
+                result = Bits.createBits(MEMORY_LEN);
+            }
+        } else {
+            result = Bits.createBits(MEMORY_LEN);
+            Bit[] c1 = memoryMap.get(cluster);
+            Bit[] c2 = memoryMap.get(cluster + 4);
+            if(c1 == null) {
+                c1 = Bits.createBits(MEMORY_LEN);
+            }
+            if(c2 == null) {
+                c2 = Bits.createBits(MEMORY_LEN);
+            }
+            System.arraycopy(c1, remainder, result, 0, CLUSTER_LEN  - remainder);
+            System.arraycopy(c2, 0, result, remainder, remainder);
+        }
+        return result;
+    }
 }

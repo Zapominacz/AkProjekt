@@ -10,7 +10,7 @@ import com.zapominacz.studia.akprojekt.utils.Bits;
 
 public class Pop extends Instruction {
 
-    Bit[] address;
+    int address;
     Bit[] result;
 
     @Override
@@ -26,12 +26,12 @@ public class Pop extends Instruction {
 
     @Override
     public void loadArguments(Register[] registers) {
-        address = registers[Processor.STACK_POINTER].getBits();
+        address = Bits.parseInteger(registers[Processor.STACK_POINTER].getBits());
     }
 
     @Override
     public void saveResult(Register[] registers) {
-        registers[Processor.STACK_POINTER].setRegisterValue(Bits.add(address, Bits.parseBits(1, Register.WORD_LEN)));
+        registers[Processor.STACK_POINTER].setRegisterValue(Bits.parseBits(address + 4, Register.WORD_LEN));
         registers[outputRegister].setRegisterValue(result);
     }
 

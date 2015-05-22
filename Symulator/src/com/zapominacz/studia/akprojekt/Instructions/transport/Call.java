@@ -8,10 +8,12 @@ import com.zapominacz.studia.akprojekt.model.Bit;
 import com.zapominacz.studia.akprojekt.model.Register;
 import com.zapominacz.studia.akprojekt.utils.Bits;
 
-public class Push extends Instruction {
+public class Call extends Instruction {
 
-    int address;
-    Bit[] data;
+    int src;
+    Bit[] returnAddress;
+    Bit[] callAddress;
+    int sp;
 
     @Override
     public void execute() {
@@ -20,24 +22,26 @@ public class Push extends Instruction {
 
     @Override
     public void parseArguments(Bit[] argument) {
-        firstArgRegister = Bits.parseInteger(Bits.getBits(argument,
-                RegisterSection.FIRST_REG_START.getIndex(), RegisterSection.FIRST_REG_END.getIndex()));
+        src = Bits.parseInteger(Bits.getBits(argument, RegisterSection.FIRST_REG_START.getIndex(), RegisterSection.FIRST_REG_END.getIndex()));
     }
 
     @Override
     public void loadArguments(Register[] registers) {
-        address = Bits.parseInteger(registers[Processor.STACK_POINTER].getBits()) - 4;
-        data = registers[outputRegister].getBits();
+        int nextPC = Bits.parseInteger(registers[Processor.PC].getBits()) + 4;
+        returnAddress = Bits.parseBits(nextPC, Register.WORD_LEN);
+        sp = Bits.parseInteger(registers[Processor.STACK_POINTER].getBits()) - 4;
+        callAddress = registers[src].getBits();
     }
 
     @Override
     public void saveResult(Register[] registers) {
-        registers[Processor.STACK_POINTER].setRegisterValue(Bits.parseBits(address, Register.WORD_LEN));
+        registers[Processor.PC].setRegisterValue(callAddress);
+        registers[Processor.STACK_POINTER].setRegisterValue(Bits.parseBits(sp, Register.WORD_LEN));
     }
 
     @Override
     public void saveResult(Memory memory) {
-        memory.writeToMemory(address, data);
+        memory.writeToMemory(sp, returnAddress);
     }
 
     @Override
