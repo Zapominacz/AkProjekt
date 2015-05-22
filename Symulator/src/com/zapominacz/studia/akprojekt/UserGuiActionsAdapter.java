@@ -4,26 +4,34 @@ import com.zapominacz.studia.akprojekt.core.Memory;
 import com.zapominacz.studia.akprojekt.core.Processor;
 import com.zapominacz.studia.akprojekt.model.Register;
 import com.zapominacz.studia.akprojekt.utils.Bits;
+import com.zapominacz.studia.akprojekt.utils.MnemonicCodeTranslator;
 import com.zapominacz.studia.akprojekt.utils.Registers;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 
 import javax.swing.*;
+import javax.swing.text.BadLocationException;
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
+import java.util.List;
+import java.util.Set;
 
 public class UserGuiActionsAdapter {
 
+    private MnemonicCodeTranslator translator;
     private Path openedFile;
     private Processor processor;
     private Memory memory;
     private Register[] registers;
-    private boolean hex = true;
+    private JLabel statusIndicator;
+    private Set<Integer> breakPoints;
 
     public UserGuiActionsAdapter() {
+        translator = new MnemonicCodeTranslator();
         openedFile = null;
         registers = new Register[Registers.REGISTERS];
         for(int i = 0; i < Registers.REGISTERS; i++) {
@@ -39,13 +47,6 @@ public class UserGuiActionsAdapter {
 
     public void connectTextFieldWithRegister(int register, JTextField textField) {
         registers[register].setRepresentation(textField);
-    }
-
-    public void onSystemChanged(JComboBox showInSystemComboBox) {
-        hex = showInSystemComboBox.getSelectedIndex() == 0;
-        for(Register register : registers) {
-            register.changeSystem(hex);
-        }
     }
 
     public void onOpenFile(RSyntaxTextArea asmTextPane, JFrame parent) {
@@ -94,38 +95,62 @@ public class UserGuiActionsAdapter {
     }
 
     public void onRunProgram(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane) {
+        onTranslate(asmTextPane, codeTextPane);
+        asmTextPane.removeAllLineHighlights();
+        codeTextPane.removeAllLineHighlights();
+        setStatusText("Uruchomiony");
+        try {
+            asmTextPane.addLineHighlight(0, Color.GREEN);
+            codeTextPane.addLineHighlight(0, Color.GREEN);
+        } catch (BadLocationException e) {
+            setStatusText("Brak danych!");
+        }
         processor.init(Bits.parseBits(Memory.CODE_BEGINNING, Register.WORD_LEN));
-//        compiler.clearCompiler();
-//
-//        try {
-//            for (int i = 0; i < asmTextPane.getLineCount(); i++) {
-//                Integer startOffset = asmTextPane.getLineStartOffset(i), endOffset = asmTextPane.getLineEndOffset(i);
-//                String temp = asmTextPane.getText(startOffset, endOffset-startOffset);
-//                temp = temp.replaceAll("(\\r|\\n)", "");
-//                compiler.addInstruction(temp);
-//            }
-//        }
-//        catch(Exception e){
-//            //Do nothing
-//        }
-//        compiler.execute();
-//        for(int i = 0; i < 32; i++) {
-//            String registerName = "R" + Integer.toHexString(i).toUpperCase();
-//            textFields[i].setText(compiler.getRegisterHexValue(registerName));
-//        }
     }
 
     public void onNextLine(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane) {
         processor.nextProcessorCycle();
+        int debugLine = processor.getCurrentLine();
+        System.out.println(debugLine);
+        try {
+            asmTextPane.removeAllLineHighlights();
+            codeTextPane.removeAllLineHighlights();
+            asmTextPane.addLineHighlight(debugLine, Color.GREEN);
+            codeTextPane.addLineHighlight(debugLine, Color.GREEN);
+        } catch (BadLocationException e) {
+            setStatusText("Koniec programu");
+        }
+
     }
 
     public void onBreakPointToggle(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane) {
+        try {
+            asmTextPane.addLineHighlight(asmTextPane.getCaretLineNumber(), Color.RED);
+        } catch (BadLocationException e) {
+            e.printStackTrace();
+        }
     }
 
     public void onInterrupt(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane) {
+
     }
 
     public void onContinue(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane) {
-        processor.nextProcessorCycle();
+
+    }
+
+    public void setStatusText(String statusText) {
+        if(statusText != null) {
+            statusIndicator.setText(statusText);
+        }
+    }
+
+    public void setStatusIndicator(JLabel statusLabel) {
+        this.statusIndicator = statusLabel;
+    }
+
+    public void onTranslate(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane) {
+        setStatusText("Przetłumaczono");
+        translator.translateAssemblyCode(asmTextPane, codeTextPane);
     }
 }

@@ -41,14 +41,11 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
     private javax.swing.JLabel jLabel3;
 
     private UserGuiActionsAdapter guiActionsAdapter;
-    private MnemonicCodeTranslator translator;
-    private Compiler compiler;
 
     /**
      * Creates new form MainWindow
      */
     public MainWindow() {
-        translator = new MnemonicCodeTranslator();
         guiActionsAdapter = new UserGuiActionsAdapter();
         initComponents();
     }
@@ -125,6 +122,7 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setName("mainFrame"); // NOI18N
 
+        guiActionsAdapter.setStatusIndicator(statusLabel);
         statusLabel.setText("Wszystko OK");
 
         GroupLayout jPanel1Layout = new GroupLayout(jPanel1);
@@ -188,7 +186,7 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
 
         translateMenuItem.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.CTRL_MASK));
         translateMenuItem.setText("Translate");
-        translateMenuItem.addActionListener(e -> translator.translateAssemblyCode(asmTextPane, codeTextPane));
+        translateMenuItem.addActionListener(e -> guiActionsAdapter.onTranslate(asmTextPane, codeTextPane));
         programMenu.add(translateMenuItem);
 
         runMenuItem.setAccelerator(KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.CTRL_MASK));
@@ -245,11 +243,11 @@ public class MainWindow extends JFrame implements StatusChangeInterface {
                                 .addContainerGap()
                                 .addComponent(jLabel2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(codeScrollPane)
+                                .addComponent(asmScrollPane)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(asmScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(codeScrollPane, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

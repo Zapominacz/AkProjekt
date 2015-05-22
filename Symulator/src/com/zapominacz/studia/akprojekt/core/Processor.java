@@ -72,10 +72,12 @@ public class Processor {
 
     private void loadNextInstruction() {
         Bit[] instructionCode = memory.loadFromMemory(registers[PC].getBits());
-        int instructionNumber = Bits.parseInteger(Bits.getBits(instructionCode,
-                RegisterSection.OPCODE_START.getIndex(), RegisterSection.OPCODE_END.getIndex()));
-        currentInstruction = availableInstructions.get(instructionNumber);
-        currentInstruction.parseArguments(instructionCode);
+        if(Bits.parseInteger(instructionCode) != 0) {
+            int instructionNumber = Bits.parseInteger(Bits.getBits(instructionCode,
+                    RegisterSection.OPCODE_START.getIndex(), RegisterSection.OPCODE_END.getIndex()));
+            currentInstruction = availableInstructions.get(instructionNumber);
+            currentInstruction.parseArguments(instructionCode);
+        }
     }
 
     public void loadAvailableInstructions() {
@@ -111,4 +113,7 @@ public class Processor {
         availableInstructions.put(24, new SetF());
     }
 
+    public int getCurrentLine() {
+        return (Bits.parseInteger(registers[PC].getBits()) - 2000) / 4;
+    }
 }

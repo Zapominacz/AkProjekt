@@ -205,7 +205,7 @@ import org.fife.ui.rsyntaxtextarea.*;
 
 Letter				= ([A-Za-z_])
 Digit				= ([0-9])
-Number				= ({Digit}+)
+Number				= ((0[Bb] | 0[xX] | 0[xX] | 0[dD] | 0[qQ])?({Digit}| [A-Fa-f])+)
 
 Identifier			= (({Letter}|{Digit})[^ \t\f\n\,\.\+\-\*\/\%\[\]]+)
 
@@ -239,64 +239,68 @@ Operator				= ("+"|"-"|"*"|"/"|"%"|"^"|"|"|"&"|"~"|"!"|"="|"<"|">")
 
     { addToken(Token.PREPROCESSOR); }
 
-	/* registers */
-	"R1" |
-	"R2" |
-    "R3" |
-    "R4" |
-    "R5" |
-    "R6" |
-    "R7" |
-    "R8" |
-    "R9" |
-    "RA" |
-    "RB" |
-    "RC" |
-    "RD" |
-    "RE" |
-    "RF"
-	{ addToken(Token.VARIABLE); }
     /*Komendy */
-	"ADD" |
-	"ADDC" |
-	"SUB" |
-	"SUBB" |
-	"MUL" |
-	"IMUL" |
-	"IMUH" |
-
-	"LOAD" |
-	"STORE" |
-	"COPY" |
-
-	"OR" |
-	"XOR" |
-	"AND" |
-
-	"PUSH" |
-	"POP" |
-
-	"JA" |
-	"JAE" |
-	"JB" |
-	"JBE" |
-	"JC" |
-	"JNC" |
-
-	"JG" |
-	"JGE" |
-	"JL" |
-	"JLE" |
-	"JO" |
-	"JNO" |
-	"JPOS" |
-	"JNEG" |
-
-	"ITRP" |
-	"SBL" |
-	"SBLC" |
-	"SBR" |
-	"SBRC"
+"ADD" |
+"ADDI" |
+"SUB" |
+"SUBI" |
+"MULI" |
+"MUL" |
+"IMUH" |
+"MUH" |
+"OR" |
+"XOR" |
+"AND" |
+"RR" |
+"RL" |
+"PUSH" |
+"POP" |
+"LOADI" |
+"LOAD" |
+"GETF" |
+"SETF" |
+"STORE" |
+"COPY" |
+"COPYNZ" |
+"COPYNE" |
+"COPYZ" |
+"COPYEQ" |
+"COPYOV" |
+"COPYNO" |
+"COPYLT" |
+"COPYGE" |
+"COPYGT" |
+"COPYLE" |
+"COPYC" |
+"COPYNC" |
+"COPYA" |
+"COPYBE" |
+"COPYB" |
+"COPYAE" |
+"COPYN" |
+"GETPC" |
+"SETPC" |
+"SETPCNZ" |
+"SETPCNE" |
+"SETPCZ" |
+"SETPCEQ" |
+"SETPCOV" |
+"SETPCNO" |
+"SETPCLT" |
+"SETPCGE" |
+"SETPCGT" |
+"SETPCLE" |
+"SETPCC" |
+"SETPCNC" |
+"SETPCA" |
+"SETPCBE" |
+"SETPCB" |
+"SETPCAE" |
+"SETPCN" |
+"CALL" |
+"RET" |
+"ITRP" |
+"INT"
 	{ addToken(Token.RESERVED_WORD); }
 
 }
