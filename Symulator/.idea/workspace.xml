@@ -2,7 +2,389 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81f6e321-724b-4f1c-9b1f-460bd1d47d4a" name="Default" comment="Nowy layout">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/utils/Bits.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/utils/Bits.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/AbstractGutterComponent.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/AbstractGutterComponent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/AbstractJFlexCTokenMaker$CStyleInsertBreakAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/AbstractJFlexCTokenMaker$CStyleInsertBreakAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/AbstractJFlexCTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/AbstractJFlexCTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/ActionScriptTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/ActionScriptTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/AssemblerX86TokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/AssemblerX86TokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/BBCodeTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/BBCodeTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/BufferedImageBackgroundPainterStrategy.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/BufferedImageBackgroundPainterStrategy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/CPlusPlusTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/CPlusPlusTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/CSSTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/CSSTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/CSharpTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/CSharpTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/CTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/CTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ChangeableHighlightPainter.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ChangeableHighlightPainter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup$1.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup$ChoiceList$1.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup$ChoiceList$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup$ChoiceList$2.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup$ChoiceList$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup$ChoiceList.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup$ChoiceList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup$EscapeAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup$EscapeAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup$LabelValuePair.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup$LabelValuePair.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup$Listener$1.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup$Listener$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup$Listener$2.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup$Listener$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup$Listener.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup$Listener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ClipboardHistoryPopup.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/ClojureTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/ClojureTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/CodeTemplateManager$TemplateComparator.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/CodeTemplateManager$TemplateComparator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/CodeTemplateManager$XMLFileFilter.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/CodeTemplateManager$XMLFileFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/CodeTemplateManager.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/CodeTemplateManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ColorBackgroundPainterStrategy.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ColorBackgroundPainterStrategy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ConfigurableCaret$1.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ConfigurableCaret$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ConfigurableCaret$FoldAwareNavigationFilter.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ConfigurableCaret$FoldAwareNavigationFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ConfigurableCaret.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ConfigurableCaret.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/DTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/DTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/DartTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/DartTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/DefaultTokenPainter.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/DefaultTokenPainter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/DelphiTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/DelphiTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/DtdTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/DtdTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/ErrorStrip$1.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/ErrorStrip$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/ErrorStrip$Listener.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/ErrorStrip$Listener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/ErrorStrip$MarkedOccurrenceNotice.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/ErrorStrip$MarkedOccurrenceNotice.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/ErrorStrip$Marker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/ErrorStrip$Marker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/ErrorStrip.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/ErrorStrip.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/FileFileLocation.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/FileFileLocation.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/FocusableTip$1.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/FocusableTip$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/FocusableTip$TextAreaListener.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/FocusableTip$TextAreaListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/FocusableTip.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/FocusableTip.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/FoldIndicator$FoldIcon.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/FoldIndicator$FoldIcon.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/FoldIndicator$Listener.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/FoldIndicator$Listener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/FoldIndicator.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/FoldIndicator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/folding/FoldManager$1.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/folding/FoldManager$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/folding/FoldManager$Listener.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/folding/FoldManager$Listener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/folding/FoldManager.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/folding/FoldManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/FoldingAwareIconRowHeader.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/FoldingAwareIconRowHeader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/FortranTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/FortranTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/GroovyTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/GroovyTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/Gutter$1.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/Gutter$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/Gutter$GutterBorder.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/Gutter$GutterBorder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/Gutter$TextAreaListener.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/Gutter$TextAreaListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/Gutter.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/Gutter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/HtaccessTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/HtaccessTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/folding/HtmlFoldParser$1.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/folding/HtmlFoldParser$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/folding/HtmlFoldParser$TagCloseInfo.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/folding/HtmlFoldParser$TagCloseInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/folding/HtmlFoldParser.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/folding/HtmlFoldParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/HtmlOccurrenceMarker$Entry.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/HtmlOccurrenceMarker$Entry.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/HtmlOccurrenceMarker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/HtmlOccurrenceMarker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/IconGroup.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/IconGroup.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/IconRowHeader$GutterIconImpl.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/IconRowHeader$GutterIconImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/IconRowHeader.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/IconRowHeader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ImageBackgroundPainterStrategy.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/ImageBackgroundPainterStrategy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/JSPTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/JSPTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/JavaTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/JavaTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/JsonTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/JsonTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/LatexTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/LatexTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/LineHighlightManager$LineHighlightInfo.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/LineHighlightManager$LineHighlightInfo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/LineHighlightManager.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/LineHighlightManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/LineNumberList$1.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/LineNumberList$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/LineNumberList$Listener.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/LineNumberList$Listener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/LineNumberList.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/LineNumberList.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/LispTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/LispTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/LuaTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/LuaTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/Macro$MacroRecord.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/Macro$MacroRecord.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/Macro.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/Macro.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Symulator/com/zapominacz/studia/akprojekt/MainWindow$1.class" afterPath="$PROJECT_DIR$/out/production/Symulator/com/zapominacz/studia/akprojekt/MainWindow$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Symulator/com/zapominacz/studia/akprojekt/MainWindow.class" afterPath="$PROJECT_DIR$/out/production/Symulator/com/zapominacz/studia/akprojekt/MainWindow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/MakefileTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/MakefileTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/MxmlTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/MxmlTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/NSISTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/NSISTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/PHPTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/PHPTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/ParserManager$NoticeHighlightPair.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/ParserManager$NoticeHighlightPair.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/ParserManager.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/ParserManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/PerlTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/PerlTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/PlainTextTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/PlainTextTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/PropertiesFileTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/PropertiesFileTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/PythonTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/PythonTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/print/RPrintUtilities$RPrintTabExpander.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/print/RPrintUtilities$RPrintTabExpander.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/print/RPrintUtilities.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/print/RPrintUtilities.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxDocument.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxDocument.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextArea$1.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextArea$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextArea$BracketMatchingTimer.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextArea$BracketMatchingTimer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextArea$RSyntaxTextAreaMutableCaretEvent.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextArea$RSyntaxTextAreaMutableCaretEvent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextArea.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextArea.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$BeginWordAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$BeginWordAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$ChangeFoldStateAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$ChangeFoldStateAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$CloseCurlyBraceAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$CloseCurlyBraceAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$CloseMarkupTagAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$CloseMarkupTagAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$CollapseAllCommentFoldsAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$CollapseAllCommentFoldsAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$CollapseAllFoldsAction$1.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$CollapseAllFoldsAction$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$CollapseAllFoldsAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$CollapseAllFoldsAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$CopyAsRtfAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$CopyAsRtfAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$DecreaseFontSizeAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$DecreaseFontSizeAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$DecreaseIndentAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$DecreaseIndentAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$DeletePrevWordAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$DeletePrevWordAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$DumbCompleteWordAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$DumbCompleteWordAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$EndWordAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$EndWordAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$ExpandAllFoldsAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$ExpandAllFoldsAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$FoldRelatedAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$FoldRelatedAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$GoToMatchingBracketAction$EndAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$GoToMatchingBracketAction$EndAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$GoToMatchingBracketAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$GoToMatchingBracketAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$IncreaseFontSizeAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$IncreaseFontSizeAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$InsertBreakAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$InsertBreakAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$InsertTabAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$InsertTabAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$NextWordAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$NextWordAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$PossiblyInsertTemplateAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$PossiblyInsertTemplateAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$PreviousWordAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$PreviousWordAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$SelectWordAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$SelectWordAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$ToggleCommentAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$ToggleCommentAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$ToggleCurrentFoldAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit$ToggleCurrentFoldAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaHighlighter$1.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaHighlighter$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaHighlighter$SyntaxLayeredHighlightInfoImpl.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaHighlighter$SyntaxLayeredHighlightInfoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaHighlighter.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaHighlighter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaUI.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaUI.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxUtilities.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RSyntaxUtilities.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTADefaultInputMap.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTADefaultInputMap.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTATextTransferHandler$TextTransferable.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTATextTransferHandler$TextTransferable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTATextTransferHandler.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTATextTransferHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextArea$1.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextArea$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextArea$RTextAreaMutableCaretEvent.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextArea$RTextAreaMutableCaretEvent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextArea.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextArea.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaBase$1.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaBase$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaBase$RTAMouseListener.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaBase$RTAMouseListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaBase.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaBase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$BeepAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$BeepAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$BeginAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$BeginAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$BeginLineAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$BeginLineAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$BeginRecordingMacroAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$BeginRecordingMacroAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$BeginWordAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$BeginWordAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$ClipboardHistoryAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$ClipboardHistoryAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$CopyAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$CopyAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$CutAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$CutAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$DecreaseFontSizeAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$DecreaseFontSizeAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$DefaultKeyTypedAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$DefaultKeyTypedAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$DeleteLineAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$DeleteLineAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$DeleteNextCharAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$DeleteNextCharAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$DeletePrevCharAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$DeletePrevCharAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$DeletePrevWordAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$DeletePrevWordAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$DeleteRestOfLineAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$DeleteRestOfLineAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$DumbCompleteWordAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$DumbCompleteWordAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$EndAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$EndAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$EndLineAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$EndLineAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$EndRecordingMacroAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$EndRecordingMacroAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$EndWordAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$EndWordAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$IncreaseFontSizeAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$IncreaseFontSizeAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$InsertBreakAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$InsertBreakAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$InsertContentAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$InsertContentAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$InsertTabAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$InsertTabAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$InvertSelectionCaseAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$InvertSelectionCaseAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$JoinLinesAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$JoinLinesAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$LineMoveAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$LineMoveAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$LowerSelectionCaseAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$LowerSelectionCaseAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$NextBookmarkAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$NextBookmarkAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$NextOccurrenceAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$NextOccurrenceAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$NextVisualPositionAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$NextVisualPositionAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$NextWordAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$NextWordAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$PageAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$PageAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$PasteAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$PasteAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$PlaybackLastMacroAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$PlaybackLastMacroAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$PreviousOccurrenceAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$PreviousOccurrenceAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$PreviousWordAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$PreviousWordAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$RedoAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$RedoAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$ScrollAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$ScrollAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$SelectAllAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$SelectAllAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$SelectLineAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$SelectLineAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$SelectWordAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$SelectWordAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$SetReadOnlyAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$SetReadOnlyAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$SetWritableAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$SetWritableAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$TimeDateAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$TimeDateAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$ToggleBookmarkAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$ToggleBookmarkAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$ToggleTextModeAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$ToggleTextModeAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$UndoAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$UndoAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$UnselectAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$UnselectAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$UpperSelectionCaseAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$UpperSelectionCaseAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$VerticalPageAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit$VerticalPageAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaEditorKit.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaHighlighter$HighlightInfoImpl.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaHighlighter$HighlightInfoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaHighlighter$LayeredHighlightInfoImpl.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaHighlighter$LayeredHighlightInfoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaHighlighter.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextAreaHighlighter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextScrollPane.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RTextScrollPane.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RUndoManager$RCompoundEdit.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RUndoManager$RCompoundEdit.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RUndoManager.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RUndoManager.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RecordableTextAction.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/RecordableTextAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RtfGenerator.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RtfGenerator.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RtfTransferable.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/RtfTransferable.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/RubyTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/RubyTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/SASTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/SASTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/SQLTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/SQLTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/ScalaTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/ScalaTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/SizeGrip$1.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/SizeGrip$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/SizeGrip$MouseHandler.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/SizeGrip$MouseHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/SizeGrip.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/SizeGrip.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/SmartHighlightPainter.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/SmartHighlightPainter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/SquiggleUnderlineHighlightPainter.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/SquiggleUnderlineHighlightPainter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/Style.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/Style.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/SyntaxScheme$SyntaxSchemeLoader.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/SyntaxScheme$SyntaxSchemeLoader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/SyntaxScheme.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/SyntaxScheme.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/TclTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/TclTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/TextEditorPane.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/TextEditorPane.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/Theme$XmlHandler.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/Theme$XmlHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/Theme.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/Theme.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/TipUtil.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/TipUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/TipWindow$1.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/TipWindow$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/TipWindow$2.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/TipWindow$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/TipWindow$3.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/TipWindow$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/TipWindow$4.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/TipWindow$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/TipWindow$TipListener.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/TipWindow$TipListener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/TipWindow.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/focusabletip/TipWindow.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/TokenImpl.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/TokenImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/io/UnicodeReader.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/io/UnicodeReader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/io/UnicodeWriter.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/io/UnicodeWriter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/UnixShellTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/UnixShellTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/VisibleWhitespaceTokenPainter.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/VisibleWhitespaceTokenPainter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/VisualBasicTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/VisualBasicTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/VolatileImageBackgroundPainterStrategy.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rtextarea/VolatileImageBackgroundPainterStrategy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/WindowsBatchTokenMaker$1.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/WindowsBatchTokenMaker$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/WindowsBatchTokenMaker$VariableType.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/WindowsBatchTokenMaker$VariableType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/WindowsBatchTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/WindowsBatchTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/XMLTokenMaker.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/modes/XMLTokenMaker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/parser/XmlParser$1.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/parser/XmlParser$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/parser/XmlParser$Handler.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/parser/XmlParser$Handler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/parser/XmlParser.class" afterPath="$PROJECT_DIR$/out/production/SyntaxHighlight/org/fife/ui/rsyntaxtextarea/parser/XmlParser.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/AbstractGutterComponent.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/AbstractGutterComponent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/AbstractJFlexCTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/AbstractJFlexCTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/parser/AbstractParser.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/parser/AbstractParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/ActionScriptTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/ActionScriptTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="D:\AkProjekt\Symulator\src\com\zapominacz\studia\akprojekt\instructions\arithmetic\Add.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/Add.java" />
+      <change type="MODIFICATION" beforePath="D:\AkProjekt\Symulator\src\com\zapominacz\studia\akprojekt\instructions\arithmetic\ArithmeticInstruction.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/ArithmeticInstruction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/AssemblerX86TokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/AssemblerX86TokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/BBCodeTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/BBCodeTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/BackgroundPainterStrategy.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/BackgroundPainterStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/BufferedImageBackgroundPainterStrategy.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/BufferedImageBackgroundPainterStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/CPlusPlusTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/CPlusPlusTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/CSSTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/CSSTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/CSharpTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/CSharpTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/CTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/CTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/ChangeableHighlightPainter.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/ChangeableHighlightPainter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/ClipboardHistoryPopup.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/ClipboardHistoryPopup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/ClojureTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/ClojureTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/templates/CodeTemplate.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/templates/CodeTemplate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/CodeTemplateManager.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/CodeTemplateManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/ColorBackgroundPainterStrategy.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/ColorBackgroundPainterStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/ConfigurableCaret.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/ConfigurableCaret.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/CurlyFoldParser.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/CurlyFoldParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/DTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/DTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/DartTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/DartTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/DefaultOccurrenceMarker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/DefaultOccurrenceMarker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/parser/DefaultParserNotice.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/parser/DefaultParserNotice.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/DefaultTokenPainter.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/DefaultTokenPainter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/DelphiTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/DelphiTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/io/DocumentReader.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/io/DocumentReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/DtdTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/DtdTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/ErrorStrip.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/ErrorStrip.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/parser/ExtendedHyperlinkListener.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/parser/ExtendedHyperlinkListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/FileFileLocation.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/FileFileLocation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/FileLocation.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/FileLocation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/focusabletip/FocusableTip.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/focusabletip/FocusableTip.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/Fold.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/Fold.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/FoldIndicator.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/FoldIndicator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/FoldManager.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/FoldManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/FoldParser.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/FoldParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/FoldParserManager.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/FoldParserManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/FoldingAwareIconRowHeader.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/FoldingAwareIconRowHeader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/FortranTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/FortranTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/GroovyTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/GroovyTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/Gutter.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/Gutter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/GutterIconInfo.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/GutterIconInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/HTMLTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/HTMLTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/HtaccessTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/HtaccessTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/HtmlFoldParser.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/HtmlFoldParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/HtmlOccurrenceMarker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/HtmlOccurrenceMarker.java" />
+      <change type="MODIFICATION" beforePath="D:\AkProjekt\Symulator\src\com\zapominacz\studia\akprojekt\instructions\arithmetic\IMuh.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/IMuh.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/IconGroup.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/IconGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/IconRowHeader.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/IconRowHeader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/ImageBackgroundPainterStrategy.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/ImageBackgroundPainterStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/JSPTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/JSPTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/JavaScriptTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/JavaScriptTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/JavaTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/JavaTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/JsonFoldParser.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/JsonFoldParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/JsonTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/JsonTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/LatexFoldParser.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/LatexFoldParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/LatexTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/LatexTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/LineHighlightManager.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/LineHighlightManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/LineNumberList.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/LineNumberList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/LispTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/LispTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/LuaTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/LuaTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/Macro.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/Macro.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/MainWindow.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/MainWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/MakefileTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/MakefileTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/MarkOccurrencesSupport.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/MarkOccurrencesSupport.java" />
+      <change type="MODIFICATION" beforePath="D:\AkProjekt\Symulator\src\com\zapominacz\studia\akprojekt\instructions\arithmetic\Muh.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/Muh.java" />
+      <change type="MODIFICATION" beforePath="D:\AkProjekt\Symulator\src\com\zapominacz\studia\akprojekt\instructions\arithmetic\Mul.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/Mul.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/MxmlTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/MxmlTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/NSISTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/NSISTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/NsisFoldParser.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/NsisFoldParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/PHPTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/PHPTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/parser/Parser.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/parser/Parser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/ParserManager.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/ParserManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/parser/ParserNotice.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/parser/ParserNotice.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/PerlTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/PerlTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/PlainTextTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/PlainTextTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/PopupWindowDecorator.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/PopupWindowDecorator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/core/Processor.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/core/Processor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/PropertiesFileTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/PropertiesFileTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/PythonTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/PythonTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/print/RPrintUtilities.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/print/RPrintUtilities.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RSTAView.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RSTAView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RSyntaxDocument.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RSyntaxDocument.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RSyntaxTextArea.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RSyntaxTextArea.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaDefaultInputMap.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaDefaultInputMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaEditorKit.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaHighlighter.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaHighlighter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaUI.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RSyntaxTextAreaUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RSyntaxUtilities.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RSyntaxUtilities.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RTADefaultInputMap.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RTADefaultInputMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RTATextTransferHandler.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RTATextTransferHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RTextArea.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RTextArea.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RTextAreaBase.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RTextAreaBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RTextAreaEditorKit.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RTextAreaEditorKit.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RTextAreaHighlighter.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RTextAreaHighlighter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RTextAreaUI.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RTextAreaUI.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RTextScrollPane.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RTextScrollPane.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RUndoManager.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RUndoManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RecordableTextAction.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/RecordableTextAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RtfGenerator.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RtfGenerator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RtfTransferable.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/RtfTransferable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/RubyTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/RubyTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/SASTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/SASTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/SQLTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/SQLTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/ScalaTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/ScalaTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/SearchEngine.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/SearchEngine.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/focusabletip/SizeGrip.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/focusabletip/SizeGrip.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/SmartHighlightPainter.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/SmartHighlightPainter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/SquiggleUnderlineHighlightPainter.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/SquiggleUnderlineHighlightPainter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/templates/StaticCodeTemplate.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/templates/StaticCodeTemplate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/Style.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/Style.java" />
+      <change type="MODIFICATION" beforePath="D:\AkProjekt\Symulator\src\com\zapominacz\studia\akprojekt\instructions\arithmetic\Sub.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/Sub.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/SyntaxScheme.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/SyntaxScheme.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/SyntaxView.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/SyntaxView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/parser/TaskTagParser.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/parser/TaskTagParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/TclTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/TclTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/TextEditorPane.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/TextEditorPane.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/Theme.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/Theme.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/focusabletip/TipUtil.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/focusabletip/TipUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/focusabletip/TipWindow.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/focusabletip/TipWindow.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/Token.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/Token.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/TokenImpl.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/TokenImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/TokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/TokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/TokenMakerBase.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/TokenMakerBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/TokenMakerFactory.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/TokenMakerFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/TokenPainter.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/TokenPainter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/parser/ToolTipInfo.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/parser/ToolTipInfo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/URLFileLocation.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/URLFileLocation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/io/UnicodeReader.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/io/UnicodeReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/io/UnicodeWriter.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/io/UnicodeWriter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/UnixShellTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/UnixShellTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java" afterPath="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/VisibleWhitespaceTokenPainter.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/VisibleWhitespaceTokenPainter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/VisualBasicTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/VisualBasicTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/VolatileImageBackgroundPainterStrategy.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rtextarea/VolatileImageBackgroundPainterStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/WindowsBatchTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/WindowsBatchTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/WrappedSyntaxView.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/WrappedSyntaxView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/XMLTokenMaker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/modes/XMLTokenMaker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/XmlFoldParser.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/folding/XmlFoldParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/XmlOccurrenceMarker.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/XmlOccurrenceMarker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/parser/XmlParser.java" afterPath="$PROJECT_DIR$/SyntaxHighlight/src/org/fife/ui/rsyntaxtextarea/parser/XmlParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Symulator.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +405,74 @@
     <favorites_list name="Symulator" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Mul.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/Mul.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="22" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SetPc.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/transport/SetPc.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="translateRegisters.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/translateRegisters.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.09855072">
+              <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserGuiActionsAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IMuh.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/IMuh.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Add.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/Add.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -71,7 +520,6 @@
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/transport/Itrp.java" />
-        <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/core/Processor.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/aritmetic/MulI.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/aritmetic/Mul.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/aritmetic/IMuh.java" />
@@ -81,11 +529,8 @@
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/aritmetic/AritmeticInstruction.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/aritmetic/ArithmeticInstruction.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/logical/LogicalInstruction.java" />
-        <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/ArithmeticInstruction.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/AddI.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/SubI.java" />
-        <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/Sub.java" />
-        <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/Add.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/MulI.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/core/Memory.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/transport/Ret.java" />
@@ -96,6 +541,10 @@
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/Mul.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/Muh.java" />
         <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/IMuh.java" />
+        <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/Sub.java" />
+        <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/Add.java" />
+        <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/ArithmeticInstruction.java" />
+        <option value="$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/core/Processor.java" />
       </list>
     </option>
   </component>
@@ -110,10 +559,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-310" />
-    <option name="y" value="-1088" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -138,8 +587,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -323,6 +770,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -580,32 +1029,32 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-310" y="-1088" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284055" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32755905" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284055" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.280887" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28031495" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13177083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21010248" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42977825" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41259843" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -662,7 +1111,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="60" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/transport/SetPc.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/transport/SetPc.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="67" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -682,7 +1145,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.24843423">
           <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -704,7 +1166,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,7 +1201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -748,7 +1208,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.112026356">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,7 +1233,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -782,7 +1240,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -790,7 +1247,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -798,15 +1254,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/transport/SetPc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="65" selection-start-line="37" selection-start-column="65" selection-end-line="37" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,72 +1261,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="441" column="80" selection-start-line="441" selection-start-column="80" selection-end-line="441" selection-end-column="80" />
-          <folding>
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="/.../" />
-            <marker date="1427849446000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1427849446000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1427849446000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1427849446000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1427849446000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1427849446000" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1427849446000" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1427849446000" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/translateRegisters.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.02607362">
-          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,7 +1268,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.41653904">
           <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -895,7 +1275,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8330781">
           <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -903,31 +1282,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.67687595">
           <caret line="598" column="4" selection-start-line="598" selection-start-column="4" selection-end-line="598" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#17097#17098#0" expanded="false" />
-            <element signature="e#17160#17161#0" expanded="false" />
-            <element signature="e#17097#17098#0" expanded="false" />
-            <element signature="e#17160#17161#0" expanded="false" />
-            <element signature="e#19607#19608#0" expanded="false" />
-            <element signature="e#19660#19661#0" expanded="false" />
-            <element signature="e#20945#20946#0" expanded="false" />
-            <element signature="e#20979#20980#0" expanded="false" />
-            <element signature="e#21222#21223#0" expanded="false" />
-            <element signature="e#21277#21278#0" expanded="false" />
-            <element signature="e#21222#21223#0" expanded="false" />
-            <element signature="e#21277#21278#0" expanded="false" />
-            <element signature="e#22840#22841#0" expanded="false" />
-            <element signature="e#22877#22878#0" expanded="false" />
-            <element signature="e#23027#23028#0" expanded="false" />
-            <element signature="e#23068#23069#0" expanded="false" />
-            <element signature="e#23188#23189#0" expanded="false" />
-            <element signature="e#23271#23272#0" expanded="false" />
-            <element signature="e#23649#23650#0" expanded="false" />
-            <element signature="e#23697#23698#0" expanded="false" />
-            <element signature="e#23803#23804#0" expanded="false" />
-            <element signature="e#23849#23850#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -935,47 +1289,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21745789">
           <caret line="238" column="0" selection-start-line="238" selection-start-column="0" selection-end-line="238" selection-end-column="0" />
-          <folding>
-            <marker date="1432320407168" expanded="false" signature="-1:-1" placeholder="/.../" />
-            <marker date="1432320407168" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1432320407168" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432320407168" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1432320407168" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432320407168" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1432320407168" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432320407168" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1432320407168" expanded="false" signature="-1:-1" placeholder=" { " />
-            <marker date="1432320407168" expanded="false" signature="-1:-1" placeholder=" }" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="/**...*/" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1432320407168" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -983,7 +1296,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07822086">
           <caret line="3" column="17" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,7 +1303,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33297062">
           <caret line="329" column="12" selection-start-line="329" selection-start-column="12" selection-end-line="329" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -999,7 +1310,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33297062">
           <caret line="388" column="15" selection-start-line="388" selection-start-column="15" selection-end-line="388" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,7 +1317,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3323124">
           <caret line="1093" column="16" selection-start-line="1093" selection-start-column="16" selection-end-line="1093" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1015,19 +1324,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="47" selection-start-line="110" selection-start-column="47" selection-end-line="110" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1544#1545#0" expanded="true" />
-            <element signature="e#1584#1585#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1035,7 +1331,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5206738">
           <caret line="152" column="0" selection-start-line="152" selection-start-column="0" selection-end-line="152" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1043,9 +1338,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33843797">
           <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1061,7 +1353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36447167">
           <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1069,7 +1360,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33843797">
           <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="29" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1077,23 +1367,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05206738">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/Sub.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05206738">
-          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/Add.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36447167">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1101,15 +1374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.10413476">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="7" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/MulI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05206738">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1117,7 +1381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19295558">
           <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,7 +1388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.70290965">
           <caret line="33" column="86" selection-start-line="33" selection-start-column="86" selection-end-line="33" selection-end-column="86" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,9 +1395,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5574273">
           <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1143,9 +1402,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4946401">
           <caret line="31" column="80" selection-start-line="31" selection-start-column="80" selection-end-line="31" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1153,17 +1409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5574273">
           <caret line="28" column="85" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/core/Processor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4532925">
-          <caret line="56" column="46" selection-start-line="56" selection-start-column="46" selection-end-line="56" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1177,8 +1422,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/ArithmeticInstruction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.05206738">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state vertical-scroll-proportion="1.969697">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/Add.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1187,31 +1442,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/IMuh.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2603369">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/Mul.java">
+    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/UserGuiActionsAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18223584">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="112" column="0" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/Sub.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36596736">
+          <caret line="15" column="45" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/core/Processor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37296036">
+          <caret line="48" column="57" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/Muh.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31240427">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.6829837">
+          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/MulI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.079254076">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/arithmetic/Mul.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/zapominacz/studia/akprojekt/instructions/transport/SetPc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/translateRegisters.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.09855072">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+          <folding />
         </state>
       </provider>
     </entry>

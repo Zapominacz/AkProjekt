@@ -8,23 +8,18 @@
  */
 package org.fife.ui.rsyntaxtextarea;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.util.ResourceBundle;
-import java.util.Stack;
-
-import javax.swing.*;
-import javax.swing.text.*;
-
 import org.fife.ui.rsyntaxtextarea.folding.Fold;
 import org.fife.ui.rsyntaxtextarea.folding.FoldCollapser;
 import org.fife.ui.rsyntaxtextarea.folding.FoldManager;
 import org.fife.ui.rsyntaxtextarea.templates.CodeTemplate;
-import org.fife.ui.rtextarea.Gutter;
-import org.fife.ui.rtextarea.IconRowHeader;
-import org.fife.ui.rtextarea.RecordableTextAction;
-import org.fife.ui.rtextarea.RTextArea;
-import org.fife.ui.rtextarea.RTextAreaEditorKit;
+import org.fife.ui.rtextarea.*;
+
+import javax.swing.*;
+import javax.swing.text.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.util.ResourceBundle;
+import java.util.Stack;
 
 
 /**

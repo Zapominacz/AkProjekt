@@ -8,15 +8,10 @@
  */
 package org.fife.ui.rtextarea;
 
-import java.util.ResourceBundle;
-import javax.swing.Action;
-import javax.swing.UIManager;
+import javax.swing.*;
 import javax.swing.event.UndoableEditEvent;
-import javax.swing.undo.CannotRedoException;
-import javax.swing.undo.CannotUndoException;
-import javax.swing.undo.CompoundEdit;
-import javax.swing.undo.UndoManager;
-import javax.swing.undo.UndoableEdit;
+import javax.swing.undo.*;
+import java.util.ResourceBundle;
 
 
 /**

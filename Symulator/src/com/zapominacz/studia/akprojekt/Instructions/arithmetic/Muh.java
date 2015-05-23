@@ -20,9 +20,6 @@ public class Muh extends ArithmeticInstruction {
         }
         if(Math.abs(res) > Integer.MAX_VALUE) {
             carry = Bit.HIGH;
-        }
-        //TODO overflow
-        if(false) {
             overflow = Bit.HIGH;
         }
     }

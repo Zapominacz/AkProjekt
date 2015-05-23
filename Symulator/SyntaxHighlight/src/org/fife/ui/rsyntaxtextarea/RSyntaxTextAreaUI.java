@@ -8,19 +8,15 @@
  */
 package org.fife.ui.rsyntaxtextarea;
 
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Rectangle;
-import java.beans.PropertyChangeEvent;
-import javax.swing.InputMap;
-import javax.swing.JComponent;
-import javax.swing.UIManager;
+import org.fife.ui.rtextarea.RTextArea;
+import org.fife.ui.rtextarea.RTextAreaUI;
+
+import javax.swing.*;
 import javax.swing.plaf.ComponentUI;
 import javax.swing.plaf.InputMapUIResource;
 import javax.swing.text.*;
-
-import org.fife.ui.rtextarea.RTextArea;
-import org.fife.ui.rtextarea.RTextAreaUI;
+import java.awt.*;
+import java.beans.PropertyChangeEvent;
 
 
 /**

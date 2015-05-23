@@ -8,17 +8,20 @@
  */
 package org.fife.ui.rsyntaxtextarea.parser;
 
-import java.io.IOException;
+import org.fife.io.DocumentReader;
+import org.fife.ui.rsyntaxtextarea.RSyntaxDocument;
+import org.xml.sax.EntityResolver;
+import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
+import org.xml.sax.SAXParseException;
+import org.xml.sax.helpers.DefaultHandler;
+
 import javax.swing.text.Document;
 import javax.swing.text.Element;
 import javax.xml.parsers.FactoryConfigurationError;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
-import org.xml.sax.*;
-import org.xml.sax.helpers.*;
-
-import org.fife.io.DocumentReader;
-import org.fife.ui.rsyntaxtextarea.RSyntaxDocument;
+import java.io.IOException;
 
 
 /**

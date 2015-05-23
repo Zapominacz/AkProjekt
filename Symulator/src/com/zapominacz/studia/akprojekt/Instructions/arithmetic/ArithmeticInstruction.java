@@ -66,8 +66,8 @@ public abstract class ArithmeticInstruction extends Instruction {
         firstArgRegister = Bits.parseInteger(Bits.getBits(argument,
                 RegisterSection.FIRST_REG_START.getIndex(), RegisterSection.FIRST_REG_END.getIndex()));
         if(isImmediate) {
-            source2 = Bits.getBits(argument,
-                    RegisterSection.IMMEDIATE_START.getIndex(), RegisterSection.IMMEDIATE_END.getIndex());
+            source2 = Bits.parseBits(Bits.parseInteger(Bits.getBits(argument,
+                    RegisterSection.IMMEDIATE_START.getIndex(), RegisterSection.IMMEDIATE_END.getIndex())), Register.WORD_LEN);
         } else {
             secondArgRegister = Bits.parseInteger(Bits.getBits(argument,
                     RegisterSection.SECOND_REG_START.getIndex(), RegisterSection.SECOND_REG_END.getIndex()));

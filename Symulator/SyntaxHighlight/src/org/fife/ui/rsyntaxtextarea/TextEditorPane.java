@@ -9,21 +9,16 @@
  */
 package org.fife.ui.rsyntaxtextarea;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.OutputStream;
-import java.nio.charset.Charset;
-import java.nio.charset.UnsupportedCharsetException;
-import javax.swing.event.DocumentEvent;
-import javax.swing.event.DocumentListener;
-import javax.swing.text.Document;
-
 import org.fife.io.UnicodeReader;
 import org.fife.io.UnicodeWriter;
 import org.fife.ui.rtextarea.RTextAreaEditorKit;
+
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
+import javax.swing.text.Document;
+import java.io.*;
+import java.nio.charset.Charset;
+import java.nio.charset.UnsupportedCharsetException;
 
 
 /**

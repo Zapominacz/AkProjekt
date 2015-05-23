@@ -9,15 +9,15 @@
  */
 package org.fife.ui.rsyntaxtextarea;
 
-import java.awt.*;
-import javax.swing.text.*;
-import javax.swing.text.Position.Bias;
-import javax.swing.event.*;
-
 import org.fife.ui.rsyntaxtextarea.TokenUtils.TokenSubList;
 import org.fife.ui.rsyntaxtextarea.folding.Fold;
 import org.fife.ui.rsyntaxtextarea.folding.FoldManager;
 import org.fife.ui.rtextarea.Gutter;
+
+import javax.swing.event.DocumentEvent;
+import javax.swing.text.*;
+import javax.swing.text.Position.Bias;
+import java.awt.*;
 
 
 /**

@@ -9,24 +9,15 @@
  */
 package org.fife.ui.rsyntaxtextarea.focusabletip;
 
-import java.awt.Color;
-import java.awt.ComponentOrientation;
-import java.awt.Cursor;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Image;
-import java.awt.Point;
-import java.awt.Window;
+import javax.imageio.ImageIO;
+import javax.swing.*;
+import javax.swing.event.MouseInputAdapter;
+import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import javax.imageio.ImageIO;
-import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
-import javax.swing.UIManager;
-import javax.swing.event.MouseInputAdapter;
 
 
 /**

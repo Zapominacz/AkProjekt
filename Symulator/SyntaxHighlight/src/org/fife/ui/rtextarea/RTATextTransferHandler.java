@@ -9,15 +9,16 @@
  */
 package org.fife.ui.rtextarea;
 
-import java.awt.datatransfer.*;
-import java.awt.im.InputContext;
-import java.io.InputStream;
-import java.io.IOException;
-import java.io.Reader;
-import java.io.StringBufferInputStream;
-import java.io.StringReader;
 import javax.swing.*;
-import javax.swing.text.*;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.Document;
+import javax.swing.text.JTextComponent;
+import javax.swing.text.Position;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.Transferable;
+import java.awt.datatransfer.UnsupportedFlavorException;
+import java.awt.im.InputContext;
+import java.io.*;
 
 
 /**

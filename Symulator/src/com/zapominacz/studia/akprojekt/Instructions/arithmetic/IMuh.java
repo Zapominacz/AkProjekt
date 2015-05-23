@@ -1,6 +1,5 @@
 package com.zapominacz.studia.akprojekt.instructions.arithmetic;
 
-import com.zapominacz.studia.akprojekt.instructions.Instruction;
 import com.zapominacz.studia.akprojekt.model.Bit;
 import com.zapominacz.studia.akprojekt.model.Register;
 import com.zapominacz.studia.akprojekt.utils.Bits;
@@ -8,7 +7,6 @@ import com.zapominacz.studia.akprojekt.utils.Bits;
 public class IMuh extends ArithmeticInstruction {
 
 
-    //TODO tu jest unsigned chyba
     @Override
     public void execute() {
         long src1 = Bits.parseLong(source1);
@@ -23,9 +21,6 @@ public class IMuh extends ArithmeticInstruction {
         }
         if(Math.abs(res) > Integer.MAX_VALUE) {
             carry = Bit.HIGH;
-        }
-        //TODO overflow
-        if(false) {
             overflow = Bit.HIGH;
         }
     }

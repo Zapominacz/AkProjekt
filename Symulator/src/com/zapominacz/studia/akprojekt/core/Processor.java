@@ -2,9 +2,12 @@ package com.zapominacz.studia.akprojekt.core;
 
 import com.zapominacz.studia.akprojekt.enums.RegisterSection;
 import com.zapominacz.studia.akprojekt.instructions.Instruction;
-import com.zapominacz.studia.akprojekt.instructions.logical.*;
-import com.zapominacz.studia.akprojekt.instructions.manipulation.*;
 import com.zapominacz.studia.akprojekt.instructions.arithmetic.*;
+import com.zapominacz.studia.akprojekt.instructions.logical.And;
+import com.zapominacz.studia.akprojekt.instructions.logical.Or;
+import com.zapominacz.studia.akprojekt.instructions.logical.Xor;
+import com.zapominacz.studia.akprojekt.instructions.manipulation.Rl;
+import com.zapominacz.studia.akprojekt.instructions.manipulation.Rr;
 import com.zapominacz.studia.akprojekt.instructions.transport.*;
 import com.zapominacz.studia.akprojekt.model.Bit;
 import com.zapominacz.studia.akprojekt.model.Register;
@@ -43,9 +46,15 @@ public class Processor {
     }
 
     public void init(Bit[] firstInstructionPointer) {
+        Bit[] empty = Bits.createBits(Register.WORD_LEN);
+        for(Register reg : registers) {
+            reg.setRegisterValue(empty);
+        }
         loadAvailableInstructions();
         initStackPointer();
         insertPointerToPC(firstInstructionPointer);
+
+
     }
 
     public void nextProcessorCycle() {

@@ -1,6 +1,5 @@
 package com.zapominacz.studia.akprojekt;
 
-import com.zapominacz.studia.akprojekt.utils.MnemonicCodeTranslator;
 import com.zapominacz.studia.akprojekt.utils.Registers;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 import org.fife.ui.rsyntaxtextarea.SyntaxConstants;

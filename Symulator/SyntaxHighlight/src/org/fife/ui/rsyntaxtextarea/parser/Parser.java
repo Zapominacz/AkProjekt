@@ -8,12 +8,12 @@
  */
 package org.fife.ui.rsyntaxtextarea.parser;
 
-import java.net.URL;
-
 import org.fife.ui.rsyntaxtextarea.RSyntaxDocument;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
 import org.fife.ui.rsyntaxtextarea.focusabletip.FocusableTip;
+
+import java.net.URL;
 
 
 /**

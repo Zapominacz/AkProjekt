@@ -9,17 +9,25 @@
  */
 package org.fife.ui.rsyntaxtextarea;
 
-import java.awt.Color;
-import java.awt.Cursor;
-import java.awt.Font;
-import java.awt.FontMetrics;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Insets;
-import java.awt.Point;
-import java.awt.Rectangle;
-import java.awt.RenderingHints;
-import java.awt.Window;
+import org.fife.ui.rsyntaxtextarea.focusabletip.FocusableTip;
+import org.fife.ui.rsyntaxtextarea.folding.Fold;
+import org.fife.ui.rsyntaxtextarea.folding.FoldManager;
+import org.fife.ui.rsyntaxtextarea.parser.Parser;
+import org.fife.ui.rsyntaxtextarea.parser.ParserNotice;
+import org.fife.ui.rsyntaxtextarea.parser.ToolTipInfo;
+import org.fife.ui.rtextarea.*;
+
+import javax.swing.*;
+import javax.swing.Timer;
+import javax.swing.event.CaretEvent;
+import javax.swing.event.EventListenerList;
+import javax.swing.event.HyperlinkEvent;
+import javax.swing.event.HyperlinkListener;
+import javax.swing.text.BadLocationException;
+import javax.swing.text.Document;
+import javax.swing.text.Element;
+import javax.swing.text.Highlighter;
+import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -30,37 +38,8 @@ import java.io.File;
 import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Collections;
-import java.util.HashMap;
+import java.util.*;
 import java.util.List;
-import java.util.Map;
-import java.util.ResourceBundle;
-import javax.swing.JLabel;
-import javax.swing.JMenu;
-import javax.swing.JPopupMenu;
-import javax.swing.SwingUtilities;
-import javax.swing.Timer;
-import javax.swing.UIManager;
-import javax.swing.event.CaretEvent;
-import javax.swing.event.EventListenerList;
-import javax.swing.event.HyperlinkEvent;
-import javax.swing.event.HyperlinkListener;
-import javax.swing.text.BadLocationException;
-import javax.swing.text.Document;
-import javax.swing.text.Element;
-import javax.swing.text.Highlighter;
-
-import org.fife.ui.rsyntaxtextarea.focusabletip.FocusableTip;
-import org.fife.ui.rsyntaxtextarea.folding.Fold;
-import org.fife.ui.rsyntaxtextarea.folding.FoldManager;
-import org.fife.ui.rsyntaxtextarea.parser.Parser;
-import org.fife.ui.rsyntaxtextarea.parser.ParserNotice;
-import org.fife.ui.rsyntaxtextarea.parser.ToolTipInfo;
-import org.fife.ui.rtextarea.Gutter;
-import org.fife.ui.rtextarea.RTextArea;
-import org.fife.ui.rtextarea.RTextAreaUI;
-import org.fife.ui.rtextarea.RTextScrollPane;
-import org.fife.ui.rtextarea.RecordableTextAction;
 
 
 /**

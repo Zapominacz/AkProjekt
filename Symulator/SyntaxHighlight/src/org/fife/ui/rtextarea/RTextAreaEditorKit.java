@@ -8,17 +8,18 @@
  */
 package org.fife.ui.rtextarea;
 
+import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
+import org.fife.ui.rsyntaxtextarea.RSyntaxUtilities;
+
+import javax.swing.*;
+import javax.swing.text.*;
 import java.awt.*;
-import java.awt.event.*;
-import java.io.*;
+import java.awt.event.ActionEvent;
+import java.io.IOException;
+import java.io.Reader;
 import java.text.BreakIterator;
 import java.text.DateFormat;
 import java.util.Date;
-import javax.swing.*;
-import javax.swing.text.*;
-
-import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
-import org.fife.ui.rsyntaxtextarea.RSyntaxUtilities;
 
 
 /**

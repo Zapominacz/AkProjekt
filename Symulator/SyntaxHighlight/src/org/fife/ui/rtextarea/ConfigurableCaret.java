@@ -8,16 +8,18 @@
  */
 package org.fife.ui.rtextarea;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.awt.datatransfer.*;
-import java.awt.event.ActionEvent;
-import javax.swing.*;
-import javax.swing.plaf.*;
-import javax.swing.text.*;
-
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 import org.fife.ui.rsyntaxtextarea.folding.FoldManager;
+
+import javax.swing.*;
+import javax.swing.plaf.TextUI;
+import javax.swing.text.*;
+import java.awt.*;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.Transferable;
+import java.awt.event.ActionEvent;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 
 /**

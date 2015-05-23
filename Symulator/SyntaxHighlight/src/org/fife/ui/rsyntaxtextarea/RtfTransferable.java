@@ -8,7 +8,9 @@
  */
 package org.fife.ui.rsyntaxtextarea;
 
-import java.awt.datatransfer.*;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.Transferable;
+import java.awt.datatransfer.UnsupportedFlavorException;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.StringReader;

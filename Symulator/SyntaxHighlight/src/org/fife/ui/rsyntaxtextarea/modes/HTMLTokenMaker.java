@@ -10,10 +10,10 @@
  */
 package org.fife.ui.rsyntaxtextarea.modes;
 
-import java.io.*;
-import javax.swing.text.Segment;
-
 import org.fife.ui.rsyntaxtextarea.*;
+
+import javax.swing.text.Segment;
+import java.io.IOException;
 
 
 /**

@@ -1,6 +1,7 @@
 package com.zapominacz.studia.akprojekt.instructions.arithmetic;
 
 import com.zapominacz.studia.akprojekt.model.Bit;
+import com.zapominacz.studia.akprojekt.model.Register;
 
 public class Sub extends ArithmeticInstruction {
 
@@ -12,7 +13,7 @@ public class Sub extends ArithmeticInstruction {
     @Override
     public void execute(){
         Bit previousCarry  = Bit.LOW;
-        for (int i = 0; i >= 0; i++) {
+        for (int i = 0; i < Register.WORD_LEN; i++) {
             previousCarry = carry;
             result[i] = source1[i].xor(source2[i].xor(carry));
             carry = (source1[i].and(source2[i].neg())).or((source1[i].neg().xor(source2[i])).and(carry));

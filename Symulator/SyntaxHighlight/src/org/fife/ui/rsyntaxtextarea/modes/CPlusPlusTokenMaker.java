@@ -11,10 +11,12 @@
  */
 package org.fife.ui.rsyntaxtextarea.modes;
 
-import java.io.*;
-import javax.swing.text.Segment;
+import org.fife.ui.rsyntaxtextarea.AbstractJFlexCTokenMaker;
+import org.fife.ui.rsyntaxtextarea.Token;
+import org.fife.ui.rsyntaxtextarea.TokenImpl;
 
-import org.fife.ui.rsyntaxtextarea.*;
+import javax.swing.text.Segment;
+import java.io.IOException;
 
 
 /**
