@@ -30,7 +30,7 @@ public class SetF extends Instruction {
 
     @Override
     public void saveResult(Register[] registers) {
-        registers[Processor.FLAGS].setRegisterValue(source);
+        registers[Processor.FLAGS].setRegisterValue(Bits.copy(source));
     }
 
     @Override

@@ -36,7 +36,8 @@ public class Register {
         });
     }
 
-    public void changeSystem(boolean hex) {
-
+    public void refreshView() {
+        int val = Bits.parseInteger(registerValue);
+        representation.setText(Conversions.toHexString(val));
     }
 }

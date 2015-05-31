@@ -32,9 +32,9 @@ public abstract class ArithmeticInstruction extends Instruction {
     @Override
     public void loadArguments(Register[] registers) {
         carry = registers[Processor.FLAGS].getBits()[Processor.FLAG_CARRY];
-        zero = Bit.LOW;
-        sign = Bit.LOW;
-        overflow = Bit.LOW;
+        sign = registers[Processor.FLAGS].getBits()[Processor.FLAG_SIGN];
+        zero = registers[Processor.FLAGS].getBits()[Processor.FLAG_ZERO];
+        overflow = registers[Processor.FLAGS].getBits()[Processor.FLAG_OVERFLOW];
         source1 = registers[firstArgRegister].getBits();
         if(!isImmediate) {
             source2 = registers[secondArgRegister].getBits();
@@ -53,12 +53,13 @@ public abstract class ArithmeticInstruction extends Instruction {
         } else {
             sign = Bit.LOW;
         }
-        registers[outputRegister].setRegisterValue(result);
+        registers[outputRegister].setRegisterValue(Bits.copy(result));
         Bit[] flag = registers[Processor.FLAGS].getBits();
         flag[Processor.FLAG_CARRY] = carry;
         flag[Processor.FLAG_SIGN] = sign;
         flag[Processor.FLAG_ZERO] = zero;
         flag[Processor.FLAG_OVERFLOW] = overflow;
+        registers[Processor.FLAGS].refreshView();
     }
 
     @Override

@@ -29,7 +29,7 @@ public class Ret extends Instruction {
 
     @Override
     public void saveResult(Register[] registers) {
-        registers[Processor.PC].setRegisterValue(result);
+        registers[Processor.PC].setRegisterValue(Bits.copy(result));
         registers[Processor.STACK_POINTER].setRegisterValue(Bits.parseBits(sp + 4, Register.WORD_LEN));
     }
 

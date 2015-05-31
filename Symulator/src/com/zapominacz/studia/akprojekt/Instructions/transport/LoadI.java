@@ -31,7 +31,7 @@ public class LoadI extends Instruction {
 
     @Override
     public void saveResult(Register[] registers) {
-        registers[outputRegister].setRegisterValue(result);
+        registers[outputRegister].setRegisterValue(Bits.copy(result));
     }
 
     @Override

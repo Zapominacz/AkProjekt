@@ -35,7 +35,7 @@ public class Call extends Instruction {
 
     @Override
     public void saveResult(Register[] registers) {
-        registers[Processor.PC].setRegisterValue(callAddress);
+        registers[Processor.PC].setRegisterValue(Bits.copy(callAddress));
         registers[Processor.STACK_POINTER].setRegisterValue(Bits.parseBits(sp, Register.WORD_LEN));
     }
 

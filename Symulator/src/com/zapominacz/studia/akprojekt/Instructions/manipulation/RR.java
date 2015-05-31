@@ -6,9 +6,8 @@ public class Rr extends RotationInstruction {
 
     @Override
     public void execute(){
-        for(int i = 0; i < Register.WORD_LEN; i++) {
-            result[i] = source[(i - 1) % Register.WORD_LEN]; //TODO modula w Javie moze byc nei ten tegos
-        }
+        result[Register.WORD_LEN - 1] = carry;
+        System.arraycopy(source, 1, result, 0, Register.WORD_LEN - 1);
         carry = source[0];
     }
 }

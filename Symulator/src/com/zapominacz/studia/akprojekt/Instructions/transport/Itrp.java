@@ -5,9 +5,6 @@ import com.zapominacz.studia.akprojekt.instructions.Instruction;
 import com.zapominacz.studia.akprojekt.model.Bit;
 import com.zapominacz.studia.akprojekt.model.Register;
 
-/**
- * Created by Quantum on 2015-05-22.
- */
 public class Itrp extends Instruction {
     @Override
     public void execute() {

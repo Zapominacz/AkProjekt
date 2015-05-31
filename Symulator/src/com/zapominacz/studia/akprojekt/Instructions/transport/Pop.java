@@ -32,7 +32,7 @@ public class Pop extends Instruction {
     @Override
     public void saveResult(Register[] registers) {
         registers[Processor.STACK_POINTER].setRegisterValue(Bits.parseBits(address + 4, Register.WORD_LEN));
-        registers[outputRegister].setRegisterValue(result);
+        registers[outputRegister].setRegisterValue(Bits.copy(result));
     }
 
     @Override

@@ -34,8 +34,9 @@ public abstract class RotationInstruction extends Instruction {
 
     @Override
     public void saveResult(Register[] registers) {
-        registers[outputRegister].setRegisterValue(result);
+        registers[outputRegister].setRegisterValue(Bits.copy(result));
         registers[Processor.FLAGS].getBits()[Processor.FLAG_CARRY] = carry;
+        registers[Processor.FLAGS].refreshView();
     }
 
     @Override

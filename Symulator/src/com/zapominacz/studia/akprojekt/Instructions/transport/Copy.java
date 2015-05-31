@@ -38,7 +38,7 @@ public class Copy extends Instruction {
     @Override
     public void saveResult(Register[] registers) {
         if(Bits.equals(flags, cond) || Instruction.isAlways(cond)) {
-            registers[outputRegister].setRegisterValue(source);
+            registers[outputRegister].setRegisterValue(Bits.copy(source));
         }
     }
 

@@ -37,7 +37,7 @@ public class Push extends Instruction {
 
     @Override
     public void saveResult(Memory memory) {
-        memory.writeToMemory(address, data);
+        memory.writeToMemory(address, Bits.copy(data));
     }
 
     @Override

@@ -43,7 +43,8 @@ public abstract class LogicalInstruction extends Instruction {
         } else {
             zero = Bit.LOW;
         }
-        registers[outputRegister].setRegisterValue(result);
+        registers[outputRegister].setRegisterValue(Bits.copy(result));
+        registers[Processor.FLAGS].refreshView();
     }
 
     @Override

@@ -18,7 +18,7 @@ public class Sub extends ArithmeticInstruction {
             result[i] = source1[i].xor(source2[i].xor(carry));
             carry = (source1[i].and(source2[i].neg())).or((source1[i].neg().xor(source2[i])).and(carry));
         }
-        if (carry == previousCarry) {
+        if (carry != previousCarry) {
             overflow = Bit.HIGH;
         }
     }

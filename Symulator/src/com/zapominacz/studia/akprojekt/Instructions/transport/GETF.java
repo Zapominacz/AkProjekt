@@ -30,7 +30,7 @@ public class GetF extends Instruction {
 
     @Override
     public void saveResult(Register[] registers) {
-        registers[outputRegister].setRegisterValue(source);
+        registers[outputRegister].setRegisterValue(Bits.copy(source));
     }
 
     @Override
