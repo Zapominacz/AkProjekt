@@ -99,4 +99,10 @@ public class Bits {
         }
         return result;
     }
+
+    public static Bit[] copy(Bit[] bits) {
+        Bit[] result = Bits.createBits(bits.length);
+        System.arraycopy(bits, 0, result, 0, bits.length);
+        return result;
+    }
 }

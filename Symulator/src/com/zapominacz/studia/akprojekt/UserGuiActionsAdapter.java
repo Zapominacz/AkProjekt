@@ -110,16 +110,19 @@ public class UserGuiActionsAdapter {
     }
 
     public void onNextLine(RSyntaxTextArea asmTextPane, RSyntaxTextArea codeTextPane) {
-        processor.nextProcessorCycle();
+        int maxLine = asmTextPane.getLineCount();
         int debugLine = processor.getCurrentLine();
-        System.out.println(debugLine);
-        try {
-            asmTextPane.removeAllLineHighlights();
-            codeTextPane.removeAllLineHighlights();
-            asmTextPane.addLineHighlight(debugLine, Color.GREEN);
-            codeTextPane.addLineHighlight(debugLine, Color.GREEN);
-        } catch (BadLocationException e) {
-            setStatusText("Koniec programu");
+        if(debugLine < maxLine) {
+            processor.nextProcessorCycle();
+            debugLine = processor.getCurrentLine();
+            try {
+                asmTextPane.removeAllLineHighlights();
+                codeTextPane.removeAllLineHighlights();
+                asmTextPane.addLineHighlight(debugLine, Color.GREEN);
+                codeTextPane.addLineHighlight(debugLine, Color.GREEN);
+            } catch (BadLocationException e) {
+                setStatusText("Koniec programu");
+            }
         }
 
     }
