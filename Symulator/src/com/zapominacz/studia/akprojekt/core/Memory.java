@@ -54,8 +54,9 @@ public class Memory {
             if(c2 == null) {
                 c2 =  Bits.createBits(MEMORY_LEN);
             }
-            System.arraycopy(value, 0, c1, remainder, CLUSTER_LEN  - remainder);
-            System.arraycopy(value, CLUSTER_LEN  - remainder, c2, 0, remainder);
+            remainder *= 8;
+            System.arraycopy(value, 0, c1, remainder, MEMORY_LEN  - remainder);
+            System.arraycopy(value, MEMORY_LEN  - remainder, c2, 0, remainder);
             memoryMap.put(cluster, c1);
             memoryMap.put(cluster + 4, c2);
         } else {
@@ -83,7 +84,8 @@ public class Memory {
             if(c2 == null) {
                 c2 = Bits.createBits(MEMORY_LEN);
             }
-            System.arraycopy(c1, remainder, result, 0, CLUSTER_LEN  - remainder);
+            remainder *= 8;
+            System.arraycopy(c1, remainder, result, 0, MEMORY_LEN  - remainder);
             System.arraycopy(c2, 0, result, remainder, remainder);
         }
         return result;
