@@ -27,7 +27,7 @@ public class Call extends Instruction {
 
     @Override
     public void loadArguments(Register[] registers) {
-        int nextPC = Bits.parseInteger(registers[Processor.PC].getBits()) + 4;
+        int nextPC = Bits.parseInteger(registers[Processor.PC].getBits());
         returnAddress = Bits.parseBits(nextPC, Register.WORD_LEN);
         sp = Bits.parseInteger(registers[Processor.STACK_POINTER].getBits()) - 4;
         callAddress = registers[src].getBits();
