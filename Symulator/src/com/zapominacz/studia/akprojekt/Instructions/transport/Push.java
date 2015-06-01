@@ -27,7 +27,7 @@ public class Push extends Instruction {
     @Override
     public void loadArguments(Register[] registers) {
         address = Bits.parseInteger(registers[Processor.STACK_POINTER].getBits()) - 4;
-        data = registers[outputRegister].getBits();
+        data = Bits.copy(registers[outputRegister].getBits());
     }
 
     @Override

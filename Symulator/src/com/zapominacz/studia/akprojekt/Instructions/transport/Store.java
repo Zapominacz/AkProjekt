@@ -30,7 +30,7 @@ public class Store extends Instruction {
     @Override
     public void loadArguments(Register[] registers) {
         address = Bits.add(registers[firstArgRegister].getBits(),  registers[secondArgRegister].getBits());
-        data = registers[outputRegister].getBits();
+        data = Bits.copy(registers[outputRegister].getBits());
     }
 
     @Override

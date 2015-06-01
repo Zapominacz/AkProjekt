@@ -7,6 +7,8 @@ import com.zapominacz.studia.akprojekt.instructions.Instruction;
 import com.zapominacz.studia.akprojekt.model.Bit;
 import com.zapominacz.studia.akprojekt.model.Register;
 import com.zapominacz.studia.akprojekt.utils.Bits;
+import com.zapominacz.studia.akprojekt.utils.CondCheck;
+
 //TODO restrykcje na rejestry
 public class SetPc extends Instruction {
 
@@ -29,13 +31,13 @@ public class SetPc extends Instruction {
 
     @Override
     public void loadArguments(Register[] registers) {
-        source = registers[firstArgRegister].getBits();
+        source = Bits.copy(registers[firstArgRegister].getBits());
         flags = Bits.getBits(registers[Processor.FLAGS].getBits(), Processor.FLAG_ZERO, Processor.FLAG_CARRY + 1);
     }
 
     @Override
     public void saveResult(Register[] registers) {
-        if(Bits.equals(flags, cond) || Instruction.isAlways(cond)) {
+        if(CondCheck.check(flags, cond)) {
             registers[Processor.PC].setRegisterValue(Bits.copy(source));
         }
     }

@@ -29,7 +29,7 @@ public abstract class RotationInstruction extends Instruction {
     @Override
     public void loadArguments(Register[] registers) {
         carry = registers[Processor.FLAGS].getBits()[Processor.FLAG_CARRY];
-        source = registers[firstArgRegister].getBits();
+        source = Bits.copy(registers[firstArgRegister].getBits());
     }
 
     @Override

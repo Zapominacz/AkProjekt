@@ -35,9 +35,9 @@ public abstract class ArithmeticInstruction extends Instruction {
         sign = registers[Processor.FLAGS].getBits()[Processor.FLAG_SIGN];
         zero = registers[Processor.FLAGS].getBits()[Processor.FLAG_ZERO];
         overflow = registers[Processor.FLAGS].getBits()[Processor.FLAG_OVERFLOW];
-        source1 = registers[firstArgRegister].getBits();
+        source1 = Bits.copy(registers[firstArgRegister].getBits());
         if(!isImmediate) {
-            source2 = registers[secondArgRegister].getBits();
+            source2 = Bits.copy(registers[secondArgRegister].getBits());
         }
     }
 

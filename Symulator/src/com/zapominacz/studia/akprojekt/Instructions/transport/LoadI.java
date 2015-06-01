@@ -26,12 +26,12 @@ public class LoadI extends Instruction {
 
     @Override
     public void loadArguments(Register[] registers) {
-        result = registers[outputRegister].getBits();
+        result = Bits.copy(registers[outputRegister].getBits());
     }
 
     @Override
     public void saveResult(Register[] registers) {
-        registers[outputRegister].setRegisterValue(Bits.copy(result));
+        registers[outputRegister].setRegisterValue(result);
     }
 
     @Override

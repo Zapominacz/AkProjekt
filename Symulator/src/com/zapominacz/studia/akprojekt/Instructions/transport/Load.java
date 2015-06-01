@@ -29,7 +29,7 @@ public class Load extends Instruction {
 
     @Override
     public void loadArguments(Register[] registers) {
-        address = Bits.add(registers[firstArgRegister].getBits(),  registers[secondArgRegister].getBits());
+        address = Bits.add(registers[firstArgRegister].getBits(),  Bits.copy(registers[secondArgRegister].getBits()));
     }
 
     @Override

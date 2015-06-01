@@ -22,8 +22,4 @@ public abstract class Instruction {
     public abstract void saveResult(Register[] registers);
     public abstract void saveResult(Memory memory);
     public abstract void loadArguments(Memory memory);
-
-    public static boolean isAlways(Bit[] cond) {
-        return cond[0].and(cond[1].and(cond[2].and(cond[3]))).getBooleanValue();
-    }
 }

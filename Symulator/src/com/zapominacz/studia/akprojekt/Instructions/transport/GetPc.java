@@ -25,7 +25,7 @@ public class GetPc extends Instruction {
 
     @Override
     public void loadArguments(Register[] registers) {
-        source = registers[Processor.PC].getBits();
+        source = Bits.copy(registers[Processor.PC].getBits());
     }
 
     @Override

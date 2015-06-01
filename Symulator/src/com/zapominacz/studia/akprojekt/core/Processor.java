@@ -27,7 +27,7 @@ public class Processor {
     /* Rejestry specjalne */
     public final static int PC = 31;
     public final static int FLAGS = 30;
-    public final static int STACK_POINTER = 28;
+    public final static int STACK_POINTER = 29;
     public final static int CURRENT_INSTRUCTION = 32;
     public final static int VALUE_BUF = 33;
 
@@ -46,9 +46,8 @@ public class Processor {
     }
 
     public void init(Bit[] firstInstructionPointer) {
-        Bit[] empty = Bits.createBits(Register.WORD_LEN);
         for(Register reg : registers) {
-            reg.setRegisterValue(empty);
+            reg.setRegisterValue(Bits.createBits(Register.WORD_LEN));
         }
         loadAvailableInstructions();
         initStackPointer();

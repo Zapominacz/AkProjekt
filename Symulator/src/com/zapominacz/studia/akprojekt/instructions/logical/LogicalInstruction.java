@@ -32,8 +32,8 @@ public abstract class LogicalInstruction extends Instruction {
     @Override
     public void loadArguments(Register[] registers) {
         zero = registers[Processor.FLAGS].getBits()[Processor.FLAG_ZERO];
-        source1 = registers[firstArgRegister].getBits();
-        source2 = registers[secondArgRegister].getBits();
+        source1 = Bits.copy(registers[firstArgRegister].getBits());
+        source2 = Bits.copy(registers[secondArgRegister].getBits());
     }
 
     @Override

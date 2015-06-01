@@ -25,7 +25,7 @@ public class SetF extends Instruction {
 
     @Override
     public void loadArguments(Register[] registers) {
-        source = registers[firstArgRegister].getBits();
+        source = Bits.copy(registers[firstArgRegister].getBits());
     }
 
     @Override

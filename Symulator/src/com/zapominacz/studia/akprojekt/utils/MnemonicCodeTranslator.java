@@ -128,6 +128,9 @@ public class MnemonicCodeTranslator {
                 translateOpcode(result, code[0]);
 
                 for (int i = 1; i < command.length; i++) {
+                    if (command[i].startsWith(";")) {
+                        break;
+                    }
                     String reg = registersMap.get(command[i]);
                     if (reg != null) {
                         insertRegisterIntoCommand(result, reg, code[i]);

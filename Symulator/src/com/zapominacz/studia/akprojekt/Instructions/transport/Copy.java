@@ -7,6 +7,7 @@ import com.zapominacz.studia.akprojekt.instructions.Instruction;
 import com.zapominacz.studia.akprojekt.model.Bit;
 import com.zapominacz.studia.akprojekt.model.Register;
 import com.zapominacz.studia.akprojekt.utils.Bits;
+import com.zapominacz.studia.akprojekt.utils.CondCheck;
 
 public class Copy extends Instruction {
 
@@ -32,12 +33,12 @@ public class Copy extends Instruction {
     @Override
     public void loadArguments(Register[] registers) {
         flags = Bits.getBits(registers[Processor.FLAGS].getBits(), Processor.FLAG_ZERO, Processor.FLAG_CARRY + 1);
-        source = registers[firstArgRegister].getBits();
+        source = Bits.copy(registers[firstArgRegister].getBits());
     }
 
     @Override
     public void saveResult(Register[] registers) {
-        if(Bits.equals(flags, cond) || Instruction.isAlways(cond)) {
+        if(CondCheck.check(flags, cond)) {
             registers[outputRegister].setRegisterValue(Bits.copy(source));
         }
     }

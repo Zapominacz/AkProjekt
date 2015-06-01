@@ -25,7 +25,7 @@ public class GetF extends Instruction {
 
     @Override
     public void loadArguments(Register[] registers) {
-        source = registers[Processor.FLAGS].getBits();
+        source = Bits.copy(registers[Processor.FLAGS].getBits());
     }
 
     @Override
